@@ -8,118 +8,159 @@
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
 
-		<!-- Stylesheets -->
+        <!-- INK by Sapo -->
  		<link rel="stylesheet" type="text/css" href="./css/ink/ink.css">
 
-		<!-- Javascript -->
 		<script type="text/javascript" src="./js/ink/holder.js"></script>
         <script type="text/javascript" src="./js/ink/ink.min.js"></script>
         <script type="text/javascript" src="./js/ink/ink-ui.min.js"></script>
         <script type="text/javascript" src="./js/ink/autoload.js"></script>
         <script type="text/javascript" src="./js/ink/html5shiv.js"></script>
 		<script type="text/javascript" src="./js/ink/ink.carousel.js"></script>
+
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 		
 	</head>
 
 	<body>
-
+		<!-- Main container -->
 		<div class="ink-grid">
-		<header>
-            <h1 class="pull-left medium-100 small-100">
-                <div class="logo">
-                    <a href="#">
-                        <img src="holder.js/150x80/auto/ink" alt="">
-                    </a>
-                </div>
-            </h1>
-			<nav class="ink-navigation">
-				<ul class="horizontal menu blue shadowed">
-					<li><a href="#news">Novidades</a></li>
-					<li><a href="#speakers">Oradores</a></li>
-					<li><a href="#previous">Edições Anteriores</a></li>
-					<li><a href="#sponsorship">Patrocínios</a></li>
-					<li><a href="#recruit">Junta-te a nós!</a></li>
-				</ul>
-			</nav>                         
-        </header>
 
-	
-	
-			<div class="ink-grid">
-				<!-- News -->
-				<div class="ink-grid">
-					<h2>
-						<a id="news">Novidades</a>
-					</h2>
-				</div>
+			<header>
+	            <h1 class="pull-left medium-100 small-100">
+	                <div class="logo">
+	                    <a href="#">
+	                        <img src="holder.js/150x80/auto/ink" alt="">
+	                    </a>
+	                </div>
+	            </h1>
+				<nav class="ink-navigation">
+					<ul class="horizontal menu blue shadowed">
+						<li><a href="#news">Novidades</a></li>
+						<li><a href="#speakers">Oradores</a></li>
+						<li><a href="#previous">Edições Anteriores</a></li>
+						<li><a href="#sponsor">Patrocínios</a></li>
+						<li><a href="#recruit">Junta-te a nós!</a></li>
+					</ul>
+				</nav>                         
+	        </header>
+
+		
+			<!-- News -->
+			<div id="news_div" class="ink-grid">
+				<h2>
+					<a id="news">Novidades</a>
+				</h2>
+			</div>
 
 				<!-- Speakers -->
-				<div class="ink-grid">
-					<h2>
-						<a id="speakers">Oradores</a>
-					</h2>
-				</div>
+			<div id="speakers_div" class="ink-grid">
+				<h2>
+					<a id="speakers">Oradores</a>
+				</h2>	
+			</div>
 
 				<!-- Previous Editions -->
-				<div class="ink-grid">
+			<div id="previous_div" class="ink-grid">
 					<h2>
 						<a id="previous">Edições Anteriores</a>
 					</h2>
 
-					<p>
-						Texto a falar sobre edições anteriores...
-					</p>
-					<div id="myCarousel" class="ink-carousel large-80 align-center" data-auto-advance="0" data-axix="x" data-initial-page="0" data-pagination="#myCarouselNav" data-swipe="true">
-    					<!-- the carousel stage and slides -->
-					    <ul class="stage column-group half-gutters">
-					        <li class="slide large-50 medium-100 small-100">
-					        	<div>
-						        	<a href="http://set.ist.utl.pt/"> <!-- TODO: corrigir depois da migração -->
-						        		<img src="./img/SET2014_360x190.png"/>
-						        	</a>
-						        	<p class="align-center">Edição 2014</p>
-						        </div>
-					        </li>
-					        <li class="slide large-50 medium-100 small-100">
-					        	<div>
-						        	<a href="http://set.ist.utl.pt/SET2013/index.php">
-						        		<img src="./img/SET2013_360x190.png"/>
-						        	</a>
-						        	<p class="align-center"> Edição 2013</p>
-					        	</div>
-					    	</li>
-					    </ul>
-					    <!-- the carousel navigation -->
-					    <nav id="myCarouselNav" class="ink-navigation align-center">
-    						<ul class="pagination dotted grey"></ul>
-						</nav>
+					<div class="large-100">
+						<p>	Texto a falar sobre edições anteriores... </p>
+
+						<div id="myCarousel" class="ink-carousel large-80 align-center" data-auto-advance="0" data-axix="x" data-initial-page="0" data-pagination="#myCarouselNav" data-swipe="true">
+	    					<!-- the carousel stage and slides -->
+						    <ul class="stage column-group half-gutters">
+						        <li class="slide large-50 medium-100 small-100">
+						        	<div>
+							        	<a href="http://set.ist.utl.pt/"> <!-- TODO: corrigir depois da migração -->
+							        		<img src="./img/SET2014_360x190.png"/>
+							        	</a>
+							        	<p class="align-center">Edição 2014</p>
+							        </div>
+						        </li>
+						        <li class="slide large-50 medium-100 small-100">
+						        	<div>
+							        	<a href="http://set.ist.utl.pt/SET2013/index.php">
+							        		<img src="./img/SET2013_360x190.png"/>
+							        	</a>
+							        	<p class="align-center"> Edição 2013</p>
+						        	</div>
+						    	</li>
+						    </ul>
+						    <!-- the carousel navigation -->
+						    <nav id="myCarouselNav" class="ink-navigation align-center">
+	    						<ul class="pagination dotted grey"></ul>
+							</nav>
+						</div>
+
+					</div>
+				</div>
+
+				<!-- Sponsorships -->
+				<div id="sponsor_div" class="ink-grid">
+					<h2>
+						<a id="sponsor">Patrocínios</a>
+					</h2>
+
+					
+					<p>Não perca esta oportunidade de nos apoiares</p>
+					<a href="mailto:lage2@lage2.com"><!--TODO: inserir mail correcto -->
+						<div class="ink-button blue large-20 push-center">Patrocina-nos</div>
+					</a>
+				
+
+					<div class="column-groups text-section">
+						<div class="large-100">
+							<ul>
+								<li>Adicionar testemunhos de oradores</li>
+								<li>Falar sobre o crescimento</li>
+								<li>etc...</li>
+							</ul>
+						</div>
+
 					</div>
 
 				</div>
 
-				<!-- Sponsorships -->
-				<div class="ink-grid">
-					<h2>
-						<a id="sponsorships">Patrocínios</a>
-					</h2>
-				</div>
-
 				<!-- Recruit -->
-				<div class="ink-grid">
+				<div id="recuit-div" class="ink-grid">
 					<h2>
-						<a id="recruitment">Junta-te a nós</a>
+						<a id="recruit">Junta-te a nós</a>
 					</h2>	
+
+
+					<div class="column-groups">
+						<a class="ink-button blue large-20" 
+						href="http://tinyurl.com/orler56">
+							Junta-te a nós
+						</a>
+					
+
+						<div class="column-groups text-section">
+							<div class="large-100">
+								<ul>
+									<li>Adicionar testemunhos de participantes</li>
+									<li>Falar sobre o oportunidades</li>
+									<li>etc...</li>
+								</ul>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-
-			<footer>
-				<div class="ink-grid">
-					<p class="small vspace">
-						&copy SET Todos os direitos reservados.
-					</p>
-				</div>
-			</footer>
 		</div>
+
+		<footer>
+			<div>
+				<p class="small vspace content-right">
+					&copy SET Todos os direitos reservados.
+				</p>
+			</div>
+		</footer>
 	</body>
 
 </html>
