@@ -9,52 +9,113 @@
         <meta name="MobileOptimized" content="320">
 
 		<!-- Stylesheets -->
-		<link rel="stylesheet" href="./css/ink.css"/>
+ 		<link rel="stylesheet" type="text/css" href="./css/ink/ink.css">
 
 		<!-- Javascript -->
-		<script type="text/javascript" src="../js/holder.js"></script>
-        <script type="text/javascript" src="../js/ink.min.js"></script>
-        <script type="text/javascript" src="../js/ink-ui.min.js"></script>
-        <script type="text/javascript" src="../js/autoload.js"></script>
-        <script type="text/javascript" src="../js/html5shiv.js"></script>
+		<script type="text/javascript" src="./js/ink/holder.js"></script>
+        <script type="text/javascript" src="./js/ink/ink.min.js"></script>
+        <script type="text/javascript" src="./js/ink/ink-ui.min.js"></script>
+        <script type="text/javascript" src="./js/ink/autoload.js"></script>
+        <script type="text/javascript" src="./js/ink/html5shiv.js"></script>
+		<script type="text/javascript" src="./js/ink/ink.carousel.js"></script>
+		
 	</head>
 
 	<body>
+
 		<div class="ink-grid">
+		<header>
+            <h1 class="pull-left medium-100 small-100">
+                <div class="logo">
+                    <a href="#">
+                        <img src="holder.js/150x80/auto/ink" alt="">
+                    </a>
+                </div>
+            </h1>
 			<nav class="ink-navigation">
 				<ul class="horizontal menu blue shadowed">
 					<li><a href="#news">Novidades</a></li>
 					<li><a href="#speakers">Oradores</a></li>
-					<li><a href="#history">Edições Anteriores</a></li>
+					<li><a href="#previous">Edições Anteriores</a></li>
 					<li><a href="#sponsorship">Patrocínios</a></li>
 					<li><a href="#recruit">Junta-te a nós!</a></li>
 				</ul>
-			</nav>
+			</nav>                         
+        </header>
+
 	
-			<!-- News -->
-			<div>
-			</div>
+	
+			<div class="ink-grid">
+				<!-- News -->
+				<div class="ink-grid">
+					<h2>
+						<a id="news">Novidades</a>
+					</h2>
+				</div>
 
-			<!-- Speakers -->
-			<div>
-			</div>
+				<!-- Speakers -->
+				<div class="ink-grid">
+					<h2>
+						<a id="speakers">Oradores</a>
+					</h2>
+				</div>
 
-			<!-- Previous Editions -->
-			<div>
-			</div>
+				<!-- Previous Editions -->
+				<div class="ink-grid">
+					<h2>
+						<a id="previous">Edições Anteriores</a>
+					</h2>
 
-			<!-- Sponsorships -->
-			<div>
-			</div>
+					<p>
+						Texto a falar sobre edições anteriores...
+					</p>
+					<div id="myCarousel" class="ink-carousel large-80 align-center" data-auto-advance="0" data-axix="x" data-initial-page="0" data-pagination="#myCarouselNav" data-swipe="true">
+    					<!-- the carousel stage and slides -->
+					    <ul class="stage column-group half-gutters">
+					        <li class="slide large-50 medium-100 small-100">
+					        	<div>
+						        	<a href="http://set.ist.utl.pt/"> <!-- TODO: corrigir depois da migração -->
+						        		<img src="./img/SET2014_360x190.png"/>
+						        	</a>
+						        	<p class="align-center">Edição 2014</p>
+						        </div>
+					        </li>
+					        <li class="slide large-50 medium-100 small-100">
+					        	<div>
+						        	<a href="http://set.ist.utl.pt/SET2013/index.php">
+						        		<img src="./img/SET2013_360x190.png"/>
+						        	</a>
+						        	<p class="align-center"> Edição 2013</p>
+					        	</div>
+					    	</li>
+					    </ul>
+					    <!-- the carousel navigation -->
+					    <nav id="myCarouselNav" class="ink-navigation align-center">
+    						<ul class="pagination dotted grey"></ul>
+						</nav>
+					</div>
 
-			<!-- Recruit -->
-			<div>	
+				</div>
+
+				<!-- Sponsorships -->
+				<div class="ink-grid">
+					<h2>
+						<a id="sponsorships">Patrocínios</a>
+					</h2>
+				</div>
+
+				<!-- Recruit -->
+				<div class="ink-grid">
+					<h2>
+						<a id="recruitment">Junta-te a nós</a>
+					</h2>	
+				</div>
 			</div>
 
 			<footer>
 				<div class="ink-grid">
 					<p class="small vspace">
-						Todos os direitos reservados ao LAGE2.
+						&copy SET Todos os direitos reservados.
 					</p>
 				</div>
 			</footer>
