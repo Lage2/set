@@ -1,23 +1,26 @@
 /* Class Selectors */
-.sub_slide{
+.front-slide{
 	width: 100%;
 	min-height: 100px;
+	background-color: white;
+	padding-top: 2em;
+	padding-bottom: 1em;
 }
 
+.front-slide div {padding-top: 2em; padding-bottom: 1em;}
 .back-slide h2 { text-align:center; color: black; margin-top: 25%; font-size: 4.5em; }
 .back-slide h2 a { text-decoration: none; color:black;}
 
 .sub_slide{
-	background-color: white;
-	padding-top: 50px;
-	padding-bottom: 25px;
+	
 }
 
 /* Identifier Selectors*/
 #header {	
+	width: 100%;
 	position: fixed;
+	z-index: 1;
 }
-
 
 #news_slide, #speakers_slide, #history_slide, #sponsors_slide, #recruit_slide {
 	overflow: hidden;
