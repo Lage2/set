@@ -8,7 +8,7 @@
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
 
-        <!-- INK by Sapo -->
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
  		<link rel="stylesheet" type="text/css" href="./css/ink/ink.css">
 
 		<script type="text/javascript" src="./js/ink/holder.js"></script>
@@ -18,9 +18,7 @@
         <script type="text/javascript" src="./js/ink/html5shiv.js"></script>
 		<script type="text/javascript" src="./js/ink/ink.carousel.js"></script>
 
-		<!-- Bootstrap -->
-		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
 		
 	</head>
 
@@ -28,46 +26,54 @@
 		<!-- Main container -->
 		<div class="ink-grid">
 
-			<header>
-	            <h1 class="pull-left medium-100 small-100">
-	                <div class="logo">
-	                    <a href="#">
-	                        <img src="holder.js/150x80/auto/ink" alt="">
-	                    </a>
-	                </div>
-	            </h1>
+			<header id="header">
+	            	            
 				<nav class="ink-navigation">
-					<ul class="horizontal menu blue shadowed">
-						<li><a href="#news">Novidades</a></li>
-						<li><a href="#speakers">Oradores</a></li>
-						<li><a href="#previous">Edições Anteriores</a></li>
-						<li><a href="#sponsor">Patrocínios</a></li>
-						<li><a href="#recruit">Junta-te a nós!</a></li>
+					<ul class="horizontal menu blue shadowed flat">
+						<li><a href="#news_slide">Novidades</a></li>
+						<li><a href="#speakers_slide">Oradores</a></li>
+						<li><a href="#history_slide">Edições Anteriores</a></li>
+						<li><a href="#sponsors_slide">Patrocínios</a></li>
+						<li><a href="#recruit_slide">Junta-te a nós!</a></li>
 					</ul>
 				</nav>                         
 	        </header>
 
 		
 			<!-- News -->
-			<div id="news_div" class="ink-grid">
+			<div id="news_slide" class="back-slide">
 				<h2>
 					<a id="news">Novidades</a>
-				</h2>
+				</h2>	
+			</div>
+			<div class="ink-grid sub_slide">
+				<div class="group-columns gutters">
+					<div class="large-100 medium-100 small-100">
+						 <h1>Latest news</h1>  
+					</div>
+				</div>
 			</div>
 
 				<!-- Speakers -->
-			<div id="speakers_div" class="ink-grid">
+			<div id="speakers_slide" class="back-slide">
 				<h2>
 					<a id="speakers">Oradores</a>
 				</h2>	
 			</div>
+			<div class="ink-grid sub_slide">
+				<div class="group-columns gutters">
+				</div>
+			</div>
+
 
 				<!-- Previous Editions -->
-			<div id="previous_div" class="ink-grid">
-					<h2>
-						<a id="previous">Edições Anteriores</a>
-					</h2>
-
+			<div id="history_slide" class="back-slide">
+				<h2>
+					<a id="previous">Edições Anteriores</a>
+				</h2>
+			</div>
+			<div class="ink-grid sub_slide">
+				<div class="column-groups gutters">
 					<div class="large-100">
 						<p>	Texto a falar sobre edições anteriores... </p>
 
@@ -99,68 +105,61 @@
 
 					</div>
 				</div>
+			</div>
 
-				<!-- Sponsorships -->
-				<div id="sponsor_div" class="ink-grid">
-					<h2>
-						<a id="sponsor">Patrocínios</a>
-					</h2>
-
-					
+			<!-- Sponsorships -->
+			<div id="sponsors_slide" class="back-slide">
+				<h2>
+					<a id="sponsor">Patrocínios</a>
+				</h2>
+			</div>
+				
+			<div class="ink-grid sub_slide">
+				<div class="column-groups gutters">
 					<p>Não perca esta oportunidade de nos apoiares</p>
 					<a href="mailto:lage2@lage2.com"><!--TODO: inserir mail correcto -->
 						<div class="ink-button blue large-20 push-center">Patrocina-nos</div>
 					</a>
-				
+					<div class="large-100">
+						<ul>
+							<li>Adicionar testemunhos de oradores</li>
+							<li>Falar sobre o crescimento</li>
+							<li>etc...</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 
-					<div class="column-groups text-section">
-						<div class="large-100">
-							<ul>
-								<li>Adicionar testemunhos de oradores</li>
-								<li>Falar sobre o crescimento</li>
+			<!-- Recruit -->
+			<div id="recruit_slide" class="back-slide">
+				<h2>
+					<a id="recruit">Junta-te a nós</a>
+				</h2>	
+			</div>
+			<div class="ink-grid sub_slide">
+				<div class="column-groups gutters">
+					<a class="ink-button blue large-20 medium-50 small-100" href="http://tinyurl.com/orler56">
+						Junta-te a nós
+					</a>
+					
+					<div class="large-100 medium-100 small-100">
+						<ul>
+							<li>Adicionar testemunhos de participantes</li>
+								<li>Falar sobre o oportunidades</li>
 								<li>etc...</li>
 							</ul>
-						</div>
-
-					</div>
-
-				</div>
-
-				<!-- Recruit -->
-				<div id="recuit-div" class="ink-grid">
-					<h2>
-						<a id="recruit">Junta-te a nós</a>
-					</h2>	
-
-
-					<div class="column-groups">
-						<a class="ink-button blue large-20" 
-						href="http://tinyurl.com/orler56">
-							Junta-te a nós
-						</a>
-					
-
-						<div class="column-groups text-section">
-							<div class="large-100">
-								<ul>
-									<li>Adicionar testemunhos de participantes</li>
-									<li>Falar sobre o oportunidades</li>
-									<li>etc...</li>
-								</ul>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+				
 
 		<footer>
 			<div>
 				<p class="small vspace content-right">
-					&copy SET Todos os direitos reservados.
+					&copy <a href="http://lage2.ist.utl.pt/">SET</a> Todos os direitos reservados.
 				</p>
 			</div>
 		</footer>
 	</body>
-
 </html>

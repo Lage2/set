@@ -1,0 +1,76 @@
+/* Class Selectors */
+.sub_slide{
+	width: 100%;
+	min-height: 100px;
+}
+
+.back-slide h2 { text-align:center; color: black; margin-top: 25%; font-size: 4.5em; }
+.back-slide h2 a { text-decoration: none; color:black;}
+
+.sub_slide{
+	background-color: white;
+	padding-top: 50px;
+	padding-bottom: 25px;
+}
+
+/* Identifier Selectors*/
+#header {	
+	position: fixed;
+}
+
+
+#news_slide, #speakers_slide, #history_slide, #sponsors_slide, #recruit_slide {
+	overflow: hidden;
+	width: 100%;
+	padding: 0;
+}
+
+#news_slide{
+	background: url('../img/main1.jpg') 50% 0 no-repeat fixed;
+	background-size: cover;
+	/*color: #fff;*/
+	height: 600px;
+	margin: 0;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+}
+
+#speakers_slide{
+	background: url('../img/speakers1.jpg') 50% 0 no-repeat fixed;	
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	color: #fff;
+	height: 600px;
+	margin: 0;
+}
+
+#history_slide{
+	background: url('../img/history1.jpg') 50% 0 no-repeat fixed;	
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	color: #fff;
+	height: 600px;
+	margin: 0;
+}
+
+#sponsors_slide{
+	background: url('../img/sponsor1.jpg') 50% 0 no-repeat fixed;	
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	color: #fff;
+	height: 600px;
+	margin: 0;
+}
+
+#recruit_slide{
+	background: url('../img/recruit1.jpg') 50% 0 no-repeat fixed;	
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	color: #fff;
+	height: 600px;
+	margin: 0;
+}
