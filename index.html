@@ -20,14 +20,36 @@
 
 		<script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
 		
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('a[href*=#]').each(function() {
+					if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+						&& location.hostname == this.hostname
+						&& this.hash.replace(/#/,'') ) {
+							var $targetId = $(this.hash),
+							$targetAnchor = $('[name=' + this.hash.slice(1) +']');
+							var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+						
+							if ($target) {
+								var targetOffset = $target.offset().top;
+								
+								$(this).click(function() {
+									$("#nav li a").removeClass("active");
+									$(this).addClass('active');
+									$('html, body').animate({scrollTop: targetOffset}, 1000);
+									return false;
+								});
+							}
+					}
+				});
+			});
+			</script>
 	</head>
 
 	<body>
-		<!-- Main container -->
-		<div class="ink-grid">
-
+		<!-- TopBar Fixed Position -->
+		<div class="topbar">
 			<header id="header">
-	            	            
 				<nav class="ink-navigation">
 					<ul class="horizontal menu blue shadowed flat">
 						<li><a href="#news_slide">Novidades</a></li>
@@ -38,8 +60,10 @@
 					</ul>
 				</nav>                         
 	        </header>
+	    </div>
 
-		
+		<!-- Main container -->
+		<div class="ink-grid">		
 			<!-- News -->
 			<div id="news_slide" class="back-slide">
 				<h2>
@@ -49,7 +73,7 @@
 			<div class="ink-grid front-slide">
 				<div class="group-columns gutters">
 					<div class="large-100 medium-100 small-100">
-						 <h1>Latest news</h1>  
+						 <h1>Novidades podem não ser uma ideia assim tão interessante...</h1>  
 					</div>
 				</div>
 			</div>
@@ -66,34 +90,61 @@
 			</div>
 
 
-				<!-- Previous Editions -->
+			<!-- Previous Editions -->
 			<div id="history_slide" class="back-slide">
 				<h2>
 					<a id="previous">Edições Anteriores</a>
 				</h2>
+				<p>O SET é novinho... mas já cá anda há muito tempo.<br>Fica a conhecê-lo...</p>
 			</div>
 			<div class="ink-grid front-slide">
 				<div class="column-groups gutters">
-					<div class="large-100">
-						<p>	Texto a falar sobre edições anteriores... </p>
-
-						<div id="myCarousel" class="ink-carousel large-80 align-center" data-auto-advance="0" data-axix="x" data-initial-page="0" data-pagination="#myCarouselNav" data-swipe="true">
+					<div class="large-100 medium-100 small-100">
+						<div id="myCarousel" 
+							class="ink-carousel large-80 align-center" 
+							data-auto-advance="0" data-axix="x"
+							data-initial-page="0" data-pagination="#myCarouselNav"
+							data-swipe="true">
 	    					<!-- the carousel stage and slides -->
 						    <ul class="stage column-group half-gutters">
 						        <li class="slide large-50 medium-100 small-100">
 						        	<div>
 							        	<a href="http://set.ist.utl.pt/"> <!-- TODO: corrigir depois da migração -->
-							        		<img src="./img/SET2014_360x190.png"/>
+							        		<img src="./img/prevEditions/SET2014_360x190.png"/>
 							        	</a>
-							        	<p class="align-center">Edição 2014</p>
+							        	<p class="align-center edition-year">Edição 2014</p>
 							        </div>
 						        </li>
 						        <li class="slide large-50 medium-100 small-100">
 						        	<div>
 							        	<a href="http://set.ist.utl.pt/SET2013/index.php">
-							        		<img src="./img/SET2013_360x190.png"/>
+							        		<img src="./img/prevEditions/SET2013_360x190.png"/>
 							        	</a>
-							        	<p class="align-center"> Edição 2013</p>
+							        	<p class="align-center edition-year"> Edição 2013</p>
+						        	</div>
+						    	</li>
+						    	<li class="slide large-50 medium-100 small-100">
+						        	<div>
+							        	<a href="http://groups.ist.utl.pt/seminarios-tagus/2012/">
+							        		<img src="./img/prevEditions/sem2012.jpg"/>
+							        	</a>
+							        	<p class="align-center edition-year"> Edição 2012</p>
+						        	</div>
+						    	</li>
+						    	<li class="slide large-50 medium-100 small-100">
+						        	<div>
+							        	<a href="http://groups.ist.utl.pt/seminarios-tagus/2011/index2.html">
+							        		<img src="./img/prevEditions/sem2011.jpg"/>
+							        	</a>
+							        	<p class="align-center edition-year"> Edição 2011</p>
+						        	</div>
+						    	</li>
+						    	<li class="slide large-50 medium-100 small-100">
+						        	<div>
+							        	<a href="http://groups.ist.utl.pt/seminarios-tagus/2010/">
+							        		<img src="./img/prevEditions/sem2010.png"/>
+							        	</a>
+							        	<p class="align-center edition-year"> Edição 2010</p>
 						        	</div>
 						    	</li>
 						    </ul>
@@ -102,7 +153,6 @@
 	    						<ul class="pagination dotted grey"></ul>
 							</nav>
 						</div>
-
 					</div>
 				</div>
 			</div>
@@ -112,13 +162,13 @@
 				<h2>
 					<a id="sponsor">Patrocínios</a>
 				</h2>
+				<p>Nós temos as skills... vocês o plafond (winky face)</p>
 			</div>
-				
 			<div class="ink-grid front-slide">
 				<div class="column-groups gutters">
-					<p>Não perca esta oportunidade de nos apoiares</p>
-					<a href="mailto:lage2@lage2.com"><!--TODO: inserir mail correcto -->
-						<div class="ink-button blue large-20 push-center">Patrocina-nos</div>
+
+					<a href="mailto:lage2+SET@ist.utl.pt" class="ink-button blue large-20 push-center">
+						Patrocina-nos
 					</a>
 					<div class="large-100">
 						<ul>
@@ -134,7 +184,8 @@
 			<div id="recruit_slide" class="back-slide">
 				<h2>
 					<a id="recruit">Junta-te a nós</a>
-				</h2>	
+				</h2>
+				<p>Não deixes passar esta oportunidade</p>	
 			</div>
 			<div class="front-slide ink-grid ">
 				<div class="column-groups gutters">
@@ -147,13 +198,35 @@
 							<li>Adicionar testemunhos de participantes</li>
 							<li>Falar sobre o oportunidades</li>
 							<li>etc...</li>
+							<li>Depois remove esta lista</li>
 						</ul>
 					</div>
 				</div>
+				<!-- Não ta a funcionar 
+				<div class="column-groups gutters">
+					<div class="large-50 medium-75 small-100 quote-container">
+						<p class="quote">
+							"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+						</p>
+						<p class="quote-author">
+							Zé Manel
+						</p>
+					</div>
+					<div class="large-50 medium-75 small-100">
+						<p class="quote">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris libero elit, consequat eget eros eget, porta aliquam felis. Quisque ac.
+						</p>
+						<p class="quote-author">
+							Zé Manel
+						</p>
+					</div>
+				</div>
+				-->
+				</div>
 			</div>
-		</div>
+		
 				
-
+		<!-- Footer -->
 		<footer>
 			<div>
 				<p class="small vspace content-right">
