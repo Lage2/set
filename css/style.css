@@ -5,7 +5,7 @@ footer { width: 100%}
 /*** Header ***/
 #nav {float:right; margin-top: 10px;}
 #nav ul { list-style: none; display: block; margin: 0 auto; height:100%;}
-#logo a { text-decoration: none; float: left; padding-left: 2.5%;}
+#logo a { text-decoration: none; float: left; padding-left: 2.5%; margin-top: 5px; margin-bottom: 5px;}
 
 
 .icon-button a { color: #333; text-decoration: none;}
@@ -68,14 +68,15 @@ footer { width: 100%}
 	padding-bottom: 1em;
 }
 
+
 .front-slide div {padding-top: 2em; padding-bottom: 1em; margin-bottom: 25px;}
 .front-slide div div {padding: 0;}
 .front-slide div div h3	{text-align: center; font-size: 3em; margin-bottom: 30px;}
 
 .back-slide {background-color: #E1E1E1;}
-.back-slide h2 { text-align:center; color: black; margin-top: 15%; font-size: 4.5em; font-weight: bold;}
-.back-slide h2 a { text-decoration: none; color:black;}
-.back-slide p { text-align: center; color: white; font-size: 2em;}
+.back-slide h2 { font-family: 'Bevan', Arial, serif; text-align:center; color: black; margin-top: 15%; font-size: 4.5em; font-weight: bold;}
+.back-slide h2 a { text-decoration: none; color:#ffa500;}
+.back-slide p { font-family: 'Bevan', Arial, serif; text-align: center; color: #CF8500; font-size: 2em; font-weight: bold;}
 
 .main-text {
 	padding: 0.75em;
