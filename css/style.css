@@ -20,8 +20,8 @@ footer { width: 100%}
 	font-size: 1.25em;
 }
 
-#header a {color: #E1E1E1; text-decoration: none;}
-#header a:hover { color: white;}
+#header a {color: white; text-decoration: none; font-size:1.25em;}
+#header a:hover { color: #ffc37d; text-decoration: blink;}
 
 /*** Main Content ***/
 .main-container { width: 100%;}
@@ -73,10 +73,10 @@ footer { width: 100%}
 .front-slide div div {padding: 0;}
 .front-slide div div h3	{text-align: center; font-size: 3em; margin-bottom: 30px;}
 
-.back-slide {background-color: #E1E1E1;}
-.back-slide h2 { font-family: 'Bevan', Arial, serif; text-align:center; color: black; margin-top: 15%; font-size: 4.5em; font-weight: bold;}
-.back-slide h2 a { text-decoration: none; color:#ffa500;}
-.back-slide p { font-family: 'Bevan', Arial, serif; text-align: center; color: #CF8500; font-size: 2em; font-weight: bold;}
+.back-slide {height: 720px; background-color: #E1E1E1;}
+.back-slide h2 { font-family: 'Montserrat', Arial, serif; text-align:center; color: black; margin-top: 15%; font-size: 4.5em; font-weight: bold; background: #161616; opacity: 0.9;}
+.back-slide h2 a { text-decoration: none; color:#ff9112;  }
+.back-slide p { font-family: 'Montserrat', Arial, serif; text-align: center; color: #ff9112; font-size: 2em; font-weight: bold; background-color: #161616; opacity: 0.8; margin: 0.15em 0;}
 
 .main-text {
 	padding: 0.75em;
@@ -84,6 +84,8 @@ footer { width: 100%}
 	text-align: justify;
 }
 
+
+.edition-year {font-size: 1.5em;}
 /* Identifier Selectors*/
 
 
@@ -96,7 +98,7 @@ footer { width: 100%}
 #news_slide{
 	background: url('../img/main2.jpg') 50% 0 no-repeat fixed;
 	background-size: cover;
-	height: 600px;
+	
 	margin: 0;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -108,7 +110,6 @@ footer { width: 100%}
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	color: #fff;
-	height: 600px;
 	margin: 0;
 }
 
@@ -118,7 +119,6 @@ footer { width: 100%}
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	color: #fff;
-	height: 600px;
 	margin: 0;
 }
 
@@ -128,7 +128,6 @@ footer { width: 100%}
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	color: #fff;
-	height: 600px;
 	margin: 0;
 }
 
@@ -138,6 +137,5 @@ footer { width: 100%}
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	color: #fff;
-	height: 600px;
 	margin: 0;
 }
