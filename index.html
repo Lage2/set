@@ -1,371 +1,408 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>SET - Semana do Empreendedorismo e Tecnologia</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-        <meta name="HandheldFriendly" content="True">
-        <meta name="MobileOptimized" content="320">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>SET - Semana do Empreendedorismo e Tecnologia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
 
-        <link href='http://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap -->
+    
 
-        <link rel="stylesheet" type="text/css" href="./css/style.css">
- 		<link rel="stylesheet" type="text/css" href="./css/ink/ink.css">
- 		<link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
 
-		<script type="text/javascript" src="./js/ink/holder.js"></script>
-        <script type="text/javascript" src="./js/ink/ink.min.js"></script>
-        <script type="text/javascript" src="./js/ink/ink-ui.min.js"></script>
-        <script type="text/javascript" src="./js/ink/autoload.js"></script>
-        <script type="text/javascript" src="./js/ink/html5shiv.js"></script>
-		<script type="text/javascript" src="./js/ink/ink.carousel.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/ink/ink.css">
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
 
-		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-		<script type="text/javascript" src="slick/slick.min.js"></script>
-		
-		<script type="text/javascript">
-			$(document).ready(function() {
-				$('a[href*=#]').each(function() {
-					if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-						&& location.hostname == this.hostname
-						&& this.hash.replace(/#/,'') ) {
-							var $targetId = $(this.hash),
-							$targetAnchor = $('[name=' + this.hash.slice(1) +']');
-							var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
-						
-							if ($target) {
-								var targetOffset = $target.offset().top;
-								
-								$(this).click(function() {
-									$("#nav li a").removeClass("active");
-									$(this).addClass('active');
-									$('html, body').animate({scrollTop: targetOffset}, 1000);
-									return false;
-								});
-							}
-					}
-				});
-			});
-			</script>
-	</head>
+    <script type="text/javascript" src="./js/ink/holder.js"></script>
+    <script type="text/javascript" src="./js/ink/ink.min.js"></script>
+    <script type="text/javascript" src="./js/ink/ink-ui.min.js"></script>
+    <script type="text/javascript" src="./js/ink/autoload.js"></script>
+    <script type="text/javascript" src="./js/ink/html5shiv.js"></script>
+    <script type="text/javascript" src="./js/ink/ink.carousel.js"></script>
 
-	<body>
-		<!-- TopBar Fixed Position -->
-		<div class="topbar">
-			<header id="header">
-				<div>
-					<div id="logo"><a href=""><img src="./img/setMedia/setWhite_small.png"/></a></div>
-					<nav id="nav" class="ink-navigation">
-						<ul class="horizontal menu flat">
-							<li class="menu-item"><a href="#news_slide">Novidades</a></li>
-							<li class="menu-item"><a href="#speakers_slide">Oradores</a></li>
-							<li class="menu-item"><a href="#history_slide">Edições Anteriores</a></li>
-							<li class="menu-item"><a href="#sponsors_slide">Patrocínios</a></li>
-							<li class="menu-item"><a href="#recruit_slide">Junta-te a nós!</a></li>
-						</ul>
-					</nav>
-				</div>                         
-	        </header>
-	    </div>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
 
-		<!-- Main container -->
-		<div class="main-container">		
-			<!-- News -->
-			<div id="news_slide" class="back-slide">
-				<h2>
-					<a id="news">Novidades</a>
-				</h2>	
-			</div>
-			<div>
-				<div class="ink-grid front-slide">
-					<div class="group-columns gutters">
-						<div class="large-100 medium-100 small-100">
-							 <h1>Novidades podem não ser uma ideia assim tão interessante...</h1>  
-						</div>
-					</div>
-				</div>
-			</div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('a[href*=#]').each(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                    && location.hostname == this.hostname
+                    && this.hash.replace(/#/, '')) {
+                    var $targetId = $(this.hash),
+                    $targetAnchor = $('[name=' + this.hash.slice(1) + ']');
+                    var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
 
-				<!-- Speakers -->
-			<div id="speakers_slide" class="back-slide">
-				<h2>
-					<a id="speakers">Oradores</a>
-				</h2>	
-				<p>Vai já pensando quem queres ver na próxima edição</p>
-			</div>
-			<div class="ink-grid front-slide">
-				<div class="group-columns gutters">
-					<div class="large-100 medium-100 small-100">
-						<h3>Diz-nos quem gostarias de ver na próxima edição do SET</h3>
-						<a href="http://tinyurl.com/lg52y87"
-							class="ink-button blue large-20 push-center my-button">
-							Recomendar
-						</a>
-					</div>
-					<div class="large-50 medium-50 small-100">
-						<div class="speach-container">
-							<p class="person-quote">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in magna urna. Vestibulum pellentesque nisl adipiscing justo tristique, nec vehicula diam aliquet. Ut libero justo, consequat vitae luctus id, congue.
-							</p>
-							<div>
-								<img class="person-thumbnail" src="./img/unknown_person.gif" align="right"/>
-								<p class="person-name">Insert name here</p>
-							</div>
-						</div>
-					</div>
-					<div class="large-50 medium-50 small-100">
-						<div class="speach-container">
-							<p class="person-quote">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in magna urna. Vestibulum pellentesque nisl adipiscing justo tristique, nec vehicula diam aliquet. Ut libero justo, consequat vitae luctus id, congue.
-							</p>
-							<div>
-								<img class="person-thumbnail" src="./img/unknown_person.gif" align="right"/>
-								<p class="person-name">Insert name here</p>
-							</div>
-						</div>
-					</div>
-					<div class="large-50 medium-50 small-100">
-						<div class="speach-container">
-							<p class="person-quote">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in magna urna. Vestibulum pellentesque nisl adipiscing justo tristique, nec vehicula diam aliquet. Ut libero justo, consequat vitae luctus id, congue.
-							</p>
-							<div>
-								<img class="person-thumbnail" src="./img/unknown_person.gif" align="right"/>
-								<p class="person-name">Insert name here</p>
-							</div>
-						</div>
-					</div>
-					<div class="large-50 medium-50 small-100">
-						<div class="speach-container">
-							<p class="person-quote">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in magna urna. Vestibulum pellentesque nisl adipiscing justo tristique, nec vehicula diam aliquet. Ut libero justo, consequat vitae luctus id, congue.
-							</p>
-							<div>
-								<img class="person-thumbnail" src="./img/unknown_person.gif" align="right"/>
-								<p class="person-name">Insert name here</p>
-							</div>
-						</div>
-					</div>					
-				</div>
-			</div>
+                    if ($target) {
+                        var targetOffset = $target.offset().top;
+
+                        $(this).click(function () {
+                            $("#nav li a").removeClass("active");
+                            $(this).addClass('active');
+                            $('html, body').animate({ scrollTop: targetOffset }, 1000);
+                            return false;
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- TopBar Fixed Position -->
+    <div class="navbar navbar-fixed-top navbar-custom">
+        <div class="container">
+            <a href="#" class="navbar-brand "><img src="./img/setMedia/setWhite_small.png" /></a>
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse navHeaderCollapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active">
+                        <a href="#news_slide">Novidades</a>
+                    </li>
+                    <li>
+                        <a href="#speakers_slide">Oradores</a>
+                    </li>
+                    <li>
+                        <a href="#history_slide">Edições Anteriores</a>
+                    </li>
+                     <li>
+                        <a href="#sponsors_slide">Patrocínios</a>
+                    </li>
+                     <li>
+                        <a href="#recruit_slide">Junta-te a nós!</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--<div class="topbar">
+        <header id="header">
+            <div>
+                <div id="logo"><a href=""><img src="./img/setMedia/setWhite_small.png" /></a></div>
+                <nav id="nav" class="ink-navigation">
+                    <ul class="horizontal menu flat">
+                        <li class="menu-item"><a href="#news_slide">Novidades</a></li>
+                        <li class="menu-item"><a href="#speakers_slide">Oradores</a></li>
+                        <li class="menu-item"><a href="#history_slide">Edições Anteriores</a></li>
+                        <li class="menu-item"><a href="#sponsors_slide">Patrocínios</a></li>
+                        <li class="menu-item"><a href="#recruit_slide">Junta-te a nós!</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>-->
+
+    <!-- Main container -->
+    <div class="main-container">
+        <!-- News -->
+        <div id="news_slide" class="back-slide">
+            <h2>
+                <a id="news">Novidades</a>
+            </h2>
+        </div>
+        <div>
+            <div class="ink-grid front-slide">
+                <div class="group-columns gutters">
+                    <div class="large-100 medium-100 small-100">
+                        <h1>Novidades podem não ser uma ideia assim tão interessante...</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Speakers -->
+        <div id="speakers_slide" class="back-slide">
+            <h2>
+                <a id="speakers">Oradores</a>
+            </h2>
+            <p>Vai já pensando quem queres ver na próxima edição</p>
+        </div>
+        <div class="ink-grid front-slide">
+            <div class="group-columns gutters">
+                <div class="large-100 medium-100 small-100">
+                    <h3>Diz-nos quem gostarias de ver na próxima edição do SET</h3>
+                    <a href="http://tinyurl.com/lg52y87"
+                       class="ink-button blue large-20 push-center my-button">
+                        Recomendar
+                    </a>
+                </div>
+                <div class="large-50 medium-50 small-100">
+                    <div class="speach-container">
+                        <p class="person-quote">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in magna urna. Vestibulum pellentesque nisl adipiscing justo tristique, nec vehicula diam aliquet. Ut libero justo, consequat vitae luctus id, congue.
+                        </p>
+                        <div>
+                            <img class="person-thumbnail" src="./img/unknown_person.gif" align="right" />
+                            <p class="person-name">Insert name here</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="large-50 medium-50 small-100">
+                    <div class="speach-container">
+                        <p class="person-quote">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in magna urna. Vestibulum pellentesque nisl adipiscing justo tristique, nec vehicula diam aliquet. Ut libero justo, consequat vitae luctus id, congue.
+                        </p>
+                        <div>
+                            <img class="person-thumbnail" src="./img/unknown_person.gif" align="right" />
+                            <p class="person-name">Insert name here</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="large-50 medium-50 small-100">
+                    <div class="speach-container">
+                        <p class="person-quote">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in magna urna. Vestibulum pellentesque nisl adipiscing justo tristique, nec vehicula diam aliquet. Ut libero justo, consequat vitae luctus id, congue.
+                        </p>
+                        <div>
+                            <img class="person-thumbnail" src="./img/unknown_person.gif" align="right" />
+                            <p class="person-name">Insert name here</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="large-50 medium-50 small-100">
+                    <div class="speach-container">
+                        <p class="person-quote">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in magna urna. Vestibulum pellentesque nisl adipiscing justo tristique, nec vehicula diam aliquet. Ut libero justo, consequat vitae luctus id, congue.
+                        </p>
+                        <div>
+                            <img class="person-thumbnail" src="./img/unknown_person.gif" align="right" />
+                            <p class="person-name">Insert name here</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
-			<!-- Previous Editions -->
-			<div id="history_slide" class="back-slide">
-				<h2>
-					<a id="previous">Edições Anteriores</a>
-				</h2>
-				<p>O SET é novinho... mas já cá anda há muito tempo.</p>
-			</div>
-			<div class="ink-grid front-slide">
-				<div class="column-groups gutters">
-					<div class="large-100 medium-100 small-100">
-						<h3 style="text-align:left;">Fica a conhecer o nosso trabalho</h3>
-					</div>
-					<div class="large-100 medium-100 small-100">
-						<div id="myCarousel" 
-							class="ink-carousel large-80 align-center" 
-							data-auto-advance="0" data-axix="x"
-							data-initial-page="0" data-pagination="#myCarouselNav"
-							data-swipe="true">
-	    					<!-- the carousel stage and slides -->
-						    <ul class="stage column-group half-gutters">
-						        <li class="slide large-50 medium-100 small-100">
-						        	<div>
-							        	<a href="http://set.ist.utl.pt/"> <!-- TODO: corrigir depois da migração -->
-							        		<img src="./img/prevEditions/SET2014.png"/>
-							        		<p class="align-center edition-year">Edição 2014</p>
-							        	</a>
-							        	
-							        </div>
-						        </li>
-						        <li class="slide large-50 medium-100 small-100">
-						        	<div>
-							        	<a href="http://set.ist.utl.pt/SET2013/index.php">
-							        		<img src="./img/prevEditions/SET2013.png"/>
-							        		<p class="align-center edition-year"> Edição 2013</p>
-							        	</a>
-						        	</div>
-						    	</li>
-						    	<li class="slide large-50 medium-100 small-100">
-						        	<div>
-							        	<a href="http://groups.ist.utl.pt/seminarios-tagus/2012/">
-							        		<img src="./img/prevEditions/sem2012.jpg"/>
-								        	<p class="align-center edition-year"> Edição 2012</p>
-							        	</a>
-						        	</div>
-						    	</li>
-						    	<li class="slide large-50 medium-100 small-100">
-						        	<div>
-							        	<a href="http://groups.ist.utl.pt/seminarios-tagus/2011/index2.html">
-							        		<img src="./img/prevEditions/sem2011.jpg"/>
-							        		<p class="align-center edition-year"> Edição 2011</p>
-							        	</a>
-						        	</div>
-						    	</li>
-						    	<li class="slide large-50 medium-100 small-100">
-						        	<div>
-							        	<a href="http://groups.ist.utl.pt/seminarios-tagus/2010/">
-							        		<img src="./img/prevEditions/sem2010.png"/>
-								        	<p class="align-center edition-year"> Edição 2010</p>
-							        	</a>
-						        	</div>
-						    	</li>
-						    </ul>
-						    <!-- the carousel navigation -->
-						    <nav id="myCarouselNav" class="ink-navigation align-center">
-	    						<ul class="pagination dotted grey"></ul>
-							</nav>
-						</div>
-					</div>
-				</div>
-			</div>
+        <!-- Previous Editions -->
+        <div id="history_slide" class="back-slide">
+            <h2>
+                <a id="previous">Edições Anteriores</a>
+            </h2>
+            <p>O SET é novinho... mas já cá anda há muito tempo.</p>
+        </div>
+        <div class="ink-grid front-slide">
+            <div class="column-groups gutters">
+                <div class="large-100 medium-100 small-100">
+                    <h3 style="text-align:left;">Fica a conhecer o nosso trabalho</h3>
+                </div>
+                <div class="large-100 medium-100 small-100">
+                    <div id="myCarousel"
+                         class="ink-carousel large-80 align-center"
+                         data-auto-advance="0" data-axix="x"
+                         data-initial-page="0" data-pagination="#myCarouselNav"
+                         data-swipe="true">
+                        <!-- the carousel stage and slides -->
+                        <ul class="stage column-group half-gutters">
+                            <li class="slide large-50 medium-100 small-100">
+                                <div>
+                                    <a href="http://set.ist.utl.pt/">
+                                        <!-- TODO: corrigir depois da migração -->
+                                        <img src="./img/prevEditions/SET2014.png" />
+                                        <p class="align-center edition-year">Edição 2014</p>
+                                    </a>
 
-			<!-- Sponsorships -->
-			<div id="sponsors_slide" class="back-slide">
-				<h2>
-					<a id="sponsor">Patrocínios</a>
-				</h2>
-				<p>Nós temos as skills... vocês o plafond (winky face)</p>
-			</div>
-			<div class="ink-grid front-slide">
-				<div class="column-groups gutters">
-					<div class="large-100 medium-100 small-100">
-						<h3>Ajudem-nos a tornar a próxima edição do SET ainda mais espectacular</h3>
-						<a href="mailto:lage2+SET@ist.utl.pt"
-							class="ink-button blue large-20 push-center my-button">
-							Informações
-						</a>
-					</div>
-					<div class="large-50 medium-50 small-100">
-						<div class="speach-container">
-							<p class="person-quote">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in magna urna. Vestibulum pellentesque nisl adipiscing justo tristique, nec vehicula diam aliquet. Ut libero justo, consequat vitae luctus id, congue.
-							</p>
-							<div>
-								<img class="person-thumbnail" src="./img/unknown_person.gif" align="right"/>
-								<p class="person-name">Insert name here</p>
-							</div>
-						</div>
-					</div>
-					<div class="large-50 medium-50 small-100">
-						<div class="speach-container">
-							<p class="person-quote">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in magna urna. Vestibulum pellentesque nisl adipiscing justo tristique, nec vehicula diam aliquet. Ut libero justo, consequat vitae luctus id, congue.
-							</p>
-							<div>
-								<img class="person-thumbnail" src="./img/unknown_person.gif" align="right"/>
-								<p class="person-name">Insert name here</p>
-							</div>
-						</div>
-					</div>
-					<div class="large-50 medium-50 small-100">
-						<div class="speach-container">
-							<p class="person-quote">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in magna urna. Vestibulum pellentesque nisl adipiscing justo tristique, nec vehicula diam aliquet. Ut libero justo, consequat vitae luctus id, congue.
-							</p>
-							<div>
-								<img class="person-thumbnail" src="./img/unknown_person.gif" align="right"/>
-								<p class="person-name">Insert name here</p>
-							</div>
-						</div>
-					</div>
-					<div class="large-50 medium-50 small-100">
-						<div class="speach-container">
-							<p class="person-quote">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in magna urna. Vestibulum pellentesque nisl adipiscing justo tristique, nec vehicula diam aliquet. Ut libero justo, consequat vitae luctus id, congue.
-							</p>
-							<div>
-								<img class="person-thumbnail" src="./img/unknown_person.gif" align="right"/>
-								<p class="person-name">Insert name here</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+                                </div>
+                            </li>
+                            <li class="slide large-50 medium-100 small-100">
+                                <div>
+                                    <a href="http://set.ist.utl.pt/SET2013/index.php">
+                                        <img src="./img/prevEditions/SET2013.png" />
+                                        <p class="align-center edition-year"> Edição 2013</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="slide large-50 medium-100 small-100">
+                                <div>
+                                    <a href="http://groups.ist.utl.pt/seminarios-tagus/2012/">
+                                        <img src="./img/prevEditions/sem2012.jpg" />
+                                        <p class="align-center edition-year"> Edição 2012</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="slide large-50 medium-100 small-100">
+                                <div>
+                                    <a href="http://groups.ist.utl.pt/seminarios-tagus/2011/index2.html">
+                                        <img src="./img/prevEditions/sem2011.jpg" />
+                                        <p class="align-center edition-year"> Edição 2011</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="slide large-50 medium-100 small-100">
+                                <div>
+                                    <a href="http://groups.ist.utl.pt/seminarios-tagus/2010/">
+                                        <img src="./img/prevEditions/sem2010.png" />
+                                        <p class="align-center edition-year"> Edição 2010</p>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- the carousel navigation -->
+                        <nav id="myCarouselNav" class="ink-navigation align-center">
+                            <ul class="pagination dotted grey"></ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-			<!-- Recruit -->
-			<div id="recruit_slide" class="back-slide">
-				<h2>
-					<a id="recruit">Junta-te a nós</a>
-				</h2>
-				<p>Não deixes passar esta oportunidade</p>	
-			</div>
-			<div class=" ink-grid front-slide">
-				<div class="column-groups gutters">
-					<div class="large-100 medium-100 small-100">
-						<h3>Olha que oportunidades assim não aparecem todos os dias... Não deixes esta escapar!</h3>
-						<a href="http://tinyurl.com/orler56" 
-							class="ink-button blue large-20 push-center my-button">
-							Junta-te a nós
-						</a>
+        <!-- Sponsorships -->
+        <div id="sponsors_slide" class="back-slide">
+            <h2>
+                <a id="sponsor">Patrocínios</a>
+            </h2>
+            <p>Nós temos as skills... vocês o plafond (winky face)</p>
+        </div>
+        <div class="ink-grid front-slide">
+            <div class="column-groups gutters">
+                <div class="large-100 medium-100 small-100">
+                    <h3>Ajudem-nos a tornar a próxima edição do SET ainda mais espectacular</h3>
+                    <a href="mailto:lage2+SET@ist.utl.pt"
+                       class="ink-button blue large-20 push-center my-button">
+                        Informações
+                    </a>
+                </div>
+                <div class="large-50 medium-50 small-100">
+                    <div class="speach-container">
+                        <p class="person-quote">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in magna urna. Vestibulum pellentesque nisl adipiscing justo tristique, nec vehicula diam aliquet. Ut libero justo, consequat vitae luctus id, congue.
+                        </p>
+                        <div>
+                            <img class="person-thumbnail" src="./img/unknown_person.gif" align="right" />
+                            <p class="person-name">Insert name here</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="large-50 medium-50 small-100">
+                    <div class="speach-container">
+                        <p class="person-quote">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in magna urna. Vestibulum pellentesque nisl adipiscing justo tristique, nec vehicula diam aliquet. Ut libero justo, consequat vitae luctus id, congue.
+                        </p>
+                        <div>
+                            <img class="person-thumbnail" src="./img/unknown_person.gif" align="right" />
+                            <p class="person-name">Insert name here</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="large-50 medium-50 small-100">
+                    <div class="speach-container">
+                        <p class="person-quote">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in magna urna. Vestibulum pellentesque nisl adipiscing justo tristique, nec vehicula diam aliquet. Ut libero justo, consequat vitae luctus id, congue.
+                        </p>
+                        <div>
+                            <img class="person-thumbnail" src="./img/unknown_person.gif" align="right" />
+                            <p class="person-name">Insert name here</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="large-50 medium-50 small-100">
+                    <div class="speach-container">
+                        <p class="person-quote">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in magna urna. Vestibulum pellentesque nisl adipiscing justo tristique, nec vehicula diam aliquet. Ut libero justo, consequat vitae luctus id, congue.
+                        </p>
+                        <div>
+                            <img class="person-thumbnail" src="./img/unknown_person.gif" align="right" />
+                            <p class="person-name">Insert name here</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-					</div>
+        <!-- Recruit -->
+        <div id="recruit_slide" class="back-slide">
+            <h2>
+                <a id="recruit">Junta-te a nós</a>
+            </h2>
+            <p>Não deixes passar esta oportunidade</p>
+        </div>
+        <div class=" ink-grid front-slide">
+            <div class="column-groups gutters">
+                <div class="large-100 medium-100 small-100">
+                    <h3>Olha que oportunidades assim não aparecem todos os dias... Não deixes esta escapar!</h3>
+                    <a href="http://tinyurl.com/orler56"
+                       class="ink-button blue large-20 push-center my-button">
+                        Junta-te a nós
+                    </a>
 
-					</div>
-					<div class="large-50 medium-50 small-100">
-						<div class="speach-container">
-							<p class="person-quote">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in magna urna. Vestibulum pellentesque nisl adipiscing justo tristique, nec vehicula diam aliquet. Ut libero justo, consequat vitae luctus id, congue.
-							</p>
-							<div>
-								<img class="person-thumbnail" src="./img/unknown_person.gif" align="right"/>
-								<p class="person-name">Insert name here</p>
-							</div>
-						</div>
-					</div>
-					<div class="large-50 medium-50 small-100">
-						<div class="speach-container">
-							<p class="person-quote">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in magna urna. Vestibulum pellentesque nisl adipiscing justo tristique, nec vehicula diam aliquet. Ut libero justo, consequat vitae luctus id, congue.
-							</p>
-							<div>
-								<img class="person-thumbnail" src="./img/unknown_person.gif" align="right"/>
-								<p class="person-name">Insert name here</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+                </div>
 
-		<footer>
-			<div ink-grid>
-				<div class="columns-groups">
-					<div class= "large-50">
-						<nav class="ink-navigation">
-							<ul class="menu horizontal">
-								<li class="icon-button">
-									<a  href="https://plus.google.com/100528915228383672706/posts">
-										<i class="icon-google-plus-sign icon-2x"></i>
-									</a>
-								</li>
-								<li class="icon-button">
-									<a href="https://www.youtube.com/user/ISTTagusSET">
-										<i class="icon-youtube-play icon-2x"></i>
-									</a>
-								</li>
-								<li class="icon-button">
-									<a href="https://www.facebook.com/SET.Tagus">
-										<i class="icon-facebook-sign icon-2x"></i>
-									</a>
-								</li>
-								<li class="icon-button">
-									<a href="https://twitter.com/ISTTagusSET">
-										<i class="icon-twitter-sign icon-2x"></i>
-									</a>
-								</li>
-							</ul>
-						</nav>
-					</div>
-					<div class="large-50">
-						<p class="small vspace content-right">
-							&copy <a href="http://lage2.ist.utl.pt/">LAGE2</a> Todos os direitos reservados.
-						</p>
-					</div>
-				</div>
-			</div>
-		</footer>
+            </div>
+            <div class="large-50 medium-50 small-100">
+                <div class="speach-container">
+                    <p class="person-quote">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in magna urna. Vestibulum pellentesque nisl adipiscing justo tristique, nec vehicula diam aliquet. Ut libero justo, consequat vitae luctus id, congue.
+                    </p>
+                    <div>
+                        <img class="person-thumbnail" src="./img/unknown_person.gif" align="right" />
+                        <p class="person-name">Insert name here</p>
+                    </div>
+                </div>
+            </div>
+            <div class="large-50 medium-50 small-100">
+                <div class="speach-container">
+                    <p class="person-quote">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in magna urna. Vestibulum pellentesque nisl adipiscing justo tristique, nec vehicula diam aliquet. Ut libero justo, consequat vitae luctus id, congue.
+                    </p>
+                    <div>
+                        <img class="person-thumbnail" src="./img/unknown_person.gif" align="right" />
+                        <p class="person-name">Insert name here</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <footer>
+        <div ink-grid>
+            <div class="columns-groups">
+                <div class="large-50">
+                    <nav class="ink-navigation">
+                        <ul class="menu horizontal">
+                            <li class="icon-button">
+                                <a href="https://plus.google.com/100528915228383672706/posts">
+                                    <i class="icon-google-plus-sign icon-2x"></i>
+                                </a>
+                            </li>
+                            <li class="icon-button">
+                                <a href="https://www.youtube.com/user/ISTTagusSET">
+                                    <i class="icon-youtube-play icon-2x"></i>
+                                </a>
+                            </li>
+                            <li class="icon-button">
+                                <a href="https://www.facebook.com/SET.Tagus">
+                                    <i class="icon-facebook-sign icon-2x"></i>
+                                </a>
+                            </li>
+                            <li class="icon-button">
+                                <a href="https://twitter.com/ISTTagusSET">
+                                    <i class="icon-twitter-sign icon-2x"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="large-50">
+                    <p class="small vspace content-right">
+                        &copy <a href="http://lage2.ist.utl.pt/">LAGE2</a> Todos os direitos reservados.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+</body>
 </html>
