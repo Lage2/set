@@ -36,16 +36,19 @@ footer { width: 100%}
 }
 
 .person-quote{
-	color: #94A4A4;
+	color: #555;
 	font-weight: normal;
 	font-size: 1.25em;
 	text-align: justify;
+	height: 100px;
+	font-family: Helvetica, Arial, sans-serif;
 }
 .person-name{
 	text-align: right;
 	padding-top: 50px;
-	color: #94A4A4;
-	font-size: 1.1em;
+	color: #555; /*#1A1A1A*/
+	font-size: 1em;
+	font-family: Helvetica, Arial, sans-serif;	
 }
 .person-thumbnail{
 	height: 100px;
