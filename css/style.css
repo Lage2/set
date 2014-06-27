@@ -11,16 +11,20 @@ footer { width: 100%; position: fixed; z-index: 1;}
 .icon-button a { color: #333; text-decoration: none;}
 .icon-button a:hover { color: #555; text-decoration: none;}
 
-#header {	
+#header, #header_small{
 	width: 100%;
 	position: fixed;
 	z-index: 1;
-	/*background-color: #3366FF;
-	color: #E1E1E1;*/
 	background-color: #1a9ede;
 	color: white;
-	
+}
+
+#header {	
 	font-size: 1.25em;
+}
+
+#header_small{
+	display: none;
 }
 
 #header a {color: white; text-decoration: none; font-size:1.25em;}
@@ -155,3 +159,24 @@ footer { width: 100%; position: fixed; z-index: 1;}
 }
 
 #myCarousel { padding-top: 5%;}
+
+
+@media (max-width: 480px){
+	#header, #speakers{
+		display: none;
+	}
+
+	#header_small{
+		display: block;
+	}
+}
+
+@media (max-width: 768px){
+	#header{
+		display: none;
+	}
+
+	#header_small{
+		display: block;
+	}
+}

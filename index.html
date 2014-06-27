@@ -22,6 +22,8 @@
         <script type="text/javascript" src="./js/ink/autoload.js"></script>
         <script type="text/javascript" src="./js/ink/html5shiv.js"></script>
 		<script type="text/javascript" src="./js/ink/ink.carousel.js"></script>
+		<script type="text/javascript" src="./js/ink/ink.dropdown.js"></script>
+
 
 		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -70,6 +72,15 @@
 					</nav>
 				</div>                         
 	        </header>
+
+	        <header id="header_small">
+	        	<div id="logo"><a href="#home_slide"><img src="./img/setMedia/setWhite_small.png"/></a></div>
+	        	<div class="ink-navigation">
+	        		<ul class="dropdown">
+	        		</ul>
+	        	</div>
+	        </header>
+
 	    </div>
 
 		<!-- Main container -->
@@ -121,129 +132,131 @@
 					<div class="large-100 medium-100 small-100">
 						<h3>Diz-nos quem gostarias de ver na próxima edição do SET</h3>
 					</div>
-					<div class="large-50 medium-50 small-100">
-						<div class="speach-container">
-							<div class="person-quote">
-								<p>
-									Cláudia Queirós trabalha há diversos anos na Ericsson e é actualmente gestora de Mobile Broadband Solutions para a região mediterrânica, com especial enfoque nas soluções de Rádio GSM, WCDMA e LTE da Ericsson.
-								</p>
-							</div>
-							<div>
-								<img class="person-thumbnail" src="./img/oradores/thumb_claudia_queiros.png" align="right"/>
-								<p class="person-name">Cláudia Queirós</p>
-							</div>
-						</div>
-					</div>
-					<div class="large-50 medium-50 small-100">
-						<div class="speach-container">
-							<div class="person-quote">
-								<p>
-									CEO e co-fundador da Lunacloud, António Miguel Ferreira é um pioneiro da Internet e tem um historial incrível no que diz respeito à criação e gestão de diversas companhias ligadas à Internet e à indústria do alojamento web, assim como outras áreas de negócio.
-								</p>
-							</div>	
-							<div>
-								<img class="person-thumbnail" src="./img/oradores/thumb_antonio_ferreira.png" align="right"/>
-								<p class="person-name">António Miguel Ferreira</p>
+					<div id="speakers">
+						<div class="large-50 medium-50 small-100">
+							<div class="speach-container">
+								<div class="person-quote">
+									<p>
+										Cláudia Queirós trabalha há diversos anos na Ericsson e é actualmente gestora de Mobile Broadband Solutions para a região mediterrânica, com especial enfoque nas soluções de Rádio GSM, WCDMA e LTE da Ericsson.
+									</p>
+								</div>
+								<div>
+									<img class="person-thumbnail" src="./img/oradores/thumb_claudia_queiros.png" align="right"/>
+									<p class="person-name">Cláudia Queirós</p>
+								</div>
 							</div>
 						</div>
-					</div>
+						<div class="large-50 medium-50 small-100">
+							<div class="speach-container">
+								<div class="person-quote">
+									<p>
+										CEO e co-fundador da Lunacloud, António Miguel Ferreira é um pioneiro da Internet e tem um historial incrível no que diz respeito à criação e gestão de diversas companhias ligadas à Internet e à indústria do alojamento web, assim como outras áreas de negócio.
+									</p>
+								</div>	
+								<div>
+									<img class="person-thumbnail" src="./img/oradores/thumb_antonio_ferreira.png" align="right"/>
+									<p class="person-name">António Miguel Ferreira</p>
+								</div>
+							</div>
+						</div>
 
-					<div class="large-50 medium-50 small-100">
-						<div class="speach-container">
-							<div class ="person-quote">
-								<p>
-									David Mota é managing partner da SkyEye e veio à SET falar sobre o trabalho desenvolvido nesta empresa, especializada no uso de drones voadores ao serviço da captação de imagens aéreas.
-								</p>
-							</div>
-							<div>
-								<img class="person-thumbnail" src="./img/oradores/thumb_david_mota.png" align="right"/>
-								<p class="person-name">David Mota</p>
-							</div>
-						</div>
-					</div>
-					<div class="large-50 medium-50 small-100">
-						<div class="speach-container">
-							<div class="person-quote">
-								<p>
-									Luís Gameiro da Silva, licenciado em Eng. Electrotécnica, um profissional com vastos anos de experiência nas áreas da banca, seguros e utilities, actualmente administrador da Glintt.
-								</p>
-							</div>
-							<div>
-								<img class="person-thumbnail" src="./img/oradores/thumb_luis_gameiro.png" align="right"/>
-								<p class="person-name">Luís Gameiro da Silva</p>
+						<div class="large-50 medium-50 small-100">
+							<div class="speach-container">
+								<div class ="person-quote">
+									<p>
+										David Mota é managing partner da SkyEye e veio à SET falar sobre o trabalho desenvolvido nesta empresa, especializada no uso de drones voadores ao serviço da captação de imagens aéreas.
+									</p>
+								</div>
+								<div>
+									<img class="person-thumbnail" src="./img/oradores/thumb_david_mota.png" align="right"/>
+									<p class="person-name">David Mota</p>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="large-50 medium-50 small-100">
-						<div class="speach-container">
-							<div class="person-quote">
-								<p>
-									Francisco Nunes tem largos anos de experiência no sector das tecnologias de informação. É colaborador da IBM e actualmente desempenha funções ao nível do business planning e desenvolvimento de estratégias de vendas na Compta SA.
-								</p>
-							</div>
-							<div>
-								<img class="person-thumbnail" src="./img/oradores/thumb_francisco_nunes.png" align="right"/>
-								<p class="person-name">Francisco Nunes</p>
-							</div>
-						</div>
-					</div>
-					<div class="large-50 medium-50 small-100">
-						<div class="speach-container">
-							<div class="person-quote">
-								<p>
-									Paulo Guedes é Executive Manager da Espírito Santo Informática, onde é responsável pelas áreas de Processos e Qualidade, Risco de IT, Arquitectura e Padrões e Recursos Humanos.
-								</p>
-							</div>
-							<div>
-								<img class="person-thumbnail" src="./img/oradores/thumb_paulo_guedes.png" align="right"/>
-								<p class="person-name">Paulo Guedes</p>
+						<div class="large-50 medium-50 small-100">
+							<div class="speach-container">
+								<div class="person-quote">
+									<p>
+										Luís Gameiro da Silva, licenciado em Eng. Electrotécnica, um profissional com vastos anos de experiência nas áreas da banca, seguros e utilities, actualmente administrador da Glintt.
+									</p>
+								</div>
+								<div>
+									<img class="person-thumbnail" src="./img/oradores/thumb_luis_gameiro.png" align="right"/>
+									<p class="person-name">Luís Gameiro da Silva</p>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="large-50 medium-50 small-100">
-						<div class="speach-container">
-							<div class="person-quote">
-								<p>
-									Fundador e Administrador do Grupo TEKEVER, onde é esponsável pela definição e implementação da estratégia de expansão tecnológica e internacional, sendo que hoje o Grupo conta já com uma presença internacional.
-								</p>
-							</div>
-							<div>
-								<img class="person-thumbnail" src="./img/oradores/thumb_ricardo_mendes.png" align="right"/>
-								<p class="person-name">Ricardo Mendes</p>
+						<div class="large-50 medium-50 small-100">
+							<div class="speach-container">
+								<div class="person-quote">
+									<p>
+										Francisco Nunes tem largos anos de experiência no sector das tecnologias de informação. É colaborador da IBM e actualmente desempenha funções ao nível do business planning e desenvolvimento de estratégias de vendas na Compta SA.
+									</p>
+								</div>
+								<div>
+									<img class="person-thumbnail" src="./img/oradores/thumb_francisco_nunes.png" align="right"/>
+									<p class="person-name">Francisco Nunes</p>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="large-50 medium-50 small-100">
-						<div class="speach-container">
-							<div class="person-quote">
-								<p>
-									Isto é um evento de alunos para alunos, por isso a tua opinão conta
-									partilha connosco quem gostarias de ver numa próxima edição do SET.
-								</p>
+						<div class="large-50 medium-50 small-100">
+							<div class="speach-container">
+								<div class="person-quote">
+									<p>
+										Paulo Guedes é Executive Manager da Espírito Santo Informática, onde é responsável pelas áreas de Processos e Qualidade, Risco de IT, Arquitectura e Padrões e Recursos Humanos.
+									</p>
+								</div>
+								<div>
+									<img class="person-thumbnail" src="./img/oradores/thumb_paulo_guedes.png" align="right"/>
+									<p class="person-name">Paulo Guedes</p>
+								</div>
 							</div>
-							<div>
-								<a href="http://tinyurl.com/lg52y87">
+						</div>
+						<div class="large-50 medium-50 small-100">
+							<div class="speach-container">
+								<div class="person-quote">
+									<p>
+										Fundador e Administrador do Grupo TEKEVER, onde é esponsável pela definição e implementação da estratégia de expansão tecnológica e internacional, sendo que hoje o Grupo conta já com uma presença internacional.
+									</p>
+								</div>
+								<div>
+									<img class="person-thumbnail" src="./img/oradores/thumb_ricardo_mendes.png" align="right"/>
+									<p class="person-name">Ricardo Mendes</p>
+								</div>
+							</div>
+						</div>
+						<div class="large-50 medium-50 small-100">
+							<div class="speach-container">
+								<div class="person-quote">
+									<p>
+										Isto é um evento de alunos para alunos, por isso a tua opinão conta
+										partilha connosco quem gostarias de ver numa próxima edição do SET.
+									</p>
+								</div>
+								<div>
+									<a href="http://tinyurl.com/lg52y87">
+										<img class="person-thumbnail" src="./img/unknown_person.gif" align="right"/>
+										<!--<p class="person-name">Unknown Person</p>-->
+									</a>
+								</div>
+							</div>
+						</div>
+						<!--
+						<div class="large-50 medium-50 small-100">
+							<div class="speach-container">
+								<div class="person-quote">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in magna urna. Vestibulum pellentesque nisl adipiscing justo tristique, nec vehicula diam aliquet. Ut libero justo, consequat vitae luctus id, congue.
+									</p>
+								</div>
+								<div>
 									<img class="person-thumbnail" src="./img/unknown_person.gif" align="right"/>
-									<!--<p class="person-name">Unknown Person</p>-->
-								</a>
+									<p class="person-name">Unknown Person</p>
+								</div>
 							</div>
 						</div>
+						-->
 					</div>
-					<!--
-					<div class="large-50 medium-50 small-100">
-						<div class="speach-container">
-							<div class="person-quote">
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in magna urna. Vestibulum pellentesque nisl adipiscing justo tristique, nec vehicula diam aliquet. Ut libero justo, consequat vitae luctus id, congue.
-								</p>
-							</div>
-							<div>
-								<img class="person-thumbnail" src="./img/unknown_person.gif" align="right"/>
-								<p class="person-name">Unknown Person</p>
-							</div>
-						</div>
-					</div>
-					-->
 				</div>
 			</div>
 
@@ -414,7 +427,7 @@
 				</h2>
 				<p>Não deixes passar esta oportunidade</p>
 				<a href="http://tinyurl.com/orler56" 
-							class="ink-button blue large-20 push-center my-button">
+							class="ink-button blue large-20 medium-20 small-80 push-center my-button">
 							Junta-te a nós
 				</a>	
 			</div>
@@ -423,7 +436,29 @@
 					<div class="large-100 medium-100 small-100">
 						<h3>Olha que oportunidades assim não aparecem todos os dias... Não deixes esta escapar!</h3>
 					</div>
-				</div>	
+				</div>
+				<div class="large-50 medium-50 small-100">
+					<div class="speach-container">
+						<p class="person-quote">
+							&quot Organizar a SET foi uma oportunidade excelente para desenvolver as minhas soft-skills, conhecer melhor o mercado de trabalho e entender como se organizam eventos desta magnitude. Trabalhar com uma equipa extraordinária de pessoas foi, sem dúvida alguma, o factor que possibilitou todo o sucesso do evento junto dos nossos visitantes. Aconselho a todas as pessoas a passarem pela experiência de organizar algo assim. &quot
+						</p>
+						<div>
+							<img class="person-thumbnail" src="./img/team/antonio_pereira.jpg" align="right"/>
+							<p class="person-name">António Pereira</p>
+						</div>
+					</div>
+				</div>
+				<div class="large-50 medium-50 small-100">
+					<div class="speach-container">
+						<p class="person-quote">
+							&quot Participar na organização da SET proporcionou-me uma experiência de trabalho com uma vasta e excelente equipa, contactos com empresas e oportunidades promissoras. &quot
+						</p>
+						<div>
+							<img class="person-thumbnail" src="./img/team/claudia_patricia.jpg" align="right"/>
+							<p class="person-name">Cláudia Patrícia</p>
+						</div>
+					</div>
+				</div>
 				<!--
 				<div class="large-50 medium-50 small-100">
 					<div class="speach-container">
