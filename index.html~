@@ -78,7 +78,7 @@
 	        	
 	        	<div class="ink-dropdown" data-target="#my-menu-dropdown" id="my-dropdown">
     				<button class="ink-button blue push-left push-middle"><i class="fa fa-bars fa-4" style="font-size:60px"></i></button>
-					<ul id="my-menu-dropdown" class="dropdown-menu hide-all push-right" style="margin-top:75px">
+					<ul id="my-menu-dropdown" class="dropdown-menu hide-all push-right" style="margin-top:80px">
 						<li><a href="#speakers_slide">Oradores</a></li>
 						<li><a href="#history_slide">Edições Anteriores</a></li>
 						<li><a href="#sponsors_slide">Patrocínios</a></li>
@@ -86,39 +86,37 @@
 					</ul>
 				</div>
 	        </header>
-
 	    </div>
 
 		<!-- Main container -->
 		<div class="main-container">		
-			<!-- Home -->
+			<!-- BEGIN: Home -->
 			<div id="home_slide" class="back-slide"></div>
-			<div>
-				<div class="ink-grid front-slide">
-					<div class="column-group gutters">
-						<div class="all-100">
-							 <h1>Semana Empresarial e Tecnológica</h1>  
-						</div>
-						<div class="all-50 all-50 large-50 medium-80 small-100" style="padding: 0 10px;">
-							<h4>Qual a nossa visão?</h4>
-							<p class="text">
-								Este evento visa promover a discussão de experiências e troca de ideias relacionadas com a área das Tecnologias de 
-								Informação, bem como a sua influência no mundo empresarial. Sendo organizado por alunos do Instituto Superior 
-								Técnico (pólo do Taguspark), este evento tem tido uma crescente participação de pessoas provenientes desta área, 
-								sendo já um conceituado palco para a apresentação de projectos inovadores e de forte impacto no mercado.
-							</p>
-						</div>
-						<div class="all-50 all-50 large-50 medium-80 small-100" style="padding: 0 10px;">
-							<h4>O que nos torna únicos?</h4>
-							<p class="text">
-								No ano lectivo 2012/2013, na sua 10ª edição, o evento Seminários IST-Tagus juntou-se a todos os núcleos de estudantes presentes no IST-Tagus dando lugar à SET. A SET, Semana Empresarial e Tecnológica, é então organizado por uma comissão de alunos de todos os cursos do IST-Taguspark, tendo por objectivo aproximar a comunidade académica com o meio empresarial.
-							</p>
-						</div>
+			<div class="ink-grid front-slide">
+				<div class="column-group gutters">
+					<div class="all-100">
+						 <h1>Semana Empresarial e Tecnológica</h1>  
+					</div>
+					<div class="all-50 all-50 large-50 medium-90 small-100" style="padding: 0 10px;">
+						<h4>Qual a nossa visão?</h4>
+						<p class="text">
+							Este evento visa promover a discussão de experiências e troca de ideias relacionadas com a área das Tecnologias de 
+							Informação, bem como a sua influência no mundo empresarial. Sendo organizado por alunos do Instituto Superior 
+							Técnico (pólo do Taguspark), este evento tem tido uma crescente participação de pessoas provenientes desta área, 
+							sendo já um conceituado palco para a apresentação de projectos inovadores e de forte impacto no mercado.
+						</p>
+					</div>
+					<div class="all-50 all-50 large-50 medium-90 small-100" style="padding: 0 10px;">
+						<h4>O que nos torna únicos?</h4>
+						<p class="text">
+							No ano lectivo 2012/2013, na sua 10ª edição, o evento Seminários IST-Tagus juntou-se a todos os núcleos de estudantes presentes no IST-Tagus dando lugar à SET. A SET, Semana Empresarial e Tecnológica, é então organizado por uma comissão de alunos de todos os cursos do IST-Taguspark, tendo por objectivo aproximar a comunidade académica com o meio empresarial.
+						</p>
 					</div>
 				</div>
 			</div>
+			<!-- END: Home -->
 
-			<!-- Speakers -->
+			<!-- BEGIN: Speakers -->
 			<div id="speakers_slide" class="back-slide">
 				<h2>
 					<a id="speakers">Oradores</a>
@@ -130,13 +128,12 @@
 				</a>	
 			</div>
 			<div class="ink-grid front-slide">
-
 				<div class="group-columns gutters">
 					<div class="all-100">
 						<h3>Diz-nos quem gostarias de ver na próxima edição do SET</h3>
 					</div>
 					<div id="speakers">
-						<div class="all-50 large-50 medium-80 small-100">
+						<div class="all-50 large-50 medium-90 small-100">
 							<div class="speach-container">
 								<div class="person-quote">
 									<p>
@@ -149,7 +146,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="all-50 large-50 medium-80 small-100">
+						<div class="all-50 large-50 medium-90 small-100">
 							<div class="speach-container">
 								<div class="person-quote">
 									<p>
@@ -163,7 +160,7 @@
 							</div>
 						</div>
 
-						<div class="all-50 large-50 medium-80 small-100">
+						<div class="all-50 large-50 medium-90 small-100">
 							<div class="speach-container">
 								<div class ="person-quote">
 									<p>
@@ -176,7 +173,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="all-50 large-50 medium-80 small-100">
+						<div class="all-50 large-50 medium-90 small-100">
 							<div class="speach-container">
 								<div class="person-quote">
 									<p>
@@ -189,7 +186,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="all-50 large-50 medium-80 small-100">
+						<div class="all-50 large-50 medium-90 small-100">
 							<div class="speach-container">
 								<div class="person-quote">
 									<p>
@@ -202,7 +199,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="all-50 large-50 medium-80 small-100">
+						<div class="all-50 large-50 medium-90 small-100">
 							<div class="speach-container">
 								<div class="person-quote">
 									<p>
@@ -215,7 +212,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="all-50 large-50 medium-80 small-100">
+						<div class="all-50 large-50 medium-90 small-100">
 							<div class="speach-container">
 								<div class="person-quote">
 									<p>
@@ -228,7 +225,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="all-50 large-50 medium-80 small-100">
+						<div class="all-50 large-50 medium-90 small-100">
 							<div class="speach-container">
 								<div class="person-quote">
 									<p>
@@ -246,6 +243,7 @@
 					</div>
 				</div>
 			</div>
+			<!-- END: speakers -->
 
 
 			<!-- Previous Editions -->
@@ -418,7 +416,7 @@
 						<h3>Olha que oportunidades assim não aparecem todos os dias... Não deixes esta escapar!</h3>
 					</div>
 				</div>
-				<div class="all-50 large-50 medium-80 small-100">
+				<div class="all-50 large-50 medium-90 small-100">
 					<div class="speach-container">
 						<p class="person-quote">
 							<i>
@@ -431,7 +429,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="all-50 large-50 medium-80 small-100">
+				<div class="all-50 large-50 medium-90 small-100">
 					<div class="speach-container">
 						<p class="person-quote">
 							<i>
@@ -446,45 +444,50 @@
 				</div>
 			</div>
 		</div>
-	</div>
-
+	
+	
 		<footer>
 			<div class="ink-grid">
 				<div class="column-group">
-					<!--
 					<div class= "all-50">
 						<nav class="ink-navigation">
 							<ul class="menu horizontal">
 								<li class="icon-button">
 									<a  href="https://plus.google.com/100528915228383672706/posts">
-										<i class="icon-google-plus-sign icon-2x"></i>
+										<i class="fa fa-google-plus-square"></i>
 									</a>
 								</li>
 								<li class="icon-button">
 									<a href="https://www.youtube.com/user/ISTTagusSET">
-										<i class="icon-youtube-play icon-2x"></i>
+										<i class="fa fa-youtube-play"></i>
 									</a>
 								</li>
 								<li class="icon-button">
 									<a href="https://www.facebook.com/SET.Tagus">
-										<i class="icon-facebook-sign icon-2x"></i>
+
+										<i class="fa fa-facebook-square"></i>
 									</a>
 								</li>
 								<li class="icon-button">
 									<a href="https://twitter.com/ISTTagusSET">
-										<i class="icon-twitter-sign icon-2x"></i>
+										<i class="fa fa-twitter-square fa-2x"></i>
 									</a>
 								</li>
 							</ul>
 						</nav>
 					</div>
-					-->
-					<div class="all-100">
-						<p class="small vspace content-right">
-							&copy <a href="http://lage2.ist.utl.pt/">LAGE2</a> Todos os direitos reservados.
-						</p>
+					
+					<div class="all-50 push-middle ">
+						<div id="rights">
+							<p class="small vspace rights">
+								&copy <a href="http://lage2.ist.utl.pt/">LAGE2</a> Todos os direitos reservados.
+								</br>
+								Fotos <i>powered by</i> <a href="http://lage2.ist.utl.pt/gfist.php">GFIST</a>
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</footer>
+	</body>
 </html>

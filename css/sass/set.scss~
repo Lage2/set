@@ -165,10 +165,10 @@ $break-small: 870px; //768px;
 	
 	//#home_slide{ background: url('../../img/main1.jpg') 50% 0 no-repeat fixed; }
 	#home_slide { background: url(../../img/main1.jpg) no-repeat center center fixed #000; }
-	#speakers_slide{ background: url('../../img/speakers1.jpg') 50% 0 no-repeat fixed;	}
-	#history_slide{ background: url('../../img/history2.jpg') 50% 0 no-repeat fixed;	}
-	#sponsors_slide{ background: url('../../img/sponsor1.jpg') 50% 0 no-repeat fixed; }
-	#recruit_slide{ background: url('../../img/recruit1.jpg') 50% 0 no-repeat fixed;	}
+	#speakers_slide{ background: url('../../img/speakers1.jpg') no-repeat center center fixed #000;	}
+	#history_slide{ background: url('../../img/history2.jpg') no-repeat center center fixed #000;	}
+	#sponsors_slide{ background: url('../../img/sponsor1.jpg') no-repeat center center fixed #000; }
+	#recruit_slide{ background: url('../../img/recruit1.jpg') no-repeat center center fixed #000;	}
 
 	#myCarousel { padding-top: 5%;}
 }
@@ -181,34 +181,29 @@ $break-small: 870px; //768px;
 
 footer { 
 	width: 100%;
+	bottom: 0;
+	left: 0;
+	background-color: #51bbef;
 	position: fixed;
 	z-index: 1;
 	
-	.icon-button a { color: #333; text-decoration: none;}
-	.icon-button a:hover { color: #555; text-decoration: none;}
-}
-
-
-@media (max-width: 480px){
-	#header, #speakers, #recruits{
-		display: none;
+	.icon-button{
+		
+	 	a { 
+	 		color: #333;
+	 		text-decoration: none;
+	 		
+	 		i { font-size: 2em; }
+	 		
+ 			&:hover { color: #555; text-decoration: none;}
+ 		}
 	}
-
-	#header_small{
-		display: block;
-	}
-}
-
-/*
-@media (max-width: 768px){
-	#header{
-		display: none;
-	}
-
-	#header_small{
-		display: block;
+	
+	#rights{
+		text-align: right;
+		
+		a { color: orange; }
 	}
 }
-*/
 
 

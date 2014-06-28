@@ -181,34 +181,30 @@ $break-small: 870px; //768px;
 
 footer { 
 	width: 100%;
+	bottom: 0;
+	left: 0;
+	//background-color: #51bbef; azul claro
+	background-color: silver;
 	position: fixed;
 	z-index: 1;
 	
-	.icon-button a { color: #333; text-decoration: none;}
-	.icon-button a:hover { color: #555; text-decoration: none;}
-}
-
-
-@media (max-width: 480px){
-	#header, #speakers, #recruits{
-		display: none;
+	.icon-button{
+		
+	 	a { 
+	 		color: #333;
+	 		text-decoration: none;
+	 		
+	 		i { font-size: 2em; }
+	 		
+ 			&:hover { color: #555; text-decoration: none;}
+ 		}
 	}
-
-	#header_small{
-		display: block;
-	}
-}
-
-/*
-@media (max-width: 768px){
-	#header{
-		display: none;
-	}
-
-	#header_small{
-		display: block;
+	
+	#rights{
+		text-align: right;
+		
+		a { color: orange; }
 	}
 }
-*/
 
 
