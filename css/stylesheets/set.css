@@ -10592,29 +10592,30 @@ footer {
   width: 100%;
   bottom: 0;
   left: 0;
-  background-color: silver;
+  background-color: #EEE;
   position: fixed;
   z-index: 1;
+  padding-top: 10px;
 }
-/* line 193, ../sass/set.scss */
+/* line 194, ../sass/set.scss */
 footer .icon-button a {
   color: #333;
   text-decoration: none;
 }
-/* line 197, ../sass/set.scss */
+/* line 198, ../sass/set.scss */
 footer .icon-button a i {
   font-size: 2em;
 }
-/* line 199, ../sass/set.scss */
+/* line 200, ../sass/set.scss */
 footer .icon-button a:hover {
   color: #555;
   text-decoration: none;
 }
-/* line 203, ../sass/set.scss */
+/* line 204, ../sass/set.scss */
 footer #rights {
   text-align: right;
 }
-/* line 206, ../sass/set.scss */
+/* line 207, ../sass/set.scss */
 footer #rights a {
   color: orange;
 }
