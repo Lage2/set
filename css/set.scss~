@@ -1,0 +1,9 @@
+@import ./sass/ink.scss;
+
+// override link colors
+$link-color                 : blue;
+$link-visited-color         : purple;
+$link-active-color          : red;
+$link-hover-color           : blue;
+$link-focus-color           : blue;
+
