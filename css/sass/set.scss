@@ -163,11 +163,12 @@ $break-small: 870px; //768px;
 		-moz-background-size: cover;
 	}
 	
-	#home_slide{ background: url('../../img/main1.jpg') 50% 0 no-repeat fixed; }
-	#speakers_slide{ background: url('../../img/speakers1.jpg') 50% 0 no-repeat fixed;	}
-	#history_slide{ background: url('../../img/history2.jpg') 50% 0 no-repeat fixed;	}
-	#sponsors_slide{ background: url('../../img/sponsor1.jpg') 50% 0 no-repeat fixed; }
-	#recruit_slide{ background: url('../../img/recruit1.jpg') 50% 0 no-repeat fixed;	}
+	//#home_slide{ background: url('../../img/main1.jpg') 50% 0 no-repeat fixed; }
+	#home_slide { background: url(../../img/main1.jpg) no-repeat center center fixed #000; }
+	#speakers_slide{ background: url('../../img/speakers1.jpg') no-repeat center center fixed #000;	}
+	#history_slide{ background: url('../../img/history2.jpg') no-repeat center center fixed #000;	}
+	#sponsors_slide{ background: url('../../img/sponsor1.jpg') no-repeat center center fixed #000; }
+	#recruit_slide{ background: url('../../img/recruit1.jpg') no-repeat center center fixed #000;	}
 
 	#myCarousel { padding-top: 5%;}
 }

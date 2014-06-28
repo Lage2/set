@@ -10558,27 +10558,27 @@ body.ink-drawer.over.right .right-drawer {
   -webkit-background-size: cover;
   -moz-background-size: cover;
 }
-/* line 166, ../sass/set.scss */
-.main-container #home_slide {
-  background: url("../../img/main1.jpg") 50% 0 no-repeat fixed;
-}
 /* line 167, ../sass/set.scss */
-.main-container #speakers_slide {
-  background: url("../../img/speakers1.jpg") 50% 0 no-repeat fixed;
+.main-container #home_slide {
+  background: url(../../img/main1.jpg) no-repeat center center fixed black;
 }
 /* line 168, ../sass/set.scss */
-.main-container #history_slide {
-  background: url("../../img/history2.jpg") 50% 0 no-repeat fixed;
+.main-container #speakers_slide {
+  background: url("../../img/speakers1.jpg") no-repeat center center fixed black;
 }
 /* line 169, ../sass/set.scss */
-.main-container #sponsors_slide {
-  background: url("../../img/sponsor1.jpg") 50% 0 no-repeat fixed;
+.main-container #history_slide {
+  background: url("../../img/history2.jpg") no-repeat center center fixed black;
 }
 /* line 170, ../sass/set.scss */
-.main-container #recruit_slide {
-  background: url("../../img/recruit1.jpg") 50% 0 no-repeat fixed;
+.main-container #sponsors_slide {
+  background: url("../../img/sponsor1.jpg") no-repeat center center fixed black;
 }
-/* line 172, ../sass/set.scss */
+/* line 171, ../sass/set.scss */
+.main-container #recruit_slide {
+  background: url("../../img/recruit1.jpg") no-repeat center center fixed black;
+}
+/* line 173, ../sass/set.scss */
 .main-container #myCarousel {
   padding-top: 5%;
 }
@@ -10587,30 +10587,30 @@ body.ink-drawer.over.right .right-drawer {
  * Footer 
  *
 */
-/* line 181, ../sass/set.scss */
+/* line 182, ../sass/set.scss */
 footer {
   width: 100%;
   position: fixed;
   z-index: 1;
 }
-/* line 186, ../sass/set.scss */
+/* line 187, ../sass/set.scss */
 footer .icon-button a {
   color: #333;
   text-decoration: none;
 }
-/* line 187, ../sass/set.scss */
+/* line 188, ../sass/set.scss */
 footer .icon-button a:hover {
   color: #555;
   text-decoration: none;
 }
 
 @media (max-width: 480px) {
-  /* line 192, ../sass/set.scss */
+  /* line 193, ../sass/set.scss */
   #header, #speakers, #recruits {
     display: none;
   }
 
-  /* line 196, ../sass/set.scss */
+  /* line 197, ../sass/set.scss */
   #header_small {
     display: block;
   }

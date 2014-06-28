@@ -163,7 +163,8 @@ $break-small: 870px; //768px;
 		-moz-background-size: cover;
 	}
 	
-	#home_slide{ background: url('../../img/main1.jpg') 50% 0 no-repeat fixed; }
+	//#home_slide{ background: url('../../img/main1.jpg') 50% 0 no-repeat fixed; }
+	#home_slide { background: url(../../img/main1.jpg) no-repeat center center fixed #000; }
 	#speakers_slide{ background: url('../../img/speakers1.jpg') 50% 0 no-repeat fixed;	}
 	#history_slide{ background: url('../../img/history2.jpg') 50% 0 no-repeat fixed;	}
 	#sponsors_slide{ background: url('../../img/sponsor1.jpg') 50% 0 no-repeat fixed; }
