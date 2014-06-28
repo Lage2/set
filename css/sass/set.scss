@@ -2,6 +2,23 @@
 
 $ink-class-prefix: set-;
 $break-small: 870px; //768px;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin cover-background-size() {
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+
+
  
 /*
  * Header
@@ -40,6 +57,29 @@ $break-small: 870px; //768px;
 	#header_small{
 		display: none;
 		
+		
+		#my-dropdown{
+		
+			#my-menu-dropdown {
+			
+				margin-top: 80px;
+				padding-right: 200px;
+			
+				li {
+					width: 300px;
+					display: block;
+					background-color: white;
+					
+					a {
+						width: 300px;
+					 	
+						font-size: 2em;
+						
+					
+					}
+				}
+			}
+		}
 		
 		@media (max-width: $break-small){
 			display: block;
@@ -157,18 +197,13 @@ $break-small: 870px; //768px;
 		padding: 0;
 		margin: 0;
 		color: #fff;
-				
-		background-size: cover;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
 	}
 	
-	//#home_slide{ background: url('../../img/main1.jpg') 50% 0 no-repeat fixed; }
-	#home_slide { background: url(../../img/main1.jpg) no-repeat center center fixed #000; }
-	#speakers_slide{ background: url('../../img/speakers1.jpg') no-repeat center center fixed #000;	}
-	#history_slide{ background: url('../../img/history2.jpg') no-repeat center center fixed #000;	}
-	#sponsors_slide{ background: url('../../img/sponsor1.jpg') no-repeat center center fixed #000; }
-	#recruit_slide{ background: url('../../img/recruit1.jpg') no-repeat center center fixed #000;	}
+	#home_slide { 		background: url(../../img/main1.jpg) no-repeat center center fixed #000; 			@include cover-background-size();}
+	#speakers_slide{ 	background: url('../../img/speakers1.jpg') no-repeat center center fixed #000;	@include cover-background-size();}
+	#history_slide{ 	background: url('../../img/history2.jpg') no-repeat center center fixed #000;		@include cover-background-size();}
+	#sponsors_slide{ 	background: url('../../img/sponsor1.jpg') no-repeat center center fixed #000; 	@include cover-background-size();}
+	#recruit_slide{ 	background: url('../../img/recruit1.jpg') no-repeat center center fixed #000;		@include cover-background-size();}
 
 	#myCarousel { padding-top: 5%;}
 }

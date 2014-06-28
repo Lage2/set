@@ -78,7 +78,7 @@
 	        	
 	        	<div class="ink-dropdown" data-target="#my-menu-dropdown" id="my-dropdown">
     				<button class="ink-button blue push-left push-middle"><i class="fa fa-bars fa-4" style="font-size:60px"></i></button>
-					<ul id="my-menu-dropdown" class="dropdown-menu hide-all push-right" style="margin-top:80px">
+					<ul id="my-menu-dropdown" class="dropdown-menu hide-all push-right">
 						<li><a href="#speakers_slide">Oradores</a></li>
 						<li><a href="#history_slide">Edições Anteriores</a></li>
 						<li><a href="#sponsors_slide">Patrocínios</a></li>

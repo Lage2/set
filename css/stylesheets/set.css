@@ -10380,7 +10380,7 @@ body.ink-drawer.over.right .right-drawer {
  * Header
  *
 */
-/* line 12, ../sass/set.scss */
+/* line 29, ../sass/set.scss */
 .set-topbar #header, .set-topbar #header_small {
   width: 100%;
   position: fixed;
@@ -10388,7 +10388,7 @@ body.ink-drawer.over.right .right-drawer {
   background-color: #1a9ede;
   color: white;
 }
-/* line 21, ../sass/set.scss */
+/* line 38, ../sass/set.scss */
 .set-topbar #header #logo a, .set-topbar #header_small #logo a {
   text-decoration: none;
   float: left;
@@ -10396,44 +10396,60 @@ body.ink-drawer.over.right .right-drawer {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-/* line 23, ../sass/set.scss */
+/* line 40, ../sass/set.scss */
 .set-topbar #header #nav, .set-topbar #header_small #nav {
   float: right;
   margin-top: 10px;
 }
-/* line 24, ../sass/set.scss */
+/* line 41, ../sass/set.scss */
 .set-topbar #header #nav ul, .set-topbar #header_small #nav ul {
   list-style: none;
   display: block;
   margin: 0 auto;
   height: 100%;
 }
-/* line 27, ../sass/set.scss */
+/* line 44, ../sass/set.scss */
 .set-topbar #header {
   font-size: 1.25em;
 }
-/* line 30, ../sass/set.scss */
+/* line 47, ../sass/set.scss */
 .set-topbar #header a {
   color: white;
   text-decoration: none;
   font-size: 1.25em;
 }
-/* line 32, ../sass/set.scss */
+/* line 49, ../sass/set.scss */
 .set-topbar #header a:hover {
   color: #ffc37d;
 }
 @media (max-width: 870px) {
-  /* line 27, ../sass/set.scss */
+  /* line 44, ../sass/set.scss */
   .set-topbar #header {
     display: none;
   }
 }
-/* line 40, ../sass/set.scss */
+/* line 57, ../sass/set.scss */
 .set-topbar #header_small {
   display: none;
 }
+/* line 63, ../sass/set.scss */
+.set-topbar #header_small #my-dropdown #my-menu-dropdown {
+  margin-top: 80px;
+  padding-right: 200px;
+}
+/* line 68, ../sass/set.scss */
+.set-topbar #header_small #my-dropdown #my-menu-dropdown li {
+  width: 300px;
+  display: block;
+  background-color: white;
+}
+/* line 73, ../sass/set.scss */
+.set-topbar #header_small #my-dropdown #my-menu-dropdown li a {
+  width: 300px;
+  font-size: 2em;
+}
 @media (max-width: 870px) {
-  /* line 40, ../sass/set.scss */
+  /* line 57, ../sass/set.scss */
   .set-topbar #header_small {
     display: block;
   }
@@ -10443,12 +10459,12 @@ body.ink-drawer.over.right .right-drawer {
  * Main Content 
  *
 */
-/* line 55, ../sass/set.scss */
+/* line 95, ../sass/set.scss */
 .main-container {
   width: 100%;
   /*** Slides ***/
 }
-/* line 59, ../sass/set.scss */
+/* line 99, ../sass/set.scss */
 .main-container .text {
   color: #555;
   font-family: Helvetica, Arial, sans-serif;
@@ -10456,7 +10472,7 @@ body.ink-drawer.over.right .right-drawer {
   font-size: 1.1em;
   text-align: justify;
 }
-/* line 67, ../sass/set.scss */
+/* line 107, ../sass/set.scss */
 .main-container .speach-container {
   padding: 0;
   color: #555;
@@ -10464,7 +10480,7 @@ body.ink-drawer.over.right .right-drawer {
   display: inline-block;
   font-family: Helvetica, Arial, sans-serif;
 }
-/* line 74, ../sass/set.scss */
+/* line 114, ../sass/set.scss */
 .main-container .speach-container .person-quote {
   height: 80px;
   font-weight: normal;
@@ -10472,13 +10488,13 @@ body.ink-drawer.over.right .right-drawer {
   text-align: justify;
   margin-bottom: 50px;
 }
-/* line 83, ../sass/set.scss */
+/* line 123, ../sass/set.scss */
 .main-container .speach-container .person-name {
   text-align: right;
   padding-top: 50px;
   font-size: 1em;
 }
-/* line 89, ../sass/set.scss */
+/* line 129, ../sass/set.scss */
 .main-container .speach-container .person-thumbnail {
   height: 100px;
   width: 100px;
@@ -10487,7 +10503,7 @@ body.ink-drawer.over.right .right-drawer {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
 }
-/* line 101, ../sass/set.scss */
+/* line 141, ../sass/set.scss */
 .main-container .front-slide {
   width: 90%;
   min-height: 100px;
@@ -10495,23 +10511,23 @@ body.ink-drawer.over.right .right-drawer {
   padding-top: 2em;
   padding-bottom: 1em;
 }
-/* line 108, ../sass/set.scss */
+/* line 148, ../sass/set.scss */
 .main-container .front-slide div {
   padding-top: 2em;
   padding-bottom: 1em;
   margin-bottom: 25px;
 }
-/* line 114, ../sass/set.scss */
+/* line 154, ../sass/set.scss */
 .main-container .front-slide div div {
   padding: 0;
 }
-/* line 116, ../sass/set.scss */
+/* line 156, ../sass/set.scss */
 .main-container .front-slide div div h3 {
   text-align: center;
   font-size: 3em;
   margin-bottom: 30px;
 }
-/* line 121, ../sass/set.scss */
+/* line 161, ../sass/set.scss */
 .main-container .back-slide {
   width: 100%;
   height: 720px;
@@ -10521,7 +10537,7 @@ body.ink-drawer.over.right .right-drawer {
   text-align: center;
   font-weight: bold;
 }
-/* line 130, ../sass/set.scss */
+/* line 170, ../sass/set.scss */
 .main-container .back-slide h2 {
   background-color: #1D1D1D;
   color: black;
@@ -10530,12 +10546,12 @@ body.ink-drawer.over.right .right-drawer {
   font-size: 4.5em;
   opacity: 0.9;
 }
-/* line 138, ../sass/set.scss */
+/* line 178, ../sass/set.scss */
 .main-container .back-slide h2 a {
   text-decoration: none;
   color: #ff9112;
 }
-/* line 141, ../sass/set.scss */
+/* line 181, ../sass/set.scss */
 .main-container .back-slide p {
   background-color: #1D1D1D;
   font-family: 'Montserrat', Arial, serif;
@@ -10544,41 +10560,58 @@ body.ink-drawer.over.right .right-drawer {
   opacity: 0.8;
   margin: 15px 0;
 }
-/* line 150, ../sass/set.scss */
+/* line 190, ../sass/set.scss */
 .main-container .back-slide a {
   font-size: 1.5em;
 }
-/* line 155, ../sass/set.scss */
+/* line 195, ../sass/set.scss */
 .main-container #home_slide, .main-container #speakers_slide, .main-container #history_slide, .main-container #sponsors_slide, .main-container #recruit_slide {
   overflow: hidden;
   padding: 0;
   margin: 0;
   color: #fff;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
 }
-/* line 167, ../sass/set.scss */
+/* line 202, ../sass/set.scss */
 .main-container #home_slide {
   background: url(../../img/main1.jpg) no-repeat center center fixed black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
-/* line 168, ../sass/set.scss */
+/* line 203, ../sass/set.scss */
 .main-container #speakers_slide {
   background: url("../../img/speakers1.jpg") no-repeat center center fixed black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
-/* line 169, ../sass/set.scss */
+/* line 204, ../sass/set.scss */
 .main-container #history_slide {
   background: url("../../img/history2.jpg") no-repeat center center fixed black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
-/* line 170, ../sass/set.scss */
+/* line 205, ../sass/set.scss */
 .main-container #sponsors_slide {
   background: url("../../img/sponsor1.jpg") no-repeat center center fixed black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
-/* line 171, ../sass/set.scss */
+/* line 206, ../sass/set.scss */
 .main-container #recruit_slide {
   background: url("../../img/recruit1.jpg") no-repeat center center fixed black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
-/* line 173, ../sass/set.scss */
+/* line 208, ../sass/set.scss */
 .main-container #myCarousel {
   padding-top: 5%;
 }
@@ -10587,7 +10620,7 @@ body.ink-drawer.over.right .right-drawer {
  * Footer 
  *
 */
-/* line 182, ../sass/set.scss */
+/* line 217, ../sass/set.scss */
 footer {
   width: 100%;
   bottom: 0;
@@ -10597,25 +10630,25 @@ footer {
   z-index: 1;
   padding-top: 10px;
 }
-/* line 194, ../sass/set.scss */
+/* line 229, ../sass/set.scss */
 footer .icon-button a {
   color: #333;
   text-decoration: none;
 }
-/* line 198, ../sass/set.scss */
+/* line 233, ../sass/set.scss */
 footer .icon-button a i {
   font-size: 2em;
 }
-/* line 200, ../sass/set.scss */
+/* line 235, ../sass/set.scss */
 footer .icon-button a:hover {
   color: #555;
   text-decoration: none;
 }
-/* line 204, ../sass/set.scss */
+/* line 239, ../sass/set.scss */
 footer #rights {
   text-align: right;
 }
-/* line 207, ../sass/set.scss */
+/* line 242, ../sass/set.scss */
 footer #rights a {
   color: orange;
 }
