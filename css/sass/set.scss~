@@ -1,7 +1,8 @@
 @import 'ink.scss';
 
 $ink-class-prefix: set-;
-
+$break-small: 870px; //768px;
+ 
 /*
  * Header
  *
@@ -15,10 +16,7 @@ $ink-class-prefix: set-;
 		background-color: #1a9ede;
 		color: white;
 		
-		a {
-			color: white; text-decoration: none; font-size:1.25em;
-			&:hover { color: #ffc37d; }		
-		}
+		
 		
 		#logo a { text-decoration: none; float: left; padding-left: 2.5%; margin-top: 5px; margin-bottom: 5px;}
 		
@@ -28,10 +26,25 @@ $ink-class-prefix: set-;
 
 	#header {	
 		font-size: 1.25em;
+		
+		a {
+			color: white; text-decoration: none; font-size:1.25em;
+			&:hover { color: #ffc37d; }		
+		}
+		
+		@media (max-width: $break-small){
+			display: none;
+		}
 	}
 	
 	#header_small{
 		display: none;
+		
+		
+		@media (max-width: $break-small){
+			display: block;
+		}
+
 	}	
 }
 
@@ -185,6 +198,7 @@ footer {
 	}
 }
 
+/*
 @media (max-width: 768px){
 	#header{
 		display: none;
@@ -194,6 +208,6 @@ footer {
 		display: block;
 	}
 }
-
+*/
 
 
