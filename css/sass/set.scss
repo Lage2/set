@@ -42,6 +42,15 @@ $ink-class-prefix: set-;
 .main-container{
 	width: 100%;
 	
+	
+	.text { 
+		color: #555;
+		font-family: Helvetica, Arial, sans-serif;
+		font-weight: normal;
+		font-size: 1.1em;
+		text-align: justify;
+	}
+	
 	.speach-container{
 		padding: 0;
 		color: #555;
@@ -50,9 +59,9 @@ $ink-class-prefix: set-;
 		font-family: Helvetica, Arial, sans-serif;
 							
 		.person-quote{
-			height: 120px;
+			height: 80px;
 			font-weight: normal;
-			font-size: 1.25em;
+			font-size: 1.1em;
 			text-align: justify;
 			margin-bottom: 50px;
 
