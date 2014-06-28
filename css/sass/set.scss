@@ -77,16 +77,24 @@ $ink-class-prefix: set-;
 	
 	/*** Slides ***/
 	.front-slide{
+		width: 90%;
 		min-height: 100px;
 		background-color: white;
 		padding-top: 2em;
 		padding-bottom: 1em;
+		
+		div {
+			padding-top: 2em;
+			padding-bottom: 1em;
+			margin-bottom: 25px;
+			
+			//TODO: corrigir demasiado nesting, pouco recomendado
+			div {
+				padding: 0;
+				h3	{text-align: center; font-size: 3em; margin-bottom: 30px;}
+			}
+		}
 	}
-
-
-	.front-slide div {padding-top: 2em; padding-bottom: 1em; margin-bottom: 25px;}
-	.front-slide div div {padding: 0;}
-	.front-slide div div h3	{text-align: center; font-size: 3em; margin-bottom: 30px;}
 
 	.back-slide {
 		width:100%;
@@ -98,19 +106,27 @@ $ink-class-prefix: set-;
 		font-weight: bold;
 		
 		h2 { 
+			background-color: #1D1D1D;
 			color: black;
 			margin-top: 15%; 
+			margin-bottom: 10px;
 			font-size: 4.5em;
 			opacity: 0.9;
+			
 			a { text-decoration: none; color:#ff9112;  }
 		}
 		
 		p {
+			background-color: #1D1D1D;
 			font-family: 'Montserrat', Arial, serif;
 			color: #ff9112;
 			font-size: 2em;
 			opacity: 0.8;
-			margin: 0.15em 0;
+			margin: 15px 0;
+		}
+		
+		a{
+			font-size: 1.5em;
 		}
 	}
 		
