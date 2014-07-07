@@ -1,0 +1,1087 @@
+/**
+ * Ink
+ *
+ * A set of tools for quick development of web interfaces.
+ *
+ * @package   Ink
+ * @author    Sapo Ink Team
+ * @license   http://opensource.org/licenses/MIT MIT
+ * @link      http://ink.sapo.pt
+ * @version   3.0.0
+ */
+/**
+ * Ink class names prefix
+ * Used in all of Inks components root elements
+ */
+/**
+ * Grid class names
+ */
+/**
+ * Alerts class names
+ */
+/**
+ * Badges class names
+ */
+/**
+ * Buttons class names
+ */
+/**
+ * Forms class names
+ */
+/**
+ * Labels class names
+ */
+/**
+ * Navigation class names
+ */
+/**
+ * Dropdown class names
+ */
+/**
+ * Tables class names
+ */
+/**
+ * Images class names
+ */
+/** 
+ * Sets the grids maximum width
+ * @var $grid-max-width (pixels|ems|percentage)
+ */
+/*
+ * Sets the grids breakpoint
+ * 
+ * To add a new break point you'll need to add an element to the list.
+ * 
+ * Here's an example: ( class-name-prefix, minimum-width, maximum-width, gutter-width, no-media-query).
+ * 
+ * media: media type.
+ * class-name-prefix: this is the prefix used in tons of inks classes i.e.: large-100, small-40, etc.
+ * minimum-width: (pixels|null) the minimum width for the breakpoint 
+ * maximum-width: (pixels|null) the maximum width for the breakpoint 
+ * gutter-width: (ems) the width for the gutters (space between grid columns) for the breakpoint 
+ * no-media-query: (true|false) if you need to support IE8 set this to true on a single breakpoint.
+ *                 Since IE8 does not support the @media statement leaving one of the breakpoints
+ *                 outside a @media query let's you use the grid in IE8.
+ *  
+ */
+/* line 686, ../sass/mixins/_grid.scss */
+.ink-grid {
+  width: auto;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* line 6, ../sass/mixins/_grid.scss */
+.ink-grid {
+  padding: 0 1.75em;
+}
+
+/* line 287, ../sass/mixins/_grid.scss */
+.column-group > [class*=large-] {
+  float: left;
+  clear: none;
+}
+
+/* line 309, ../sass/mixins/_grid.scss */
+.large-5 {
+  width: 5%;
+}
+
+/* line 309, ../sass/mixins/_grid.scss */
+.large-10 {
+  width: 10%;
+}
+
+/* line 309, ../sass/mixins/_grid.scss */
+.large-15 {
+  width: 15%;
+}
+
+/* line 309, ../sass/mixins/_grid.scss */
+.large-20 {
+  width: 20%;
+}
+
+/* line 309, ../sass/mixins/_grid.scss */
+.large-25 {
+  width: 25%;
+}
+
+/* line 309, ../sass/mixins/_grid.scss */
+.large-30 {
+  width: 30%;
+}
+
+/* line 296, ../sass/mixins/_grid.scss */
+.large-33 {
+  width: 33.33%;
+}
+
+/* line 309, ../sass/mixins/_grid.scss */
+.large-35 {
+  width: 35%;
+}
+
+/* line 309, ../sass/mixins/_grid.scss */
+.large-40 {
+  width: 40%;
+}
+
+/* line 309, ../sass/mixins/_grid.scss */
+.large-45 {
+  width: 45%;
+}
+
+/* line 309, ../sass/mixins/_grid.scss */
+.large-50 {
+  width: 50%;
+}
+
+/* line 309, ../sass/mixins/_grid.scss */
+.large-55 {
+  width: 55%;
+}
+
+/* line 309, ../sass/mixins/_grid.scss */
+.large-60 {
+  width: 60%;
+}
+
+/* line 309, ../sass/mixins/_grid.scss */
+.large-65 {
+  width: 65%;
+}
+
+/* line 303, ../sass/mixins/_grid.scss */
+.large-66 {
+  width: 66.66%;
+}
+
+/* line 309, ../sass/mixins/_grid.scss */
+.large-70 {
+  width: 70%;
+}
+
+/* line 309, ../sass/mixins/_grid.scss */
+.large-75 {
+  width: 75%;
+}
+
+/* line 309, ../sass/mixins/_grid.scss */
+.large-80 {
+  width: 80%;
+}
+
+/* line 309, ../sass/mixins/_grid.scss */
+.large-85 {
+  width: 85%;
+}
+
+/* line 309, ../sass/mixins/_grid.scss */
+.large-90 {
+  width: 90%;
+}
+
+/* line 309, ../sass/mixins/_grid.scss */
+.large-95 {
+  width: 95%;
+}
+
+/* line 309, ../sass/mixins/_grid.scss */
+.large-100 {
+  width: 100%;
+}
+
+/* line 315, ../sass/mixins/_grid.scss */
+[class*=large-100] {
+  float: none;
+  clear: both;
+}
+
+/* line 14, ../sass/mixins/_grid.scss */
+.column-group {
+  *zoom: 1;
+}
+/* line 38, ../../../../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.column-group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 18, ../sass/mixins/_grid.scss */
+.column-group.gutters {
+  margin-left: -1.75em;
+}
+/* line 21, ../sass/mixins/_grid.scss */
+.column-group.gutters > [class*=large-], .column-group.gutters > [class*=all-] {
+  padding-left: 1.75em;
+  margin-bottom: 1.75em;
+}
+
+/* line 27, ../sass/mixins/_grid.scss */
+.column-group.horizontal-gutters {
+  margin-left: -1.75em;
+}
+/* line 30, ../sass/mixins/_grid.scss */
+.column-group.horizontal-gutters > [class*=large-], .column-group.horizontal-gutters > [class*=all-] {
+  padding-left: 1.75em;
+}
+
+/* line 37, ../sass/mixins/_grid.scss */
+.column-group.vertical-gutters > [class*=large-], .column-group.vertical-gutters > [class*=all-] {
+  margin-bottom: 1.75em;
+}
+
+/* line 42, ../sass/mixins/_grid.scss */
+.column-group.double-gutters {
+  margin-left: -3.5em;
+}
+/* line 45, ../sass/mixins/_grid.scss */
+.column-group.double-gutters > [class*=large-], .column-group.double-gutters > [class*=all-] {
+  padding-left: 3.5em;
+  margin-bottom: 3.5em;
+}
+
+/* line 51, ../sass/mixins/_grid.scss */
+.column-group.double-horizontal-gutters {
+  margin-left: -3.5em;
+}
+/* line 54, ../sass/mixins/_grid.scss */
+.column-group.double-horizontal-gutters > [class*=large-], .column-group.double-horizontal-gutters > [class*=all-] {
+  padding-left: 3.5em;
+}
+
+/* line 61, ../sass/mixins/_grid.scss */
+.column-group.double-vertical-gutters > [class*=large-], .column-group.double-vertical-gutters > [class*=all-] {
+  margin-bottom: 3.5em;
+}
+
+/* line 66, ../sass/mixins/_grid.scss */
+.column-group.half-gutters {
+  margin-left: -0.875em;
+}
+/* line 69, ../sass/mixins/_grid.scss */
+.column-group.half-gutters > [class*=large-], .column-group.half-gutters > [class*=all-] {
+  padding-left: 0.875em;
+  margin-bottom: 0.875em;
+}
+
+/* line 75, ../sass/mixins/_grid.scss */
+.column-group.half-horizontal-gutters {
+  margin-left: -0.875em;
+}
+/* line 78, ../sass/mixins/_grid.scss */
+.column-group.half-horizontal-gutters > [class*=large-], .column-group.half-horizontal-gutters > [class*=all-] {
+  padding-left: 0.875em;
+}
+
+/* line 85, ../sass/mixins/_grid.scss */
+.column-group.half-vertical-gutters > [class*=large-], .column-group.half-vertical-gutters > [class*=all-] {
+  margin-bottom: 0.875em;
+}
+
+/* line 90, ../sass/mixins/_grid.scss */
+.column-group.quarter-gutters {
+  margin-left: -0.4375em;
+}
+/* line 93, ../sass/mixins/_grid.scss */
+.column-group.quarter-gutters > [class*=large-], .column-group.quarter-gutters > [class*=all-] {
+  padding-left: 0.4375em;
+  margin-bottom: 0.4375em;
+}
+
+/* line 99, ../sass/mixins/_grid.scss */
+.column-group.quarter-horizontal-gutters {
+  margin-left: -0.4375em;
+}
+/* line 102, ../sass/mixins/_grid.scss */
+.column-group.quarter-horizontal-gutters > [class*=large-], .column-group.quarter-horizontal-gutters > [class*=all-] {
+  padding-left: 0.4375em;
+}
+
+/* line 109, ../sass/mixins/_grid.scss */
+.column-group.quarter-vertical-gutters > [class*=large-], .column-group.quarter-vertical-gutters > [class*=all-] {
+  margin-bottom: 0.4375em;
+}
+
+/* line 114, ../sass/mixins/_grid.scss */
+.column-group.large-gutters {
+  margin-left: -1.75em;
+}
+/* line 117, ../sass/mixins/_grid.scss */
+.column-group.large-gutters > [class*=large-], .column-group.large-gutters > [class*=all-] {
+  padding-left: 1.75em;
+  margin-bottom: 1.75em;
+}
+
+/* line 123, ../sass/mixins/_grid.scss */
+.column-group.large-horizontal-gutters {
+  margin-left: -1.75em;
+}
+/* line 126, ../sass/mixins/_grid.scss */
+.column-group.large-horizontal-gutters > [class*=large-], .column-group.large-horizontal-gutters > [class*=all-] {
+  padding-left: 1.75em;
+}
+
+/* line 133, ../sass/mixins/_grid.scss */
+.column-group.large-vertical-gutters > [class*=large-], .column-group.large-vertical-gutters > [class*=all-] {
+  margin-bottom: 1.75em;
+}
+
+/* line 138, ../sass/mixins/_grid.scss */
+.column-group.large-double-gutters {
+  margin-left: -3.5em;
+}
+/* line 141, ../sass/mixins/_grid.scss */
+.column-group.large-double-gutters > [class*=large-], .column-group.large-double-gutters > [class*=all-] {
+  padding-left: 3.5em;
+  margin-bottom: 3.5em;
+}
+
+/* line 147, ../sass/mixins/_grid.scss */
+.column-group.large-double-horizontal-gutters {
+  margin-left: -3.5em;
+}
+/* line 150, ../sass/mixins/_grid.scss */
+.column-group.large-double-horizontal-gutters > [class*=large-], .column-group.large-double-horizontal-gutters > [class*=all-] {
+  padding-left: 3.5em;
+}
+
+/* line 157, ../sass/mixins/_grid.scss */
+.column-group.large-double-vertical-gutters > [class*=large-], .column-group.large-double-vertical-gutters > [class*=all-] {
+  margin-bottom: 3.5em;
+}
+
+/* line 162, ../sass/mixins/_grid.scss */
+.column-group.large-half-gutters {
+  margin-left: -0.875em;
+}
+/* line 165, ../sass/mixins/_grid.scss */
+.column-group.large-half-gutters > [class*=large-], .column-group.large-half-gutters > [class*=all-] {
+  padding-left: 0.875em;
+  margin-bottom: 0.875em;
+}
+
+/* line 171, ../sass/mixins/_grid.scss */
+.column-group.large-half-horizontal-gutters {
+  margin-left: -0.875em;
+}
+/* line 174, ../sass/mixins/_grid.scss */
+.column-group.large-half-horizontal-gutters > [class*=large-], .column-group.large-half-horizontal-gutters > [class*=all-] {
+  padding-left: 0.875em;
+}
+
+/* line 181, ../sass/mixins/_grid.scss */
+.column-group.large-half-vertical-gutters > [class*=large-], .column-group.large-half-vertical-gutters > [class*=all-] {
+  margin-bottom: 0.875em;
+}
+
+/* line 186, ../sass/mixins/_grid.scss */
+.column-group.large-quarter-gutters {
+  margin-left: -0.4375em;
+}
+/* line 189, ../sass/mixins/_grid.scss */
+.column-group.large-quarter-gutters > [class*=large-], .column-group.large-quarter-gutters > [class*=all-] {
+  padding-left: 0.4375em;
+  margin-bottom: 0.4375em;
+}
+
+/* line 195, ../sass/mixins/_grid.scss */
+.column-group.large-quarter-horizontal-gutters {
+  margin-left: -0.4375em;
+}
+/* line 198, ../sass/mixins/_grid.scss */
+.column-group.large-quarter-horizontal-gutters > [class*=large-], .column-group.large-quarter-horizontal-gutters > [class*=all-] {
+  padding-left: 0.4375em;
+}
+
+/* line 205, ../sass/mixins/_grid.scss */
+.column-group.large-quarter-vertical-gutters > [class*=large-], .column-group.large-quarter-vertical-gutters > [class*=all-] {
+  margin-bottom: 0.4375em;
+}
+
+/* line 210, ../sass/mixins/_grid.scss */
+.column-group.large-no-gutters {
+  margin-left: 0;
+}
+/* line 213, ../sass/mixins/_grid.scss */
+.column-group.large-no-gutters > [class*=large-], .column-group.large-no-gutters > [class*=all-] {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+/* line 221, ../sass/mixins/_grid.scss */
+.ink-table td[class*=large-], .ink-table th[class*=large-], .ink-table tr[class*=large-], .ink-table thead[class*=large-], .ink-table tbody[class*=large-], .ink-table tfoot[class*=large-] {
+  float: none;
+}
+
+/* line 328, ../sass/mixins/_grid.scss */
+.large-push-left {
+  float: left;
+}
+
+/* line 332, ../sass/mixins/_grid.scss */
+.large-push-center {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 337, ../sass/mixins/_grid.scss */
+.large-push-right {
+  float: right;
+}
+
+/* line 340, ../sass/mixins/_grid.scss */
+.large-align-left {
+  text-align: left;
+}
+
+/* line 343, ../sass/mixins/_grid.scss */
+.large-align-center {
+  text-align: center;
+}
+
+/* line 346, ../sass/mixins/_grid.scss */
+.large-align-right {
+  text-align: right;
+}
+
+/* line 350, ../sass/mixins/_grid.scss */
+.large-no-margin {
+  margin: 0 !important;
+}
+
+/* line 551, ../sass/mixins/_grid.scss */
+.space {
+  margin: 1.75em;
+}
+
+/* line 555, ../sass/mixins/_grid.scss */
+.large-space {
+  margin: 1.75em;
+}
+
+/* line 559, ../sass/mixins/_grid.scss */
+.padding {
+  padding: 1.75em;
+}
+
+/* line 563, ../sass/mixins/_grid.scss */
+.large-padding {
+  padding: 1.75em;
+}
+
+/* line 571, ../sass/mixins/_grid.scss */
+.double-space {
+  margin: 3.5em;
+}
+
+/* line 575, ../sass/mixins/_grid.scss */
+.large-double-space {
+  margin: 3.5em;
+}
+
+/* line 579, ../sass/mixins/_grid.scss */
+.double-padding {
+  padding: 3.5em;
+}
+
+/* line 583, ../sass/mixins/_grid.scss */
+.large-double-padding {
+  padding: 3.5em;
+}
+
+/* line 571, ../sass/mixins/_grid.scss */
+.half-space {
+  margin: 0.875em;
+}
+
+/* line 575, ../sass/mixins/_grid.scss */
+.large-half-space {
+  margin: 0.875em;
+}
+
+/* line 579, ../sass/mixins/_grid.scss */
+.half-padding {
+  padding: 0.875em;
+}
+
+/* line 583, ../sass/mixins/_grid.scss */
+.large-half-padding {
+  padding: 0.875em;
+}
+
+/* line 571, ../sass/mixins/_grid.scss */
+.quarter-space {
+  margin: 0.4375em;
+}
+
+/* line 575, ../sass/mixins/_grid.scss */
+.large-quarter-space {
+  margin: 0.4375em;
+}
+
+/* line 579, ../sass/mixins/_grid.scss */
+.quarter-padding {
+  padding: 0.4375em;
+}
+
+/* line 583, ../sass/mixins/_grid.scss */
+.large-quarter-padding {
+  padding: 0.4375em;
+}
+
+/* line 462, ../sass/mixins/_grid.scss */
+.vertical-space {
+  margin-top: 1.75em;
+  margin-bottom: 1.75em;
+}
+
+/* line 467, ../sass/mixins/_grid.scss */
+.large-vertical-space {
+  margin-top: 1.75em;
+  margin-bottom: 1.75em;
+}
+
+/* line 472, ../sass/mixins/_grid.scss */
+.vertical-padding {
+  padding-top: 1.75em;
+  padding-bottom: 1.75em;
+}
+
+/* line 477, ../sass/mixins/_grid.scss */
+.large-vertical-padding {
+  padding-top: 1.75em;
+  padding-bottom: 1.75em;
+}
+
+/* line 486, ../sass/mixins/_grid.scss */
+.double-vertical-space {
+  margin-top: 3.5em;
+  margin-bottom: 3.5em;
+}
+
+/* line 491, ../sass/mixins/_grid.scss */
+.large-double-vertical-space {
+  margin-top: 3.5em;
+  margin-bottom: 3.5em;
+}
+
+/* line 496, ../sass/mixins/_grid.scss */
+.double-vertical-padding {
+  padding-top: 3.5em;
+  padding-bottom: 3.5em;
+}
+
+/* line 501, ../sass/mixins/_grid.scss */
+.large-double-vertical-padding {
+  padding-top: 3.5em;
+  padding-bottom: 3.5em;
+}
+
+/* line 486, ../sass/mixins/_grid.scss */
+.half-vertical-space {
+  margin-top: 0.875em;
+  margin-bottom: 0.875em;
+}
+
+/* line 491, ../sass/mixins/_grid.scss */
+.large-half-vertical-space {
+  margin-top: 0.875em;
+  margin-bottom: 0.875em;
+}
+
+/* line 496, ../sass/mixins/_grid.scss */
+.half-vertical-padding {
+  padding-top: 0.875em;
+  padding-bottom: 0.875em;
+}
+
+/* line 501, ../sass/mixins/_grid.scss */
+.large-half-vertical-padding {
+  padding-top: 0.875em;
+  padding-bottom: 0.875em;
+}
+
+/* line 486, ../sass/mixins/_grid.scss */
+.quarter-vertical-space {
+  margin-top: 0.4375em;
+  margin-bottom: 0.4375em;
+}
+
+/* line 491, ../sass/mixins/_grid.scss */
+.large-quarter-vertical-space {
+  margin-top: 0.4375em;
+  margin-bottom: 0.4375em;
+}
+
+/* line 496, ../sass/mixins/_grid.scss */
+.quarter-vertical-padding {
+  padding-top: 0.4375em;
+  padding-bottom: 0.4375em;
+}
+
+/* line 501, ../sass/mixins/_grid.scss */
+.large-quarter-vertical-padding {
+  padding-top: 0.4375em;
+  padding-bottom: 0.4375em;
+}
+
+/* line 413, ../sass/mixins/_grid.scss */
+.horizontal-space {
+  margin-left: 1.75em;
+  margin-right: 1.75em;
+}
+
+/* line 418, ../sass/mixins/_grid.scss */
+.large-horizontal-space {
+  margin-left: 1.75em;
+  margin-right: 1.75em;
+}
+
+/* line 423, ../sass/mixins/_grid.scss */
+.horizontal-padding {
+  padding-left: 1.75em;
+  padding-right: 1.75em;
+}
+
+/* line 428, ../sass/mixins/_grid.scss */
+.large-horizontal-padding {
+  padding-left: 1.75em;
+  padding-right: 1.75em;
+}
+
+/* line 437, ../sass/mixins/_grid.scss */
+.double-horizontal-space {
+  margin-left: 3.5em;
+  margin-right: 3.5em;
+}
+
+/* line 442, ../sass/mixins/_grid.scss */
+.large-double-horizontal-space {
+  margin-left: 3.5em;
+  margin-right: 3.5em;
+}
+
+/* line 447, ../sass/mixins/_grid.scss */
+.double-horizontal-padding {
+  padding-left: 3.5em;
+  padding-right: 3.5em;
+}
+
+/* line 452, ../sass/mixins/_grid.scss */
+.large-double-horizontal-padding {
+  padding-left: 3.5em;
+  padding-right: 3.5em;
+}
+
+/* line 437, ../sass/mixins/_grid.scss */
+.half-horizontal-space {
+  margin-left: 0.875em;
+  margin-right: 0.875em;
+}
+
+/* line 442, ../sass/mixins/_grid.scss */
+.large-half-horizontal-space {
+  margin-left: 0.875em;
+  margin-right: 0.875em;
+}
+
+/* line 447, ../sass/mixins/_grid.scss */
+.half-horizontal-padding {
+  padding-left: 0.875em;
+  padding-right: 0.875em;
+}
+
+/* line 452, ../sass/mixins/_grid.scss */
+.large-half-horizontal-padding {
+  padding-left: 0.875em;
+  padding-right: 0.875em;
+}
+
+/* line 437, ../sass/mixins/_grid.scss */
+.quarter-horizontal-space {
+  margin-left: 0.4375em;
+  margin-right: 0.4375em;
+}
+
+/* line 442, ../sass/mixins/_grid.scss */
+.large-quarter-horizontal-space {
+  margin-left: 0.4375em;
+  margin-right: 0.4375em;
+}
+
+/* line 447, ../sass/mixins/_grid.scss */
+.quarter-horizontal-padding {
+  padding-left: 0.4375em;
+  padding-right: 0.4375em;
+}
+
+/* line 452, ../sass/mixins/_grid.scss */
+.large-quarter-horizontal-padding {
+  padding-left: 0.4375em;
+  padding-right: 0.4375em;
+}
+
+/* line 511, ../sass/mixins/_grid.scss */
+.top-space {
+  margin-top: 1.75em;
+}
+
+/* line 515, ../sass/mixins/_grid.scss */
+.large-top-space {
+  margin-top: 1.75em;
+}
+
+/* line 519, ../sass/mixins/_grid.scss */
+.top-padding {
+  padding-top: 1.75em;
+}
+
+/* line 523, ../sass/mixins/_grid.scss */
+.large-top-padding {
+  padding-top: 1.75em;
+}
+
+/* line 531, ../sass/mixins/_grid.scss */
+.double-top-space {
+  margin-top: 3.5em;
+}
+
+/* line 535, ../sass/mixins/_grid.scss */
+.large-double-top-space {
+  margin-top: 3.5em;
+}
+
+/* line 539, ../sass/mixins/_grid.scss */
+.double-top-padding {
+  padding-top: 3.5em;
+}
+
+/* line 543, ../sass/mixins/_grid.scss */
+.large-double-top-padding {
+  padding-top: 3.5em;
+}
+
+/* line 531, ../sass/mixins/_grid.scss */
+.half-top-space {
+  margin-top: 0.875em;
+}
+
+/* line 535, ../sass/mixins/_grid.scss */
+.large-half-top-space {
+  margin-top: 0.875em;
+}
+
+/* line 539, ../sass/mixins/_grid.scss */
+.half-top-padding {
+  padding-top: 0.875em;
+}
+
+/* line 543, ../sass/mixins/_grid.scss */
+.large-half-top-padding {
+  padding-top: 0.875em;
+}
+
+/* line 531, ../sass/mixins/_grid.scss */
+.quarter-top-space {
+  margin-top: 0.4375em;
+}
+
+/* line 535, ../sass/mixins/_grid.scss */
+.large-quarter-top-space {
+  margin-top: 0.4375em;
+}
+
+/* line 539, ../sass/mixins/_grid.scss */
+.quarter-top-padding {
+  padding-top: 0.4375em;
+}
+
+/* line 543, ../sass/mixins/_grid.scss */
+.large-quarter-top-padding {
+  padding-top: 0.4375em;
+}
+
+/* line 511, ../sass/mixins/_grid.scss */
+.right-space {
+  margin-right: 1.75em;
+}
+
+/* line 515, ../sass/mixins/_grid.scss */
+.large-right-space {
+  margin-right: 1.75em;
+}
+
+/* line 519, ../sass/mixins/_grid.scss */
+.right-padding {
+  padding-right: 1.75em;
+}
+
+/* line 523, ../sass/mixins/_grid.scss */
+.large-right-padding {
+  padding-right: 1.75em;
+}
+
+/* line 531, ../sass/mixins/_grid.scss */
+.double-right-space {
+  margin-right: 3.5em;
+}
+
+/* line 535, ../sass/mixins/_grid.scss */
+.large-double-right-space {
+  margin-right: 3.5em;
+}
+
+/* line 539, ../sass/mixins/_grid.scss */
+.double-right-padding {
+  padding-right: 3.5em;
+}
+
+/* line 543, ../sass/mixins/_grid.scss */
+.large-double-right-padding {
+  padding-right: 3.5em;
+}
+
+/* line 531, ../sass/mixins/_grid.scss */
+.half-right-space {
+  margin-right: 0.875em;
+}
+
+/* line 535, ../sass/mixins/_grid.scss */
+.large-half-right-space {
+  margin-right: 0.875em;
+}
+
+/* line 539, ../sass/mixins/_grid.scss */
+.half-right-padding {
+  padding-right: 0.875em;
+}
+
+/* line 543, ../sass/mixins/_grid.scss */
+.large-half-right-padding {
+  padding-right: 0.875em;
+}
+
+/* line 531, ../sass/mixins/_grid.scss */
+.quarter-right-space {
+  margin-right: 0.4375em;
+}
+
+/* line 535, ../sass/mixins/_grid.scss */
+.large-quarter-right-space {
+  margin-right: 0.4375em;
+}
+
+/* line 539, ../sass/mixins/_grid.scss */
+.quarter-right-padding {
+  padding-right: 0.4375em;
+}
+
+/* line 543, ../sass/mixins/_grid.scss */
+.large-quarter-right-padding {
+  padding-right: 0.4375em;
+}
+
+/* line 511, ../sass/mixins/_grid.scss */
+.bottom-space {
+  margin-bottom: 1.75em;
+}
+
+/* line 515, ../sass/mixins/_grid.scss */
+.large-bottom-space {
+  margin-bottom: 1.75em;
+}
+
+/* line 519, ../sass/mixins/_grid.scss */
+.bottom-padding {
+  padding-bottom: 1.75em;
+}
+
+/* line 523, ../sass/mixins/_grid.scss */
+.large-bottom-padding {
+  padding-bottom: 1.75em;
+}
+
+/* line 531, ../sass/mixins/_grid.scss */
+.double-bottom-space {
+  margin-bottom: 3.5em;
+}
+
+/* line 535, ../sass/mixins/_grid.scss */
+.large-double-bottom-space {
+  margin-bottom: 3.5em;
+}
+
+/* line 539, ../sass/mixins/_grid.scss */
+.double-bottom-padding {
+  padding-bottom: 3.5em;
+}
+
+/* line 543, ../sass/mixins/_grid.scss */
+.large-double-bottom-padding {
+  padding-bottom: 3.5em;
+}
+
+/* line 531, ../sass/mixins/_grid.scss */
+.half-bottom-space {
+  margin-bottom: 0.875em;
+}
+
+/* line 535, ../sass/mixins/_grid.scss */
+.large-half-bottom-space {
+  margin-bottom: 0.875em;
+}
+
+/* line 539, ../sass/mixins/_grid.scss */
+.half-bottom-padding {
+  padding-bottom: 0.875em;
+}
+
+/* line 543, ../sass/mixins/_grid.scss */
+.large-half-bottom-padding {
+  padding-bottom: 0.875em;
+}
+
+/* line 531, ../sass/mixins/_grid.scss */
+.quarter-bottom-space {
+  margin-bottom: 0.4375em;
+}
+
+/* line 535, ../sass/mixins/_grid.scss */
+.large-quarter-bottom-space {
+  margin-bottom: 0.4375em;
+}
+
+/* line 539, ../sass/mixins/_grid.scss */
+.quarter-bottom-padding {
+  padding-bottom: 0.4375em;
+}
+
+/* line 543, ../sass/mixins/_grid.scss */
+.large-quarter-bottom-padding {
+  padding-bottom: 0.4375em;
+}
+
+/* line 511, ../sass/mixins/_grid.scss */
+.left-space {
+  margin-left: 1.75em;
+}
+
+/* line 515, ../sass/mixins/_grid.scss */
+.large-left-space {
+  margin-left: 1.75em;
+}
+
+/* line 519, ../sass/mixins/_grid.scss */
+.left-padding {
+  padding-left: 1.75em;
+}
+
+/* line 523, ../sass/mixins/_grid.scss */
+.large-left-padding {
+  padding-left: 1.75em;
+}
+
+/* line 531, ../sass/mixins/_grid.scss */
+.double-left-space {
+  margin-left: 3.5em;
+}
+
+/* line 535, ../sass/mixins/_grid.scss */
+.large-double-left-space {
+  margin-left: 3.5em;
+}
+
+/* line 539, ../sass/mixins/_grid.scss */
+.double-left-padding {
+  padding-left: 3.5em;
+}
+
+/* line 543, ../sass/mixins/_grid.scss */
+.large-double-left-padding {
+  padding-left: 3.5em;
+}
+
+/* line 531, ../sass/mixins/_grid.scss */
+.half-left-space {
+  margin-left: 0.875em;
+}
+
+/* line 535, ../sass/mixins/_grid.scss */
+.large-half-left-space {
+  margin-left: 0.875em;
+}
+
+/* line 539, ../sass/mixins/_grid.scss */
+.half-left-padding {
+  padding-left: 0.875em;
+}
+
+/* line 543, ../sass/mixins/_grid.scss */
+.large-half-left-padding {
+  padding-left: 0.875em;
+}
+
+/* line 531, ../sass/mixins/_grid.scss */
+.quarter-left-space {
+  margin-left: 0.4375em;
+}
+
+/* line 535, ../sass/mixins/_grid.scss */
+.large-quarter-left-space {
+  margin-left: 0.4375em;
+}
+
+/* line 539, ../sass/mixins/_grid.scss */
+.quarter-left-padding {
+  padding-left: 0.4375em;
+}
+
+/* line 543, ../sass/mixins/_grid.scss */
+.large-quarter-left-padding {
+  padding-left: 0.4375em;
+}
+
+/* line 594, ../sass/mixins/_grid.scss */
+.hide-large {
+  display: none !important;
+}
+
+/* line 597, ../sass/mixins/_grid.scss */
+.show-large {
+  display: inherit !important;
+}
+
+/* line 601, ../sass/mixins/_grid.scss */
+table.show-large {
+  display: table;
+}
+
+/* line 604, ../sass/mixins/_grid.scss */
+thead.show-large {
+  display: table-header-group;
+}
+
+/* line 607, ../sass/mixins/_grid.scss */
+tbody.show-large {
+  display: table-row-group;
+}
+
+/* line 610, ../sass/mixins/_grid.scss */
+tfoot.show-large {
+  display: table-footer-group;
+}
+
+/* line 613, ../sass/mixins/_grid.scss */
+tr.show-large {
+  display: table-row;
+}
+
+/* line 617, ../sass/mixins/_grid.scss */
+th.show-large,
+td.show-large {
+  display: table-cell;
+}
