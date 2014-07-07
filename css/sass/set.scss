@@ -62,27 +62,18 @@ $x-tiny: 375px;
 			#my-menu-dropdown {
 			
 				margin-top: 60px;
-				width: 200px;
-			
+							
 				li {
 					width: 200px;
 					display: block;
 					background-color: white;
 					
-					a {
-						
-					 	
-						font-size: 1.35em;
-						
-					
-					}
+					a { font-size: 1.35em; }
 				}
 			}
 		}
 		
-		@media (max-width: $break-small){
-			display: block;
-		}
+		@media (max-width: $break-small){ display: block; }
 
 	}	
 }
@@ -129,9 +120,7 @@ $x-tiny: 375px;
 			height: 100px;
 			width: 100px;
 			margin-left: 25px;
-			border-radius: 50%;
-			-webkit-border-radius: 50%;
-			-moz-border-radius: 50%;
+			@include border-radius(50%);
 		}
 	}
 	
