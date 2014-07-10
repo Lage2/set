@@ -1,8 +1,10 @@
 @import 'ink.scss';
 
 $ink-class-prefix: set-;
-$break-small: 870px; //768px;
-$x-tiny: 375px;
+$break-small: 	870px; //768px;
+$small:			768px;
+$tiny:			640px;
+$x-tiny: 		481px;
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
@@ -11,14 +13,6 @@ $x-tiny: 375px;
           border-radius: $radius;
 }
 
-@mixin cover-background-size() {
-	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-
- 
 /*
  * Header
  *
@@ -32,9 +26,7 @@ $x-tiny: 375px;
 		background-color: #1a9ede;
 		color: white;
 		
-		
-		
-		#logo a { text-decoration: none; float: left; padding-left: 2.5%; margin-top: 5px; margin-bottom: 5px;}
+		#logo a { text-decoration: none; float: left; padding-left: 2.5%; margin: 5px 0;}
 		
 		#nav {float:right; margin-top: 10px;}
 		#nav ul { list-style: none; display: block; margin: 0 auto; height:100%;}
@@ -54,9 +46,9 @@ $x-tiny: 375px;
 	}
 	
 	#header_small{
+		
 		display: none;
-		
-		
+				
 		#my-dropdown{
 		
 			#my-menu-dropdown {
@@ -72,6 +64,12 @@ $x-tiny: 375px;
 				}
 			}
 		}
+
+		.nav-button{
+			font-size:40px;
+			margin-top: 5px;
+		}
+		
 		
 		@media (max-width: $break-small){ display: block; }
 
@@ -83,8 +81,8 @@ $x-tiny: 375px;
  *
 */
 .main-container{
-	width: 100%;
 	
+	width: 100%;
 	
 	.text { 
 		color: #555;
@@ -96,6 +94,7 @@ $x-tiny: 375px;
 	
 	.speach-container{
 		padding: 0;
+		max-height: 200px;
 		color: #555;
 		margin: 25px;
 		display: inline-block;
@@ -107,44 +106,62 @@ $x-tiny: 375px;
 			font-size: 1.1em;
 			text-align: justify;
 			margin-bottom: 50px;
-
 		}
 		
 		.person-name{
-			text-align: right;
+			float: right;
+			text-align: left;
 			padding-top: 50px;
 			font-size: 1em;
 		}
 
 		.person-thumbnail{
-			height: 100px;
-			width: 100px;
+			float: right;
 			margin-left: 25px;
+			height: 100px; width: 100px;
+
 			@include border-radius(50%);
+			@include background-size(cover);
 		}
+
+		.speaker 			{ background: url(../../img/speakers/sprites.png) no-repeat silver; }
+		#antonio_ferreira	{ background-position: 0 0; }
+		#claudia_queiros	{ background-position: 0 -101px; }
+		#david_mota 		{ background-position: 0 -202px; }
+		#luis_gameiro		{ background-position: 0 -404px; }
+		#francisco_nunes	{ background-position: 0 -303px; }
+		#paulo_guedes		{ background-position: 0 -505px; }
+		#ricardo_mendes		{ background-position: 0 -606px; }
+
+		.team 				{ background: url(../../img/team/sprites.png) no-repeat silver; }
+		#antonio_pereira	{ background-position: 0 0; }
+		#claudia_patricia	{ background-position: 0 -101px; }
+		#rita_carvalho		{ background-position: 0 -303px; }
+		#luis_silva			{ background-position: 0 -202px; }
+		#vania_mendonca		{ background-position: 0 -404px; }
+
 	}
 	
 	
 	/*** Slides ***/
 	.front-slide{
+		
 		width: 90%;
 		min-height: 100px;
 		background-color: white;
-		padding-top: 2em;
-		padding-bottom: 1em;
-		
+				
 		div {
-			padding-top: 2em;
-			padding-bottom: 1em;
-			margin-bottom: 25px;
+			padding-top: 	4%;
+			margin-bottom: 	2%;
 			
 			//TODO: corrigir demasiado nesting, pouco recomendado
 			div {
 				padding: 0;
+				
 				h3	{
-					text-align: center;
-					font-size: 3em;
-					margin-bottom: 30px;
+					text-align: 	center;
+					font-size: 		3em;
+					margin-bottom: 	3%;
 
 					@media (max-width: $x-tiny){
 						font-size: 1.25em;
@@ -152,11 +169,23 @@ $x-tiny: 375px;
 				}
 			}
 		}
+
+		#speakers,
+		#recruits{
+			padding-bottom: 80px;
+		}
+
+		#speakers,
+		#recruits,
+		#myCarouselNav{
+			@media (max-width: $x-tiny){ display: none;	}
+		}
 	}
 
 	.back-slide {
+
+		float: left;
 		width:100%;
-		height: 720px;
 		background-color: #E1E1E1;
 		font-family: 'Montserrat', Arial, serif;
 		background-color: #161616;
@@ -168,14 +197,13 @@ $x-tiny: 375px;
 			color: black;
 			margin-top: 15%; 
 			margin-bottom: 10px;
-			font-size: 4.5em;
+			font-size: 4em;
 			opacity: 0.9;
 			
 			a { text-decoration: none; color:#ff9112;  }
 
-			@media (max-width: $x-tiny){
-				font-size: 2em;
-			}	
+			@media (max-width: $small){ font-size: 3em; }
+			@media (max-width: $tiny){ font-size: 2em; }	
 		}
 		
 		p {
@@ -186,58 +214,69 @@ $x-tiny: 375px;
 			opacity: 0.8;
 			margin: 15px 0;
 			
-			@media (max-width: $x-tiny){
-				font-size: 1.25em;
-			}	
+			@media (max-width: $tiny){ font-size: 1.25em; }	
+			@media (max-width: $x-tiny){ display: none; }	
 
 		}
 		
-		a{
-			font-size: 1.5em;
-		}
+		a{ font-size: 1.5em; }
+
+		.home_column{ padding: 0 10px; }
 	}
-		
+
+	/* CSS Sprite - NAO CONSEGUI POR A FUNCIONAR */
 	#home_slide, #speakers_slide, #history_slide, #sponsors_slide, #recruit_slide {
+
 		overflow: hidden;
 		padding: 0;
+		padding-bottom: 10%;
 		margin: 0;
 		color: #fff;
-	}
 
-	
-	#home_slide { 		background: url(../../img/main1.jpg) no-repeat center center fixed #000; 			@include cover-background-size();}
-	
-	#speakers_slide{ 
-		background: url('../../img/speakers1.jpg') no-repeat center center fixed #000;
-		@include cover-background-size();
-	}
+		background: url(../../img/background/sprites.png) no-repeat black;
+		background-attachment: fixed;
 
-	#speakers{
-		@media (max-width: $x-tiny){
-			display: none;
+		@media (max-width: $small){
+			background-attachment: scroll; 
+			background-size: 150%;
 		}
 	}
 
-	#history_slide{ 	background: url('../../img/history2.jpg') no-repeat center center fixed #000;		@include cover-background-size();}
-	#sponsors_slide{ 	background: url('../../img/sponsor1.jpg') no-repeat center center fixed #000; 	@include cover-background-size();}
+	#home_slide {
+		min-height: 400px;
+		background-position: 0 5%;
+		@include background-size(cover);
+
+		@media (max-width: $small){	min-height: 300px;	}
+		@media (max-width: $tiny){	min-height: 200px;	}
+		@media (max-width: $x-tiny){ min-height: 0;}
+	}
 	
-	#recruit_slide{ 
-		background: url('../../img/recruit1.jpg') no-repeat center center fixed #000;
-		@include cover-background-size();
+	#speakers_slide{
+		background-position: 0  45%;
+		@include background-size(cover);
 	}
 
-	#recruits{
-		@media (max-width: $x-tiny){
-			display: none;
-		}
-	}		
+
+	#history_slide{
+		background-position: 0 70%;
+		@include background-size(cover);		
+	}
+	
+	#sponsors_slide{
+		background-position: 0 100%;
+		@include background-size(cover);
+	}
+	
+	#recruit_slide{ //Currently not using sprite image
+		//background-position: 0 21%;
+		//@include background-size(cover);
+		background: url('../../img/background/5_recruit.png') no-repeat center center fixed #000;
+		@include background-size(cover);
+	}
+	
 
 	#myCarousel { padding-top: 5%;}
-	#myCarouselNav {
-		@media (max-width: $x-tiny){
-			display: none;
-		}
-	}
 }
 
 
@@ -250,7 +289,6 @@ footer {
 	width: 100%;
 	bottom: 0;
 	left: 0;
-	//background-color: #51bbef; azul claro
 	background-color: #EEE;
 	position: fixed;
 	z-index: 1;
@@ -263,9 +301,7 @@ footer {
 		 		color: #333;
 		 		text-decoration: none;
 		 		
-		 		i { 
-		 			font-size: 1.75em; 		
-	 			}
+		 		i { font-size: 1.75em; }
 		 		
 	 			&:hover { color: #555; text-decoration: none;}
 	 		}

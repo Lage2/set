@@ -3,29 +3,35 @@
 	<head>
 		<meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>SET - Semana do Empreendedorismo e Tecnologia</title>
+        <meta name="description" content="SET - Semana do Empreendedorismo e Tecnologia, edição 2014/2015">
+        <meta name="keywords" content="SET, evento, IST, empreendedorismo, académico, empresarial">        
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
+
+        <title>SET - Semana do Empreendedorismo e Tecnologia</title>
+
 
         <link rel="shortcut icon" href="img/setMedia/set_favicon.ico">
 
 		<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="./css/stylesheets/set.css">
  		
+ 		
+ 		<script type="text/javascript" src="./js/ink.min.js"></script>
+ 		<script type="text/javascript" src="./js/autoload.js"></script>
+ 		<script type="text/javascript" src="./js/ink-ui.min.js"></script>	
+ 		<script type="text/javascript" src="./js/ink.carousel.js"></script>
+        <script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
 
-		<script type="text/javascript" src="./js/holder.js"></script>
-		<script type="text/javascript" src="./js/ink.min.js"></script>
-		<script type="text/javascript" src="./js/ink-ui.min.js"></script>
-		<script type="text/javascript" src="./js/autoload.js"></script>
+        <!-- Nota: provavelmente desnecessários
+		<script type="text/javascript" src="./js/holder.js"></script>	
 		<script type="text/javascript" src="./js/html5shiv.js"></script>
-		<script type="text/javascript" src="./js/ink.carousel.js"></script>
 		<script type="text/javascript" src="./js/ink.dropdown.js"></script>
+		-->
 
-
-		<script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
-		
-		<link rel="stylesheet" href="http://cdn.ink.sapo.pt/3.0.4/css/ink-flex.min.css">
+		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53bf0b89240c3b85">
+		</script>
 		
 		<script type="text/javascript">
 			$(document).ready(function() {
@@ -63,9 +69,8 @@
 					</div>
 					<nav id="nav" class="ink-navigation">
 						<ul class="horizontal menu flat">
-							
-							<li class="menu-item"><a href="#speakers_slide">Oradores</a></li>
 							<li class="menu-item"><a href="#history_slide">Edições Anteriores</a></li>
+							<li class="menu-item"><a href="#speakers_slide">Oradores</a></li>
 							<li class="menu-item"><a href="#sponsors_slide">Patrocínios</a></li>
 							<li class="menu-item"><a href="#recruit_slide">Junta-te a nós!</a></li>
 						</ul>
@@ -78,10 +83,12 @@
 	        		<a href="#home_slide"><img src="./img/setMedia/set_white_tiny.png"/></a>
 	        	</div>	        	
 	        	<div class="ink-dropdown" data-target="#my-menu-dropdown" id="my-dropdown">
-    				<button class="ink-button blue push-left push-middle"><i class="fa fa-bars fa-4" style="font-size:40px; margin-top: 5px;"></i></button>
+    				<button class="ink-button blue push-left push-middle">
+    					<i class="fa fa-bars fa-4 nav-button"></i>
+    				</button>
 					<ul id="my-menu-dropdown" class="dropdown-menu hide-all push-right">
-						<li><a href="#speakers_slide">Oradores</a></li>
 						<li><a href="#history_slide">Edições Anteriores</a></li>
+						<li><a href="#speakers_slide">Oradores</a></li>
 						<li><a href="#sponsors_slide">Patrocínios</a></li>
 						<li><a href="#recruit_slide">Junta-te a nós!</a></li>
 					</ul>
@@ -98,7 +105,7 @@
 					<div class="all-100">
 						 <h1>Semana Empresarial e Tecnológica</h1>  
 					</div>
-					<div class="all-100 xlarge-50 large-50 medium-90 small-100" style="padding: 0 10px;">
+					<div class="all-100 xlarge-50 large-50 medium-90 small-100 home_column">
 						<h4>Qual a nossa visão?</h4>
 						<p class="text">
 							Este evento visa promover a discussão de experiências e troca de ideias relacionadas com a área das Tecnologias de 
@@ -107,7 +114,7 @@
 							sendo já um conceituado palco para a apresentação de projectos inovadores e de forte impacto no mercado.
 						</p>
 					</div>
-					<div class="all-100 xlarge-50 large-50 medium-90 small-100" style="padding: 0 10px;">
+					<div class="all-100 xlarge-50 large-50 medium-90 small-100 home_column">
 						<h4>O que nos torna únicos?</h4>
 						<p class="text">
 							No ano lectivo 2012/2013, na sua 10ª edição, o evento Seminários IST-Tagus juntou-se a todos os núcleos de estudantes presentes no IST-Tagus dando lugar à SET. A SET, Semana Empresarial e Tecnológica, é então organizado por uma comissão de alunos de todos os cursos do IST-Taguspark, tendo por objectivo aproximar a comunidade académica com o meio empresarial.
@@ -116,6 +123,145 @@
 				</div>
 			</div>
 			<!-- END: Home -->
+
+			<!-- Previous Editions -->
+			<div id="history_slide" class="back-slide">
+				<h2 class="main_title">
+					<a id="previous">Edições Anteriores</a>
+				</h2>
+				<p>O SET é novinho... mas já cá anda há muito tempo.</p>
+			</div>
+			<div class="ink-grid front-slide">
+				<div class="column-groups gutters">
+					<div class="all-100">
+						<h3>Fica a conhecer o nosso trabalho</h3>
+						<p class="text">
+							Os Seminários IST-Tagus estão na origem do LAGE2, sendo uma importante fonte de colaboradores e dirigentes deste. Iniciados no ano de 2004, são actualmente o maior evento realizado anualmente no IST-Taguspark.
+						</p>
+					</div>
+					<div class="all-100">
+						<div id="myCarousel" 
+							class="ink-carousel push-center align-center" 
+							data-auto-advance="0.1" data-axix="x"
+							data-initial-page="0" data-pagination="#myCarouselNav"
+							data-swipe="true">
+							
+	    					<!-- the carousel stage and slides -->
+	    					<div>
+							    <ul class="stage column-group half-gutters">
+							        <li class="slide large-50 medium-100 small-100">
+							        	<div id="edition_2014">
+								        	<a href="http://set.ist.utl.pt/SET2014/index.php">
+								        		<img src="./img/prevEditions/SET2014.png"/>
+								        		<p class="align-center edition-year">Edição 2014</p>
+								        	</a>
+								        </div>
+							        </li>
+							        <li class="slide large-50 medium-100 small-100">
+							        	<div id="edition_2013">
+								        	<a href="http://set.ist.utl.pt/SET2013/index.php">
+								        		<img src="./img/prevEditions/SET2013.png"/>
+								        		<p class="align-center edition-year"> Edição 2013</p>
+								        	</a>
+							        	</div>
+							    	</li>
+							    	<li class="slide large-50 medium-100 small-100">
+							        	<div id="edition_2012">
+								        	<a href="http://groups.ist.utl.pt/seminarios-tagus/2012/">
+								        		<img src="./img/prevEditions/sem2012.png"/>
+									        	<p class="align-center edition-year"> Edição 2012</p>
+								        	</a>
+							        	</div>
+							    	</li>
+							    	<li class="slide large-50 medium-100 small-100">
+							        	<div id="edition_2011">
+								        	<a href="http://groups.ist.utl.pt/seminarios-tagus/2011/index2.html">
+								        		<img src="./img/prevEditions/sem2011.png"/>
+								        		<p class="align-center edition-year"> Edição 2011</p>
+								        	</a>
+							        	</div>
+							    	</li>
+							    	<li class="slide large-50 medium-100 small-100">
+							        	<div id="edition_2010">
+								        	<a href="http://groups.ist.utl.pt/seminarios-tagus/2010/">
+								        		<img src="./img/prevEditions/sem2010.png"/>
+									        	<p class="align-center edition-year"> Edição 2010</p>
+								        	</a>
+							        	</div>
+							    	</li>
+							    	<li class="slide large-50 medium-100 small-100">
+							        	<div id="edition_2009">
+								        	<a href="http://groups.ist.utl.pt/seminarios-tagus/2009/">
+								        		<img src="./img/prevEditions/sem2009.png"/>
+									        	<p class="align-center edition-year"> Edição 2009</p>
+								        	</a>
+							        	</div>
+							    	</li>
+							    	
+							    	<li class="slide large-50 medium-100 small-100">
+							        	<div id="edition_2008">
+								        	<a href="http://groups.ist.utl.pt/seminarios-tagus/2008/">
+								        		<img src="./img/prevEditions/sem2008.png"/>
+									        	<p class="align-center edition-year"> Edição 2008</p>
+								        	</a>
+							        	</div>
+							    	</li>
+							    	
+							    	<li class="slide large-50 medium-100 small-100">
+							        	<div id="edition_2007">
+								        	<a href="http://groups.ist.utl.pt/seminarios-tagus/2007/">
+								        		<img src="./img/prevEditions/sem2007.png"/>
+									        	<p class="align-center edition-year"> Edição 2007</p>
+								        	</a>
+							        	</div>
+							    	</li>
+							    	
+							    	<li class="slide large-50 medium-100 small-100">
+							        	<div id="edition_2006">
+								        	<a href="http://groups.ist.utl.pt/seminarios-tagus/2006/">
+								        		<img src="./img/prevEditions/sem2006.png"/>
+									        	<p class="align-center edition-year"> Edição 2006</p>
+								        	</a>
+							        	</div>
+							    	</li>
+							    	
+							    	<li class="slide large-50 medium-100 small-100">
+							        	<div id="edition_2005">
+								        	<a href="http://groups.ist.utl.pt/seminarios-tagus/2005/">
+								        		<img src="./img/prevEditions/sem2005.png"/>
+									        	<p class="align-center edition-year"> Edição 2005</p>
+								        	</a>
+							        	</div>
+							    	</li>
+							    	
+							    	<li class="slide large-50 medium-100 small-100">
+							        	<div id="edition_2004">
+								        	<a href="http://groups.ist.utl.pt/seminarios-tagus/2004/">
+								        		<img src="./img/prevEditions/sem2004.png"/>
+									        	<p class="align-center edition-year"> Edição 2004</p>
+								        	</a>
+							        	</div>
+							    	</li>
+							    </ul>
+							</div>
+						    <!-- the carousel navigation -->
+						    <div class="ink-grid">
+						    	<div class="column-group">
+						    		<div class="all-10 large-20 medium-45 small-55  push-center">
+										<nav id="myCarouselNav" class="ink-navigation align-center ">
+											<!--<ul class="pagination dotted grey"></ul>-->
+											<ul class="pagination chevron black">
+										        <li class="previous"><a href="#"><span>Previous</span></a></li>
+										        <li class="next"><a href="#"><span>Next</span></a></li>
+    										</ul>
+										</nav>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
 			<!-- BEGIN: Speakers -->
 			<div id="speakers_slide" class="back-slide">
@@ -142,7 +288,10 @@
 									</p>
 								</div>
 								<div>
+									<!--
 									<img class="person-thumbnail" src="./img/oradores/thumb_claudia_queiros.png" align="right"/>
+									-->
+									<div id="claudia_queiros" class="person-thumbnail speaker"></div>
 									<p class="person-name">Cláudia Queirós</p>
 								</div>
 							</div>
@@ -151,11 +300,14 @@
 							<div class="speach-container">
 								<div class="person-quote">
 									<p>
-										CEO e co-fundador da Lunacloud, António Miguel Ferreira é um pioneiro da Internet e tem um historial incrível no que diz respeito à criação e gestão de diversas companhias ligadas à Internet e à indústria do alojamento web, assim como outras áreas de negócio.
+										CEO e co-fundador da Lunacloud, António Miguel Ferreira é um pioneiro da Internet e tem um historial incrível no que diz respeito à criação e gestão de diversas companhias ligadas à Internet.
 									</p>
 								</div>	
 								<div>
+									<!--
 									<img class="person-thumbnail" src="./img/oradores/thumb_antonio_ferreira.png" align="right"/>
+									-->
+									<div id="antonio_ferreira" class="person-thumbnail speaker"></div>
 									<p class="person-name">António Miguel Ferreira</p>
 								</div>
 							</div>
@@ -169,7 +321,10 @@
 									</p>
 								</div>
 								<div>
+									<!--
 									<img class="person-thumbnail" src="./img/oradores/thumb_david_mota.png" align="right"/>
+									-->
+									<div id="david_mota" class="person-thumbnail speaker"></div>
 									<p class="person-name">David Mota</p>
 								</div>
 							</div>
@@ -182,7 +337,10 @@
 									</p>
 								</div>
 								<div>
+									<!--
 									<img class="person-thumbnail" src="./img/oradores/thumb_luis_gameiro.png" align="right"/>
+									-->
+									<div id="luis_gameiro" class="person-thumbnail speaker"></div>
 									<p class="person-name">Luís Gameiro da Silva</p>
 								</div>
 							</div>
@@ -191,11 +349,14 @@
 							<div class="speach-container">
 								<div class="person-quote">
 									<p>
-										Francisco Nunes tem largos anos de experiência no sector das tecnologias de informação. É colaborador da IBM e actualmente desempenha funções ao nível do business planning e desenvolvimento de estratégias de vendas na Compta SA.
+										Francisco Nunes tem vasta experiência no sector das tecnologias de informação. É colaborador da IBM e actualmente desempenha funções ao nível do business planning e desenvolvimento de estratégias de vendas na Compta SA.
 									</p>
 								</div>
 								<div>
-									<img class="person-thumbnail" src="./img/oradores/thumb_francisco_nunes.png" align="right"/>
+									<!--
+									<img class="person-thumbnail" src="./img/speakers/thumb_francisco_nunes.png" align="right"/>
+									-->
+									<div id="francisco_nunes" class="person-thumbnail speaker"></div>
 									<p class="person-name">Francisco Nunes</p>
 								</div>
 							</div>
@@ -208,12 +369,15 @@
 									</p>
 								</div>
 								<div>
-									<img class="person-thumbnail" src="./img/oradores/thumb_paulo_guedes.png" align="right"/>
+									<!--
+									<img class="person-thumbnail" src="./img/speakers/thumb_paulo_guedes.png" align="right"/>
+									-->
+									<div id="paulo_guedes" class="person-thumbnail speaker"></div>
 									<p class="person-name">Paulo Guedes</p>
 								</div>
 							</div>
 						</div>
-						<div class="all-50 large-50 medium-90 small-100">
+						<div class="all-70 large-70 medium-90 small-100 tiny-100 push-center">
 							<div class="speach-container">
 								<div class="person-quote">
 									<p>
@@ -221,23 +385,11 @@
 									</p>
 								</div>
 								<div>
-									<img class="person-thumbnail" src="./img/oradores/thumb_ricardo_mendes.png" align="right"/>
+									<!--
+									<img class="person-thumbnail" src="./img/speakers/thumb_ricardo_mendes.png" align="right"/>
+									-->
+									<div id="ricardo_mendes" class="person-thumbnail speaker"></div>
 									<p class="person-name">Ricardo Mendes</p>
-								</div>
-							</div>
-						</div>
-						<div class="all-50 large-50 medium-90 small-100">
-							<div class="speach-container">
-								<div class="person-quote">
-									<p>
-										Isto é um evento de alunos para alunos, por isso a tua opinão conta
-										partilha connosco quem gostarias de ver numa próxima edição do SET.
-									</p>
-								</div>
-								<div>
-									<a href="http://tinyurl.com/lg52y87">
-										<img class="person-thumbnail" src="./img/unknown_person.gif" align="right"/>
-									</a>
 								</div>
 							</div>
 						</div>
@@ -245,141 +397,6 @@
 				</div>
 			</div>
 			<!-- END: speakers -->
-
-
-			<!-- Previous Editions -->
-			<div id="history_slide" class="back-slide">
-				<h2 class="main_title">
-					<a id="previous">Edições Anteriores</a>
-				</h2>
-				<p>O SET é novinho... mas já cá anda há muito tempo.</p>
-			</div>
-			<div class="ink-grid front-slide">
-				<div class="column-groups gutters">
-					<div class="all-100">
-						<h3 style="text-align:left;">Fica a conhecer o nosso trabalho</h3>
-						<p class="text">
-							Os Seminários IST-Tagus estão na origem do LAGE2, sendo uma importante fonte de colaboradores e dirigentes deste. Iniciados no ano de 2004, são actualmente o maior evento realizado anualmente no IST-Taguspark.
-						</p>
-					</div>
-					<div class="all-100">
-						<div id="myCarousel" 
-							class="ink-carousel large-80 align-center" 
-							data-auto-advance="0" data-axix="x"
-							data-initial-page="0" data-pagination="#myCarouselNav"
-							data-swipe="true">
-							
-	    					<!-- the carousel stage and slides -->
-						    <ul class="stage column-group half-gutters">
-						        <li class="slide large-50 medium-100 small-100">
-						        	<div>
-							        	<a href="http://set.ist.utl.pt/SET2014/index.php">
-							        		<img src="./img/prevEditions/SET2014.png"/>
-							        		<p class="align-center edition-year">Edição 2014</p>
-							        	</a>
-							        	
-							        </div>
-						        </li>
-						        <li class="slide large-50 medium-100 small-100">
-						        	<div>
-							        	<a href="http://set.ist.utl.pt/SET2013/index.php">
-							        		<img src="./img/prevEditions/SET2013.png"/>
-							        		<p class="align-center edition-year"> Edição 2013</p>
-							        	</a>
-						        	</div>
-						    	</li>
-						    	<li class="slide large-50 medium-100 small-100">
-						        	<div>
-							        	<a href="http://groups.ist.utl.pt/seminarios-tagus/2012/">
-							        		<img src="./img/prevEditions/sem2012.jpg"/>
-								        	<p class="align-center edition-year"> Edição 2012</p>
-							        	</a>
-						        	</div>
-						    	</li>
-						    	<li class="slide large-50 medium-100 small-100">
-						        	<div>
-							        	<a href="http://groups.ist.utl.pt/seminarios-tagus/2011/index2.html">
-							        		<img src="./img/prevEditions/sem2011.jpg"/>
-							        		<p class="align-center edition-year"> Edição 2011</p>
-							        	</a>
-						        	</div>
-						    	</li>
-						    	<li class="slide large-50 medium-100 small-100">
-						        	<div>
-							        	<a href="http://groups.ist.utl.pt/seminarios-tagus/2010/">
-							        		<img src="./img/prevEditions/sem2010.png"/>
-								        	<p class="align-center edition-year"> Edição 2010</p>
-							        	</a>
-						        	</div>
-						    	</li>
-						    	<li class="slide large-50 medium-100 small-100">
-						        	<div>
-							        	<a href="http://groups.ist.utl.pt/seminarios-tagus/2009/">
-							        		<img src="./img/prevEditions/sem2009.png"/>
-								        	<p class="align-center edition-year"> Edição 2009</p>
-							        	</a>
-						        	</div>
-						    	</li>
-						    	
-						    	<li class="slide large-50 medium-100 small-100">
-						        	<div>
-							        	<a href="http://groups.ist.utl.pt/seminarios-tagus/2008/">
-							        		<img src="./img/prevEditions/sem2008.png"/>
-								        	<p class="align-center edition-year"> Edição 2008</p>
-							        	</a>
-						        	</div>
-						    	</li>
-						    	
-						    	<li class="slide large-50 medium-100 small-100">
-						        	<div>
-							        	<a href="http://groups.ist.utl.pt/seminarios-tagus/2007/">
-							        		<img src="./img/prevEditions/sem2007.png"/>
-								        	<p class="align-center edition-year"> Edição 2007</p>
-							        	</a>
-						        	</div>
-						    	</li>
-						    	
-						    	<li class="slide large-50 medium-100 small-100">
-						        	<div>
-							        	<a href="http://groups.ist.utl.pt/seminarios-tagus/2006/">
-							        		<img src="./img/prevEditions/sem2006.png"/>
-								        	<p class="align-center edition-year"> Edição 2006</p>
-							        	</a>
-						        	</div>
-						    	</li>
-						    	
-						    	<li class="slide large-50 medium-100 small-100">
-						        	<div>
-							        	<a href="http://groups.ist.utl.pt/seminarios-tagus/2005/">
-							        		<img src="./img/prevEditions/sem2005.png"/>
-								        	<p class="align-center edition-year"> Edição 2005</p>
-							        	</a>
-						        	</div>
-						    	</li>
-						    	
-						    	<li class="slide large-50 medium-100 small-100">
-						        	<div>
-							        	<a href="http://groups.ist.utl.pt/seminarios-tagus/2004/">
-							        		<img src="./img/prevEditions/sem2004.png"/>
-								        	<p class="align-center edition-year"> Edição 2004</p>
-							        	</a>
-						        	</div>
-						    	</li>
-						    </ul>
-						    <!-- the carousel navigation -->
-						    <div class="ink-grid">
-						    	<div class="column-group">
-						    		<div class="all-10 large-20 medium-45 small-55  push-center">
-										<nav id="myCarouselNav" class="ink-navigation align-center ">
-											<ul class="pagination dotted grey"></ul>
-										</nav>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
 
 			<!-- Sponsorships -->
 			<div id="sponsors_slide" class="back-slide">
@@ -424,11 +441,12 @@
 						<div class="speach-container">
 							<p class="person-quote">
 								<i>
-									&quot Organizar a SET foi uma oportunidade excelente para desenvolver as minhas soft-skills, conhecer melhor o mercado de trabalho e entender como se organizam eventos desta magnitude. Aconselho a todas as pessoas a passarem pela experiência de organizar algo assim. &quot
+									&quot Organizar a SET foi uma oportunidade excelente para desenvolver as minhas soft-skills, conhecer melhor o mercado de trabalho e entender como se organizam eventos desta magnitude. Aconselho a todas as pessoas a passarem pela experiência. &quot
 								</i>
 							</p>
 							<div>
-								<img class="person-thumbnail" src="./img/team/antonio_pereira.jpg" align="right"/>
+								<!--<img class="person-thumbnail" src="./img/team/antonio_pereira.jpg" align="right"/>-->
+								<div id="antonio_pereira" class="person-thumbnail team"></div>
 								<p class="person-name">António Pereira</p>
 							</div>
 						</div>
@@ -441,7 +459,8 @@
 								</i>
 							</p>
 							<div>
-								<img class="person-thumbnail" src="./img/team/claudia_patricia.jpg" align="right"/>
+								<!--<img class="person-thumbnail" src="./img/team/claudia_patricia.jpg" align="right"/>-->
+								<div id="claudia_patricia" class="person-thumbnail team"></div>
 								<p class="person-name">Cláudia Patrícia</p>
 							</div>
 						</div>
@@ -450,11 +469,12 @@
 						<div class="speach-container">
 							<p class="person-quote">
 								<i>
-									&quot Decidi juntar-me à organização da 11a edição da SET para ter alguma experiência no IST para além das aulas. Trabalhei com uma equipa divertida e empenhada, o que resultou num evento espetacular e do qual ficámos bastante orgulhosos. Sem dúvida para repetir! &quot
+									&quot Decidi juntar-me à organização da SET para ter algumas novas experiências. Trabalhei com uma equipa divertida e empenhada, o que resultou num evento espetacular e do qual ficámos bastante orgulhosos. Sem dúvida para repetir! &quot
 								</i>
 							</p>
 							<div>
-								<img class="person-thumbnail" src="./img/team/rita_carvalho.jpg" align="right"/>
+								<!--<img class="person-thumbnail" src="./img/team/rita_carvalho.jpg" align="right"/>-->
+								<div id="rita_carvalho" class="person-thumbnail team"></div>
 								<p class="person-name">Rita Carvalho</p>
 							</div>
 						</div>
@@ -463,11 +483,12 @@
 						<div class="speach-container">
 							<p class="person-quote">
 								<i>
-									&quot Considero a minha participação na SET positiva assim como considero que o evento este ano foi bastante positivo. Espero que os estudantes continuem a participar e tirar partido deste tipo de actividades, uma vez que, este evento é feito por eles e para eles. &quot
+									&quot Considero a minha participação na SET positiva e que o evento tem sido bastante positivo. Espero que os estudantes continuem a participar e tirar partido deste tipo de actividades, uma vez que, este evento é feito por eles e para eles. &quot
 								</i>
 							</p>
 							<div>
-								<img class="person-thumbnail" src="./img/team/luis_silva.jpg" align="right"/>
+								<!--<img class="person-thumbnail" src="./img/team/luis_silva.jpg" align="right"/>-->
+								<div id="luis_silva" class="person-thumbnail team"></div>
 								<p class="person-name">Luís Silva</p>
 							</div>
 						</div>
@@ -480,7 +501,8 @@
 								</i>
 							</p>
 							<div>
-								<img class="person-thumbnail" src="./img/team/vania_mendonca.jpg" align="right"/>
+								<!--<img class="person-thumbnail" src="./img/team/vania_mendonca.jpg" align="right"/>-->
+								<div id="vania_mendonca" class="person-thumbnail team"></div>
 								<p class="person-name">Vânia Mendonça</p>
 							</div>
 						</div>
@@ -493,7 +515,7 @@
 		<footer>
 			<div class="ink-grid">
 				<div class="column-group">
-					<div class= "all-50" id="icon-bar">
+					<div class= "all-50 small-55 push-center" id="icon-bar">
 						<nav class="ink-navigation">
 							<ul class="menu horizontal">
 								<li class="icon-button">
@@ -521,7 +543,7 @@
 						</nav>
 					</div>
 					
-					<div class="all-100 xlarge-50 large-50 medium-50 small-50 tiny-100">
+					<div class="all-100 xlarge-50 large-50 medium-50 small-100 tiny-100">
 						<div id="rights">
 							<p class="small vspace rights">
 								&copy <a href="http://lage2.ist.utl.pt/">LAGE2</a> Todos os direitos reservados.
