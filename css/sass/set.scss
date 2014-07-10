@@ -263,6 +263,15 @@ $x-tiny: 		481px;
 			font-size: 2em;
 			opacity: 0.9;
 
+			#addthis-item{
+				width:			150px;
+				min-height: 	30px;
+				margin-left: 	auto;
+				margin-right: 	auto;
+				padding-top:	1px;
+				padding-bottom:	15px;
+			}
+
 			@media (max-width: $small){ font-size: 1.5em; }
 			@media (max-width: $tiny){ font-size: 1em; }
 		}
