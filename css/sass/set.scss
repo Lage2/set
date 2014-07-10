@@ -250,9 +250,22 @@ $x-tiny: 		481px;
 		background: url('../../img/background/home.png') no-repeat center center fixed #000;
 		@include background-size(cover);
 
+
 		@media (max-width: $small){	min-height: 300px;	}
 		@media (max-width: $tiny){	min-height: 200px;	}
 		@media (max-width: $x-tiny){ min-height: 0;}
+
+		#addthis-container{
+			
+			background-color: #1D1D1D;
+			color: #ff9112;
+			margin-top: 15%;
+			font-size: 2em;
+			opacity: 0.9;
+
+			@media (max-width: $small){ font-size: 1.5em; }
+			@media (max-width: $tiny){ font-size: 1em; }
+		}
 	}
 	
 	#speakers_slide{
@@ -303,6 +316,7 @@ footer {
 	#icon-bar{
 		.icon-button{
 			
+
 		 	a { 
 		 		color: #333;
 		 		text-decoration: none;
