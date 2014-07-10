@@ -236,15 +236,18 @@ $x-tiny: 		481px;
 		background: url(../../img/background/sprites.png) no-repeat black;
 		background-attachment: fixed;
 
+		/* Note: Only usefull with sprites for background
 		@media (max-width: $small){
 			background-attachment: scroll; 
 			background-size: 150%;
 		}
+		*/
 	}
 
 	#home_slide {
 		min-height: 400px;
-		background-position: 0 5%;
+		//background-position: 0 5%;
+		background: url('../../img/background/home.png') no-repeat center center fixed #000;
 		@include background-size(cover);
 
 		@media (max-width: $small){	min-height: 300px;	}
@@ -253,25 +256,28 @@ $x-tiny: 		481px;
 	}
 	
 	#speakers_slide{
-		background-position: 0  45%;
+		//background-position: 0  45%;
+		background: url('../../img/background/speakers.png') no-repeat center center fixed #000;
 		@include background-size(cover);
 	}
 
 
 	#history_slide{
-		background-position: 0 70%;
+		//background-position: 0 70%;
+		background: url('../../img/background/history.png') no-repeat center center fixed #000;
 		@include background-size(cover);		
 	}
 	
 	#sponsors_slide{
-		background-position: 0 100%;
+		//background-position: 0 100%;
+		background: url('../../img/background/sponsor.png') no-repeat center center fixed #000;
 		@include background-size(cover);
 	}
 	
 	#recruit_slide{ //Currently not using sprite image
 		//background-position: 0 21%;
 		//@include background-size(cover);
-		background: url('../../img/background/5_recruit.png') no-repeat center center fixed #000;
+		background: url('../../img/background/recruit.png') no-repeat center center fixed #000;
 		@include background-size(cover);
 	}
 	
