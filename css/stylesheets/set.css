@@ -10719,13 +10719,11 @@ body.ink-drawer.over.right .right-drawer {
 }
 /* line 258, ../sass/set.scss */
 .main-container #home_slide #addthis-container {
-  background-color: #1D1D1D;
-  color: #ff9112;
+  background-color: #E6E6E6;
   margin-top: 15%;
-  font-size: 2em;
   opacity: 0.9;
 }
-/* line 266, ../sass/set.scss */
+/* line 264, ../sass/set.scss */
 .main-container #home_slide #addthis-container #addthis-item {
   width: 150px;
   min-height: 30px;
@@ -10746,7 +10744,7 @@ body.ink-drawer.over.right .right-drawer {
     font-size: 1em;
   }
 }
-/* line 280, ../sass/set.scss */
+/* line 278, ../sass/set.scss */
 .main-container #speakers_slide {
   background: url("../../img/background/speakers.png") no-repeat center center fixed black;
   -webkit-background-size: cover;
@@ -10754,7 +10752,7 @@ body.ink-drawer.over.right .right-drawer {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 287, ../sass/set.scss */
+/* line 285, ../sass/set.scss */
 .main-container #history_slide {
   background: url("../../img/background/history.png") no-repeat center center fixed black;
   -webkit-background-size: cover;
@@ -10762,7 +10760,7 @@ body.ink-drawer.over.right .right-drawer {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 293, ../sass/set.scss */
+/* line 291, ../sass/set.scss */
 .main-container #sponsors_slide {
   background: url("../../img/background/sponsor.png") no-repeat center center fixed black;
   -webkit-background-size: cover;
@@ -10770,7 +10768,7 @@ body.ink-drawer.over.right .right-drawer {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 299, ../sass/set.scss */
+/* line 297, ../sass/set.scss */
 .main-container #recruit_slide {
   background: url("../../img/background/recruit.png") no-repeat center center fixed black;
   -webkit-background-size: cover;
@@ -10778,7 +10776,7 @@ body.ink-drawer.over.right .right-drawer {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 307, ../sass/set.scss */
+/* line 305, ../sass/set.scss */
 .main-container #myCarousel {
   padding-top: 5%;
 }
@@ -10787,7 +10785,7 @@ body.ink-drawer.over.right .right-drawer {
  * Footer 
  *
 */
-/* line 316, ../sass/set.scss */
+/* line 314, ../sass/set.scss */
 footer {
   width: 100%;
   bottom: 0;
@@ -10797,31 +10795,31 @@ footer {
   z-index: 1;
   padding-top: 10px;
 }
-/* line 329, ../sass/set.scss */
+/* line 327, ../sass/set.scss */
 footer #icon-bar .icon-button a {
   color: #333;
   text-decoration: none;
 }
-/* line 333, ../sass/set.scss */
+/* line 331, ../sass/set.scss */
 footer #icon-bar .icon-button a i {
   font-size: 1.75em;
 }
-/* line 335, ../sass/set.scss */
+/* line 333, ../sass/set.scss */
 footer #icon-bar .icon-button a:hover {
   color: #555;
   text-decoration: none;
 }
 @media (max-width: 481px) {
-  /* line 325, ../sass/set.scss */
+  /* line 323, ../sass/set.scss */
   footer #icon-bar {
     display: none;
   }
 }
-/* line 345, ../sass/set.scss */
+/* line 343, ../sass/set.scss */
 footer #rights {
   text-align: right;
 }
-/* line 348, ../sass/set.scss */
+/* line 346, ../sass/set.scss */
 footer #rights a {
   color: orange;
 }
