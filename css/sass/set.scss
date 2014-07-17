@@ -176,8 +176,8 @@ $x-tiny: 		481px;
 		}
 
 		#speakers,
-		#recruits,
-		#myCarouselNav{
+		#recruits/*,
+		#myCarouselNav*/{
 			@media (max-width: $x-tiny){ display: none;	}
 		}
 	}
@@ -247,7 +247,7 @@ $x-tiny: 		481px;
 	#home_slide {
 		min-height: 400px;
 		//background-position: 0 5%;
-		background: url('../../img/background/home.png') no-repeat center 50% fixed #000;
+		background: url('../../img/background/home.png') no-repeat center 50% fixed #31A8E1;
 		@include background-size(cover);
 
 
@@ -281,27 +281,27 @@ $x-tiny: 		481px;
 	
 	#speakers_slide{
 		//background-position: 0  45%;
-		background: url('../../img/background/speakers.png') no-repeat center center fixed #000;
+		background: url('../../img/background/speakers.png') no-repeat center center fixed #48B1E5;
 		@include background-size(cover);
 	}
 
 
 	#history_slide{
 		//background-position: 0 70%;
-		background: url('../../img/background/history.png') no-repeat center center fixed #000;
+		background: url('../../img/background/history.png') no-repeat center center fixed #5FBBE8;
 		@include background-size(cover);		
 	}
 	
 	#sponsors_slide{
 		//background-position: 0 100%;
-		background: url('../../img/background/sponsor.png') no-repeat center center fixed #000;
+		background: url('../../img/background/sponsor.png') no-repeat center center fixed #76C5EB;
 		@include background-size(cover);
 	}
 	
 	#recruit_slide{ //Currently not using sprite image
 		//background-position: 0 21%;
 		//@include background-size(cover);
-		background: url('../../img/background/recruit.png') no-repeat center center fixed #000;
+		background: url('../../img/background/recruit.png') no-repeat center center fixed #8CCEEE;
 		@include background-size(cover);
 	}
 	
@@ -332,14 +332,10 @@ footer {
 	#photos-rights{
 		text-align: right;
 		a { color: orange; }
+		p { margin-bottom: 2px; }
 	}
 
-	#rights{ 
-		padding-top: 10px; 
-
-		p { margin-bottom: 0px; }
-	}
-
+	#rights{ padding-top: 10px;	}
 	#photos-rights { padding-top: 0px; }
 	
 	/*

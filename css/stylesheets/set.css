@@ -10604,8 +10604,7 @@ body.ink-drawer.over.right .right-drawer {
 @media (max-width: 481px) {
   /* line 180, ../sass/set.scss */
   .main-container .front-slide #speakers,
-  .main-container .front-slide #recruits,
-  .main-container .front-slide #myCarouselNav {
+  .main-container .front-slide #recruits {
     display: none;
   }
 }
@@ -10693,7 +10692,7 @@ body.ink-drawer.over.right .right-drawer {
 /* line 247, ../sass/set.scss */
 .main-container #home_slide {
   min-height: 400px;
-  background: url("../../img/background/home.png") no-repeat center 50% fixed black;
+  background: url("../../img/background/home.png") no-repeat center 50% fixed #31a8e1;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -10755,7 +10754,7 @@ body.ink-drawer.over.right .right-drawer {
 }
 /* line 282, ../sass/set.scss */
 .main-container #speakers_slide {
-  background: url("../../img/background/speakers.png") no-repeat center center fixed black;
+  background: url("../../img/background/speakers.png") no-repeat center center fixed #48b1e5;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -10763,7 +10762,7 @@ body.ink-drawer.over.right .right-drawer {
 }
 /* line 289, ../sass/set.scss */
 .main-container #history_slide {
-  background: url("../../img/background/history.png") no-repeat center center fixed black;
+  background: url("../../img/background/history.png") no-repeat center center fixed #5fbbe8;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -10771,7 +10770,7 @@ body.ink-drawer.over.right .right-drawer {
 }
 /* line 295, ../sass/set.scss */
 .main-container #sponsors_slide {
-  background: url("../../img/background/sponsor.png") no-repeat center center fixed black;
+  background: url("../../img/background/sponsor.png") no-repeat center center fixed #76c5eb;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -10779,7 +10778,7 @@ body.ink-drawer.over.right .right-drawer {
 }
 /* line 301, ../sass/set.scss */
 .main-container #recruit_slide {
-  background: url("../../img/background/recruit.png") no-repeat center center fixed black;
+  background: url("../../img/background/recruit.png") no-repeat center center fixed #8cceee;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -10839,15 +10838,16 @@ footer #rights a,
 footer #photos-rights a {
   color: orange;
 }
-/* line 337, ../sass/set.scss */
+/* line 335, ../sass/set.scss */
+footer #rights p,
+footer #photos-rights p {
+  margin-bottom: 2px;
+}
+/* line 338, ../sass/set.scss */
 footer #rights {
   padding-top: 10px;
 }
-/* line 340, ../sass/set.scss */
-footer #rights p {
-  margin-bottom: 0px;
-}
-/* line 343, ../sass/set.scss */
+/* line 339, ../sass/set.scss */
 footer #photos-rights {
   padding-top: 0px;
 }
