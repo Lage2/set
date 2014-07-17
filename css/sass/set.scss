@@ -247,13 +247,13 @@ $x-tiny: 		481px;
 	#home_slide {
 		min-height: 400px;
 		//background-position: 0 5%;
-		background: url('../../img/background/home.png') no-repeat center center fixed #000;
+		background: url('../../img/background/home.png') no-repeat center 50% fixed #000;
 		@include background-size(cover);
 
 
 		@media (max-width: $small){	min-height: 300px;	}
 		@media (max-width: $tiny){	min-height: 200px;	}
-		@media (max-width: $x-tiny){ min-height: 0;}
+		@media (max-width: $x-tiny){ min-height: 0; margin-top: 30px; padding-top: 30px;}
 
 		#addthis-container{
 			
@@ -322,8 +322,27 @@ footer {
 	background-color: #EEE;
 	position: fixed;
 	z-index: 1;
-	padding-top: 10px;
 	
+	@media (max-width: $x-tiny){
+		position: initial;
+	}
+
+
+	#rights, 
+	#photos-rights{
+		text-align: right;
+		a { color: orange; }
+	}
+
+	#rights{ 
+		padding-top: 10px; 
+
+		p { margin-bottom: 0px; }
+	}
+
+	#photos-rights { padding-top: 0px; }
+	
+	/*
 	#icon-bar{
 		.icon-button{
 			
@@ -342,13 +361,9 @@ footer {
 				display: none;
 		}
 	}
+	*/
 
 
-	#rights{
-		text-align: right;
-		
-		a { color: orange; }
-	}
 }
 
 

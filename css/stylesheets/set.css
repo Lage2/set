@@ -10693,7 +10693,7 @@ body.ink-drawer.over.right .right-drawer {
 /* line 247, ../sass/set.scss */
 .main-container #home_slide {
   min-height: 400px;
-  background: url("../../img/background/home.png") no-repeat center center fixed black;
+  background: url("../../img/background/home.png") no-repeat center 50% fixed black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -10715,6 +10715,8 @@ body.ink-drawer.over.right .right-drawer {
   /* line 247, ../sass/set.scss */
   .main-container #home_slide {
     min-height: 0;
+    margin-top: 30px;
+    padding-top: 30px;
   }
 }
 /* line 258, ../sass/set.scss */
@@ -10800,33 +10802,52 @@ footer {
   background-color: #EEE;
   position: fixed;
   z-index: 1;
-  padding-top: 10px;
-}
-/* line 331, ../sass/set.scss */
-footer #icon-bar .icon-button a {
-  color: #333;
-  text-decoration: none;
-}
-/* line 335, ../sass/set.scss */
-footer #icon-bar .icon-button a i {
-  font-size: 1.75em;
-}
-/* line 337, ../sass/set.scss */
-footer #icon-bar .icon-button a:hover {
-  color: #555;
-  text-decoration: none;
+  	/*
+  	#icon-bar{
+  		.icon-button{
+  			
+  
+  		 	a { 
+  		 		color: #333;
+  		 		text-decoration: none;
+  		 		
+  		 		i { font-size: 1.75em; }
+  		 		
+  	 			&:hover { color: #555; text-decoration: none;}
+  	 		}
+  		}
+  
+  		@media (max-width: $x-tiny){
+  				display: none;
+  		}
+  	}
+  	*/
 }
 @media (max-width: 481px) {
-  /* line 327, ../sass/set.scss */
-  footer #icon-bar {
-    display: none;
+  /* line 318, ../sass/set.scss */
+  footer {
+    position: initial;
   }
 }
-/* line 347, ../sass/set.scss */
-footer #rights {
+/* line 332, ../sass/set.scss */
+footer #rights,
+footer #photos-rights {
   text-align: right;
 }
-/* line 350, ../sass/set.scss */
-footer #rights a {
+/* line 334, ../sass/set.scss */
+footer #rights a,
+footer #photos-rights a {
   color: orange;
+}
+/* line 337, ../sass/set.scss */
+footer #rights {
+  padding-top: 10px;
+}
+/* line 340, ../sass/set.scss */
+footer #rights p {
+  margin-bottom: 0px;
+}
+/* line 343, ../sass/set.scss */
+footer #photos-rights {
+  padding-top: 0px;
 }
