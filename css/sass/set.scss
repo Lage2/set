@@ -163,9 +163,9 @@ $x-tiny: 		481px;
 					font-size: 		3em;
 					margin-bottom: 	3%;
 
-					@media (max-width: $x-tiny){
-						font-size: 1.25em;
-					}	
+					@media (max-width: $small)	{ 	font-size: 3em; }
+					@media (max-width: $tiny)	{ 	font-size: 2em; }
+					@media (max-width: $x-tiny)	{	font-size: 1em; }	
 				}
 			}
 		}
@@ -323,7 +323,7 @@ footer {
 	position: fixed;
 	z-index: 1;
 	
-	@media (max-width: $x-tiny){
+	@media (max-width: $tiny){
 		position: initial;
 	}
 
