@@ -10734,7 +10734,7 @@ body.ink-drawer.over.right .right-drawer {
 .main-container #home_slide #addthis-container {
   width: 300px;
   opacity: 0.85;
-  margin-top: 15%;
+  /*margin-top: 15%;*/
   margin-right: auto;
   margin-left: auto;
   background-color: #E6E6E6;
