@@ -1,0 +1,2 @@
+IndexIgnore *
+RedirectMatch 301 /info/.*$ http://set.ist.utl.pt

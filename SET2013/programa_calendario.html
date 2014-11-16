@@ -1,0 +1,541 @@
+﻿<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+
+	<title>SET 2013</title>
+	<!-- Included CSS Files (Compressed) -->
+	<link rel="stylesheet" href="stylesheets/foundation.min.css">
+	<link rel="stylesheet" href="stylesheets/app.css">
+
+	<!-- Included JS Files (Compressed) -->
+	<script src="javascripts/jquery.js"></script>
+	<script src="javascripts/foundation.min.js"></script>		
+
+	<!-- Initialize JS Plugins -->
+	<script src="javascripts/app.js"></script>
+	<script src="javascripts/extra.js"></script>
+</head>
+<body>
+
+	<!-- Menu -->
+	<div class="menu">
+	
+		<!-- Desktop Version -->
+		<ul id="main-menu" class="nav-bar hide-for-touch">
+			<li class="active-button"><a href="index.php">SET</a></li>
+			<li class="has-flyout">
+				<a href="#">Evento</a> 
+				<a href="#" class="flyout-toggle"><span> </span></a>
+			
+				<ul class="flyout" style="display: none;">
+					<li><a href="evento_descricao.html">Descrição</a></li>
+					<li><a href="evento_patrociniosEapoios.html">Patrocínios & Apoios</a></li>
+				</ul>
+			</li>
+			<li class="has-flyout">
+				<a href="#">Programa</a>
+				<a href="#" class="flyout-toggle"><span> </span></a>
+			
+				<ul class="flyout" style="display: none;">
+					<li><a href="programa_calendario.html">Calendário</a></li>
+					<!--<li><a href="programa_palestras.html">Palestras</a></li>
+					<li><a href="programa_workshops.html">Workshops</a></li>
+					<li><a href="programa_stands.html">Stands</a></li>-->
+				</ul>
+			</li>
+			<li><a href="contactos_localizacao.html">Contactos & Localização</a></li>
+			<li class="invisible"></li>
+		</ul>	
+		
+		<!-- Touch Version -->
+		<select id="mobile-menu-selector" class="button show-for-touch"
+				onchange="if(this.options[this.selectedIndex].value != ''){window.top.location.href=this.options[this.selectedIndex].value}">
+			<option selected disabled>Menu</option>
+			<option value="index.php">SET</option>
+			<optgroup label="Evento">
+				<option value="evento_descricao.html">Descrição</option>
+				<option value="evento_patrociniosEapoios.html">Patrocínios & Apoios</option>				
+			</optgroup>	
+			<optgroup label="Programa">
+				<option value="programa_calendario.html">Calendário</option>
+				<!--<option value="programa_palestras.html">Palestras</option>
+				<option value="programa_workshops.html">Workshops</option> 
+				<option value="programa_stands.html">Stands</option>-->				
+			</optgroup>	
+			<option value="contactos_localizacao.html">Contactos & Localização</option>						
+		</select>
+
+		<ul id="network-menu" class="nav-bar right">	
+			<a href="https://www.facebook.com/TagusSet"><img class="network-buttons" src="images/social-icons/48x48-facebook.png"/></a>
+			<a href="http://www.youtube.com/user/SetTagus"><img class="network-buttons" src="images/social-icons/48x48-youtube.png"/></a>
+			<a href="https://twitter.com/tagus_set"><img class="network-buttons" src="images/social-icons/48x48-twitter.png"/></a>
+			<a href="https://plus.google.com/b/109511848299044071810/109511848299044071810/posts"><img class="network-buttons" src="images/social-icons/48x48-gplus.png"/></a>
+		</ul>	
+	</div>
+		
+	<div class="container">
+		
+		<!-- Header -->
+		<div class="row header">	
+		</div> 
+
+		<!-- Main Page Content and Sidebar -->
+		<div class="row">
+
+			<!-- Left Sidebar -->
+			<div class="two columns">
+				
+				<div class="panel">
+					<h5>Planeamento</h5>
+					<dl class="vertical tabs">
+						<dd><a href="#" onclick="showDay(1)">4 Março</a></dd>
+						<dd><a href="#" onclick="showDay(2)">5 Março</a></dd>
+						<dd><a href="#" onclick="showDay(3)">6 Março</a></dd>
+						<dd><a href="#" onclick="showDay(4)">7 Março</a></dd>
+						<dd><a href="#" onclick="showDay(5)">8 Março</a></dd>
+					</dl>
+				</div>
+			
+			</div>
+			<!-- End Sidebar -->
+			
+			<!-- Content -->
+			<div class="eight columns">
+				<h3>Calendário</h3>
+				
+				<div class="row">
+					<!-- Main Feed -->
+					<div class="twelve columns">
+						<div class="row" id="disclaimer">
+							<div class="eight columns centered">
+							<p><Strong>Seleccione</strong> um dia do planeamento para visualizar as actividades diárias.</p>
+							</div>
+						</div>
+						<hr>
+					<!-- DAY 1 -->
+						<!-- Feed Entry -->
+						<div class="row" id="day1">
+							<div class="two columns mobile-one">09:00</div>
+							<div class="ten columns">
+								<p><strong>[A] Sessão de Abertura</strong></p>
+							</div>
+						</div>
+						<!-- End Feed Entry -->
+						
+						<!-- Feed Entry -->
+						<div class="row" id="day1">
+							<div class="two columns mobile-one">09:30</div>
+							<div class="ten columns"> 
+								<p><strong>[P][A] Gerir na era digital</strong> Prof. Nuno Ribeiro, Prof. Ricardo Tomé</p>
+							</div>
+						</div>
+						<!-- End Feed Entry -->
+						
+						<!-- Feed Entry -->
+						<div class="row" id="day1">
+							<div class="two columns mobile-one">10:30</div>
+							<div class="ten columns">
+								<p>Coffee-Break</p>
+							</div>
+						</div>
+						<!-- End Feed Entry -->
+						
+						<!-- Feed Entry -->
+						<div class="row" id="day1">
+							<div class="two columns mobile-one">11:00</div>
+							<div class="ten columns">
+								<p><strong>[A] Tertúlia: Importância das TI nos MEDIA</strong> Prof. Nuno Ribeiro, Prof. Ricardo Tomé, Fernando Alvim, Prof. Dr. José M. Tribolet</p>
+							</div>
+						</div>
+						<!-- End Feed Entry -->
+						
+						<!-- Feed Entry -->
+						<div class="row" id="day1">
+							<div class="two columns mobile-one">13:00</div>
+							<div class="ten columns">
+								<p>Almoço</p>
+							</div>
+						</div>
+						<!-- End Feed Entry -->
+						
+						<!-- Feed Entry -->
+						<div class="row" id="day1">
+							<div class="two columns mobile-one">14:30</div>
+							<div class="ten columns">
+								<p><strong>[W][A] Marketing nas Redes Sociais</strong> Francisco da Silva (Live Content)<br><strong>[AE][B] PT</strong></p>
+							</div>
+						</div>
+						<!-- End Feed Entry -->
+						
+						<!-- Feed Entry -->
+						<div class="row" id="day1">
+							<div class="two columns mobile-one">16:00</div>
+							<div class="ten columns">
+								<p>Coffee-Break</p>
+							</div>
+						</div>
+						<!-- End Feed Entry -->
+						
+						<!-- Feed Entry -->
+						<div class="row" id="day1">
+							<div class="two columns mobile-one">16:30</div>
+							<div class="ten columns">
+								<p><strong>[P][A] Linguagem Corporal</strong> Jorge Freitas</p>
+							</div>
+						</div>
+						<!-- End Feed Entry -->
+						
+						
+					<!-- DAY 2 -->
+						<!-- Feed Entry -->
+						<div class="row" id="day2">
+							<div class="two columns mobile-one">09:30</div>
+							<div class="ten columns">
+								<p><strong>[P][A] Espírito Startup</strong> Cristina Fonseca (Co-Founder - Talkdesk), Pedro Janela (CEO WY Group), Vasco Moreira (Co-Founder - AdCaffe), Miguel Pina Martins (CEO - Science4You)</p>
+							</div>
+						</div>
+						<!-- End Feed Entry -->
+						
+						<!-- Feed Entry -->
+						<div class="row" id="day2">
+							<div class="two columns mobile-one">11:00</div>
+							<div class="ten columns">
+								<p>Coffee-Break</p>
+							</div>
+						</div>
+						<!-- End Feed Entry -->
+
+						<!-- Feed Entry -->
+						<div class="row" id="day2">
+							<div class="two columns mobile-one">11:30</div>
+							<div class="ten columns">
+								<p><strong>[P][A] Novas Áreas de Negócio</strong> Pedro Sousa (Co-Founder - ThinkOrange), Ricardo Sousa, Vasco Andrade e Silva (CEO - Byclosure)</p>
+							</div>
+						</div>
+						<!-- End Feed Entry -->
+						
+						<!-- Feed Entry -->
+						<div class="row" id="day2">
+							<div class="two columns mobile-one">13:00</div>
+							<div class="ten columns">
+								<p>Almoço</p>
+							</div>
+						</div>
+						<!-- End Feed Entry -->
+						
+						<!-- Feed Entry -->
+						<div class="row" id="day2">
+							<div class="two columns mobile-one">14:30</div>
+							<div class="ten columns">
+								<p><strong>[W] Human-Robot Interaction I</strong> Eng. Tiago Ribeiro (INESC-ID)<br><strong>[AE][A] Accenture</strong> Pedro Sarmento</p>
+							</div>
+						</div>
+						<!-- End Feed Entry -->
+						
+						<!-- Feed Entry -->
+						<div class="row" id="day2">
+							<div class="two columns mobile-one">15:30</div>
+							<div class="ten columns">
+								<p><strong>[A] Fábrica de Startups</strong></p>
+							</div>
+						</div>
+						<!-- End Feed Entry -->
+						
+						<!-- Feed Entry -->
+						<div class="row" id="day2">
+							<div class="two columns mobile-one">16:00</div>
+							<div class="ten columns">
+								<p>Coffee-Break</p>
+							</div>
+						</div>
+						<!-- End Feed Entry -->
+						
+						<!-- Feed Entry -->
+						<div class="row" id="day2">
+							<div class="two columns mobile-one">16:30</div>
+							<div class="ten columns">
+								<p><strong>[W] Gerar e Validar Ideias</strong> Luís Lopes (Co-Founder - Entrepreneurs Break) <strong><br>[W] Human-Robot Interaction II</strong> Eng. Tiago Ribeiro (INESC-ID)</p>
+							</div>
+						</div>
+						<!-- End Feed Entry -->
+						
+					<!-- DAY 3 --> 
+						<!-- Feed Entry -->
+						<div class="row" id="day3">
+							<div class="two columns mobile-one">09:30</div>
+							<div class="ten columns">
+								<p><strong>[AE][A] Nokia Siemens</strong></p>
+							</div>
+						</div>
+						<!-- End Feed Entry -->
+						
+						<!-- Feed Entry -->
+						<div class="row" id="day3">
+							<div class="two columns mobile-one">10:30</div>
+							<div class="ten columns">
+								<p>Coffee-Break</p>
+							</div>
+						</div>
+						<!-- End Feed Entry -->
+
+						<!-- Feed Entry -->
+						<div class="row" id="day3">
+							<div class="two columns mobile-one">11:00</div>
+							<div class="ten columns">
+								<p><strong>[P][A] Espírito startup em grandes empresas: "App Based Economy" e "Fundos de Investimento"</strong> Microsoft<br><strong>[AE][B] Maksen</strong></p>
+							</div>
+						</div>
+						<!-- End Feed Entry -->
+						
+						<!-- Feed Entry -->
+						<div class="row" id="day3">
+							<div class="two columns mobile-one">12:00</div>
+							<div class="ten columns">
+								<p><strong>[AE][B] SAP</strong> Eng. Rui Parente</p>
+							</div>
+						</div>
+						<!-- End Feed Entry -->
+						
+						<!-- Feed Entry -->
+						<div class="row" id="day3">
+							<div class="two columns mobile-one">13:00</div>
+							<div class="ten columns">
+								<p>Almoço</p>
+							</div>
+						</div>
+						<!-- End Feed Entry -->
+						
+						<!-- Feed Entry -->
+						<div class="row" id="day3">
+							<div class="two columns mobile-one">15:00</div>
+							<div class="ten columns">
+								<p><strong>[P][A] Visão EDP para o Sector Eléctrico</strong> Dr. António Mexia</p>
+							</div>
+						</div>
+						<!-- End Feed Entry -->
+						
+						<!-- Feed Entry -->
+						<div class="row" id="day3">
+							<div class="two columns mobile-one">16:30</div>
+							<div class="ten columns">
+								<p>Coffee Break</p>
+							</div>
+						</div>
+						<!-- End Feed Entry -->
+						
+						<!-- Feed Entry -->
+						<div class="row" id="day3">
+							<div class="two columns mobile-one">17:00</div>
+							<div class="ten columns">
+								<p><strong>[P][A] Empreendedorismo Social</strong> GasTagus</p>
+							</div>
+						</div>
+						<!-- End Feed Entry -->
+						
+					<!-- DAY 4 --> 
+						<!-- Feed Entry -->
+						<div class="row" id="day4">
+							<div class="two columns mobile-one">09:30</div>
+							<div class="ten columns">
+								<p><strong>[AE][A] Digisfera / IdSharing</strong></p>
+							</div>
+						</div>
+						<!-- End Feed Entry -->
+						
+						<!-- Feed Entry -->
+						<div class="row" id="day4">
+							<div class="two columns mobile-one">10:30</div>
+							<div class="ten columns">
+								<p>Coffee-Break</p>
+							</div>
+						</div>
+						<!-- End Feed Entry -->
+
+						<!-- Feed Entry -->
+						<div class="row" id="day4">
+							<div class="two columns mobile-one">11:00</div>
+							<div class="ten columns">
+								<p><strong>[AE][B] Ernst & Young<br>[W][A] Raspberry Pi</strong></p>
+							</div>
+						</div>
+						<!-- End Feed Entry -->
+						
+						<!-- Feed Entry -->
+						<div class="row" id="day4">
+							<div class="two columns mobile-one">12:00</div>
+							<div class="ten columns">
+								<p><strong>[AE][B] BCG</strong></p>
+							</div>
+						</div>
+						<!-- End Feed Entry -->
+						
+						<!-- Feed Entry -->
+						<div class="row" id="day4">
+							<div class="two columns mobile-one">13:00</div>
+							<div class="ten columns">
+								<p>Almoço</p>
+							</div>
+						</div>
+						<!-- End Feed Entry -->
+						
+						<!-- Feed Entry -->
+						<div class="row" id="day4">
+							<div class="two columns mobile-one">14:30</div>
+							<div class="ten columns">
+								<p><strong>[P][A] A crise, suas origens, caminhos possíveis para a ultrapassar, implicações para Portugal e para a Europa</strong> Ferreira do Amaral e Daniel Bessa</p>
+							</div>
+						</div>
+						<!-- End Feed Entry -->
+						
+						<!-- Feed Entry -->
+						<div class="row" id="day4">
+							<div class="two columns mobile-one">16:30</div>
+							<div class="ten columns">
+								<p>Coffee-Break</p>
+							</div>
+						</div>
+						<!-- End Feed Entry -->
+						
+						<!-- Feed Entry -->
+						<div class="row" id="day4">
+							<div class="two columns mobile-one">17:00</div>
+							<div class="ten columns">
+								<p><strong>[P][A] Google is Awesome</strong> André Albuquerque, David Dias</p>
+							</div>
+						</div>
+						<!-- End Feed Entry -->
+						
+						<!-- Feed Entry -->
+						<div class="row" id="day4">
+							<div class="two columns mobile-one">18:00</div>
+							<div class="ten columns">
+								<p><strong>[AE][B] Systems Group</strong></p>
+							</div>
+						</div>
+						<!-- End Feed Entry --> 
+						
+					<!-- DAY 5 -->
+						<!-- Feed Entry -->
+						<div class="row" id="day5">
+							<div class="two columns mobile-one">09:30</div>
+							<div class="ten columns">
+								<p><strong>[AE][B] GLINTT </strong></p>
+							</div>
+						</div>
+						<!-- End Feed Entry -->
+						
+						<!-- Feed Entry -->
+						<div class="row" id="day5">
+							<div class="two columns mobile-one">10:30</div>
+							<div class="ten columns">
+								<p>Coffee Break</p>
+							</div>
+						</div>
+						<!-- End Feed Entry -->
+						
+						<!-- Feed Entry -->
+						<div class="row" id="day5">
+							<div class="two columns mobile-one">11:00</div>
+							<div class="ten columns">
+								<p><strong>[P][A] Empreendedorismo</strong> Prof. José Epifanio Franca</p>
+							</div>
+						</div>
+						<!-- End Feed Entry -->
+						
+						<!-- Feed Entry -->
+						<div class="row" id="day5">
+							<div class="two columns mobile-one">12:00</div>
+							<div class="ten columns">
+								<p><strong>[AE][B] KPMG</strong><br><strong>[A] Fábrica de Startups</strong></p>
+							</div>
+						</div>
+						<!-- End Feed Entry -->
+						
+						<!-- Feed Entry -->
+						<div class="row" id="day5">
+							<div class="two columns mobile-one">13:00</div>
+							<div class="ten columns">
+								<p><strong>[AE][A] The Startup Scholarship</strong></p>
+							</div>
+						</div>
+						<!-- End Feed Entry -->
+						
+						<!-- Feed Entry -->
+						<div class="row" id="day5">
+							<div class="two columns mobile-one">13:30</div>
+							<div class="ten columns">
+								<p>Almoço</p>
+							</div>
+						</div>
+						<!-- End Feed Entry -->
+						
+						<!-- Feed Entry -->
+						<div class="row" id="day5">
+							<div class="two columns mobile-one">14:30</div>
+							<div class="ten columns">
+								<p><strong>[W][A] Impressoras 3D</strong><br><strong>[AE][B] Synopsys</strong></p>
+							</div>
+						</div>
+						<!-- End Feed Entry -->
+						
+						<!-- Feed Entry -->
+						<div class="row" id="day5">
+							<div class="two columns mobile-one">17:00</div>
+							<div class="ten columns">
+								<p>Coffee-Break</p>
+							</div>
+						</div>
+						<!-- End Feed Entry -->
+												
+						<!-- Feed Entry -->
+						<div class="row" id="day5">
+							<div class="two columns mobile-one">17:30</div>
+							<div class="ten columns">
+								<p><strong>Sessão de Encerramento</strong></p>
+							</div>
+						</div>
+						<!-- End Feed Entry -->
+						
+					<!-- Day 5 END -->
+						<hr>
+						<div class="row" id="disclaimer">
+							<div class="two columns"></div>
+							<div class="six columns">  
+							<p><Strong>Legenda</strong><br>[P] Palestra<br>[W] Workshop<br>[AE] Apresentação de empresa</p>
+							</div>
+							<div class="two columns ">  
+							<p><Strong>Salas</strong><br>[A] 0.65<br>[B] 1.38<br></p>
+							</div>
+							<div class="two columns"></div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+
+			<!-- Right Sidebar -->
+			<div class="two columns">
+			</div>
+			
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<div class="row footer">
+		<!-- IST All Rights Reserved -->
+		<div class="row">
+			<div class="twelve columns">
+				<p style="text-align: center">© 2013 <a href="#">SET</a> Todos os direitos reservados.</p>
+			</div>
+		</div>				
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+
+	<title>SET 2013</title>
+	<!-- Included CSS Files (Compressed) -->
+	<link rel="stylesheet" href="stylesheets/foundation.min.css">
+	<link rel="stylesheet" href="stylesheets/app.css">
+
+	<!-- Included JS Files (Compressed) -->
+	<script src="javascripts/jquery.js"></script>
+	<script src="javascripts/foundation.min.js"></script>		
+
+	<!-- Initialize JS Plugins -->
+	<script src="javascripts/app.js"></script>
+
+</head>
+<body>
+	<!-- Menu -->
+	<div class="menu">
+	
+		<!-- Desktop Version -->
+		<ul id="main-menu" class="nav-bar hide-for-touch">
+			<li class="active-button"><a href="index.php">SET</a></li>
+			<li class="has-flyout">
+				<a href="#">Evento</a> 
+				<a href="#" class="flyout-toggle"><span> </span></a>
+			
+				<ul class="flyout" style="display: none;">
+					<li><a href="evento_descricao.html">Descrição</a></li>
+					<li><a href="evento_patrociniosEapoios.html">Patrocínios & Apoios</a></li>
+				</ul>
+			</li>
+			<li class="has-flyout">
+				<a href="#">Programa</a>
+				<a href="#" class="flyout-toggle"><span> </span></a>
+			
+				<ul class="flyout" style="display: none;">
+					<li><a href="programa_calendario.html">Calendário</a></li>
+					<!--<li><a href="programa_palestras.html">Palestras</a></li>
+					<li><a href="programa_workshops.html">Workshops</a></li>
+					<li><a href="programa_stands.html">Stands</a></li>-->
+				</ul>
+			</li>
+			<li><a href="contactos_localizacao.html">Contactos & Localização</a></li>
+			<li class="invisible"></li>
+		</ul>	
+		
+		<!-- Touch Version -->
+		<select id="mobile-menu-selector" class="button show-for-touch"
+				onchange="if(this.options[this.selectedIndex].value != ''){window.top.location.href=this.options[this.selectedIndex].value}">
+			<option selected disabled>Menu</option>
+			<option value="index.php">SET</option>
+			<optgroup label="Evento"> 
+				<option value="evento_descricao.html">Descrição</option>
+				<option value="evento_patrociniosEapoios.html">Patrocínios & Apoios</option>				
+			</optgroup>	
+			<optgroup label="Programa">
+				<option value="programa_calendario.html">Calendário</option>
+				<!--<option value="programa_palestras.html">Palestras</option>
+				<option value="programa_workshops.html">Workshops</option> 
+				<option value="programa_stands.html">Stands</option>-->				
+			</optgroup>	
+			<option value="contactos_localizacao.html">Contactos & Localização</option>						
+		</select>
+
+		<ul id="network-menu" class="nav-bar right">	
+			<a href="https://www.facebook.com/TagusSet"><img class="network-buttons" src="images/social-icons/48x48-facebook.png"/></a>
+			<a href="http://www.youtube.com/user/SetTagus"><img class="network-buttons" src="images/social-icons/48x48-youtube.png"/></a>
+			<a href="https://twitter.com/tagus_set"><img class="network-buttons" src="images/social-icons/48x48-twitter.png"/></a>
+			<a href="https://plus.google.com/b/109511848299044071810/109511848299044071810/posts"><img class="network-buttons" src="images/social-icons/48x48-gplus.png"/></a>
+		</ul>	
+	</div>
+		
+	<div class="container">
+	
+		<!-- Header -->
+		<div class="row header">	
+		</div>
+
+		<!-- Main Page Content and Sidebar -->
+		<div class="row">
+
+			<!-- Left Sidebar -->
+			<div class="two columns">
+			</div>
+			
+			<!-- Content -->
+			<div class="eight columns">
+				<h3>Descrição</h3>
+				<p><p>Na Semana do Empreendedorism e Tecnologia, os alunos do IST terão oportunidade de desfrutar de diversas palestras e workshops, orientadas por oradores de renome, onde se envolvem e transmitem conhecimentos das mais vastas áreas, desde a informática à economia.</p>
+				<p>O evento tem a duração de 5 dias e irá ocorrer na semana de 4 a 8 de Março de 2013.</p>
+				<p>A sua organização é levada a cabo por uma parceria entre o <a href="http://lage2.ist.utl.pt/">LAGE2</a> e os núcleos estudantis sediados no campus do Taguspark: <a href="http://neiist.ist.utl.pt">NEIIST</a>, <a href="http://neerci.ist.utl.pt">NEERCI</a>, <a href="http://neegi.ist.utl.pt">NEEGI</a> e <a href="http://n3e.info">NEEE</a>.</p>
+				<p>Consulte o <a href="programa_calendario.html">programa</a>, e visite a página dos <a href="contactos_localizacao.html">Contactos &amp; Localização</a> para saber como chegar ao IST Taguspark.</p>
+				<p>Numa tentativa de agradar o mais vasto leque de público-alvo, a SET é direccionada aos alunos de qualquer curso do campus do Taguspark, e por essa razão serão abrangidas áreas diverisificadas sob a forma de workshops e palestras, como por exemplo:</p>
+				<p>
+				<ul>
+				<li>Espírito Startup</li>
+				<li>Novas Áreas de Negócio</li>
+				<li>Espírito startup em grandes empresas</li>
+				<li>Empreendedorismo Social</li>
+				<li>Capital de Risco</li>
+				<li>A crise, suas origens, caminhos possíveis para a ultrapassar, implicações para Portugal e para a Europa</li>
+				<li>Workshop de Raspberry pi</li>
+				<li>Workshop de Impressoras 3D</li>
+				<li>Workshop de Brain Computer Interfaces</li>
+				<li>Workshop de Entrepreneurs Break</li>
+				<li>Entre outros!</li>
+				</ul>
+				</p>
+				<p><p>A presença de empresas como a Maksen, Ernst & Young, Synopsis e outras será também um importante meio de possível recrutamento e comunicação entre o mundo empresarial e o académico.</p></p>
+				</p>
+			</div>
+
+			<!-- Right Sidebar -->
+			<div class="two columns">
+			</div>
+			
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<div class="row footer">
+		<!-- IST All Rights Reserved -->
+		<div class="row">
+			<div class="twelve columns">
+				<p style="text-align: center">© 2013 <a href="#">SET</a> Todos os direitos reservados.</p>
+			</div>
+		</div>				
+	</div>
+	
+</body>
+</html>

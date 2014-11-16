@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="modx.prosilver.en.xsl"?>
+<!--NOTICE: Please open this file in your web browser. If presented with a security warning, you may safely tell it to allow the blocked content.-->
+<!--For security purposes, please check: http://www.phpbb.com/mods/ for the latest version of this MOD.\nAlthough MODs are checked before being allowed in the MODs Database there is no guarantee that there are no security problems within the MOD.\nNo support will be given for MODs not found within the MODs Database which can be found at http://www.phpbb.com/mods/-->
+<mod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.phpbb.com/mods/xml/modx-1.2.5.xsd">
+	<header>
+		<meta name="generator" content="MODX file generated with PP MODX Creator 1.0.1 by tumba25 (phpBB version)"/>
+		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
+		<title lang="en"><![CDATA[Almsamim WYSIWYG editor for phpBB3]]></title>
+		<description lang="en"><![CDATA[WYSIWYG for phpBB3]]></description>
+		<author-group>
+			<author>
+				<realname><![CDATA[Abdullah Mohamed]]></realname>
+				<username><![CDATA[almsamim]]></username>
+				<homepage><![CDATA[http://www.almsamim.com]]></homepage>
+			</author>
+			<author>
+				<realname><![CDATA[Vinh Le]]></realname>
+				<username><![CDATA[KidA7]]></username>
+				<homepage><![CDATA[http://hanghaicnt.net]]></homepage>
+				<email><![CDATA[vinh_thekiller@yahoo.com]]></email>
+			</author>
+		</author-group>
+		<mod-version>0.0.9-RC3</mod-version>
+		<installation>
+			<level>easy</level>
+			<time>60</time>
+			<target-version>3.0.7-PL1</target-version>
+		</installation>
+		<history>
+			<entry>
+				<date>2010-04-23</date>
+				<rev-version>0.0.9-RC1</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[Fixed so many bug in wc.js. Change method of parsing bbcode.]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2010-04-24</date>
+				<rev-version>0.0.9-RC2</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[Fixed bug in message_parser.php([url] and [size] bbcode error), template error. Remove table bcode, upload image button.]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2010-04-30</date>
+				<rev-version>0.0.9-RC3</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[Work perfect with seo without any seo change]]></change>
+				</changelog>
+			</entry>
+		</history>
+		<link-group>
+			<link type="template" href="templates/prosilver.xml" lang="en">prosilver-based</link>
+			<link type="template" href="templates/subsilver2.xml" lang="en">subsilver2-based</link>
+		</link-group>
+	</header>
+	<action-group>
+		<copy>
+			<file from="root/install_wysiwyg.php" to="install_wysiwyg.php"/>
+			<file from="root/video.php" to="video.php"/>
+			<file from="root/imguploader.php" to="imguploader.php"/>
+			<file from="root/umil/" to="umil/"/>
+			<file from="root/images/editor/*.*" to="images/editor/*.*"/>
+			<file from="root/images/wc.js" to="images/wc.js"/>
+			<file from="root/adm/style/acp_wysiwyg.html" to="adm/style/acp_wysiwyg.html"/>
+			<file from="root/styles/prosilver/template/wysiwyg.html" to="styles/prosilver/template/wysiwyg.html"/>
+			<file from="root/styles/subsilver2/template/wysiwyg.html" to="styles/subsilver2/template/wysiwyg.html"/>
+			<file from="root/language/en/mods/wysiwyg.php" to="language/en/mods/wysiwyg.php"/>
+			<file from="root/language/en/mods/wysiwyg_install.php" to="language/en/mods/wysiwyg_install.php"/>
+			<file from="root/includes/acp/acp_wysiwyg.php" to="includes/acp/acp_wysiwyg.php"/>
+			<file from="root/includes/acp/info/acp_wysiwyg.php" to="includes/acp/info/acp_wysiwyg.php"/>
+		</copy>
+		<open src="includes/bbcode.php">
+			<edit>
+				<find><![CDATA[						$message = preg_replace($preg['search'], $preg['replace'], $message);]]></find>
+				<action type="replace-with"><![CDATA[						$lp=count($preg['search']);
+						for($i=0;$i<$lp;$i++)
+							while(preg_match($preg['search'][$i],$message))
+								$message = preg_replace($preg['search'][$i], $preg['replace'][$i], $message);]]></action>
+			</edit>
+		</open>
+		<open src="includes/functions.php">
+			<edit>
+				<find><![CDATA[		'SITE_LOGO_IMG'			=> $user->img('site_logo'),]]></find>
+				<action type="before-add"><![CDATA[		'SITE_FULL_URL'			=> generate_board_url(),
+		'S_WYSIWYG_BG'	=> $config['wysiwyg_bg'],
+		'S_WYSIWYG_COLOR'	=> $config['wysiwyg_color'],
+		'S_WYSIWYG_FONTS'	=> "'" .r_arrays($config['wysiwyg_fonts']). "'",
+		'S_WYSIWYG_EXP'	=> "'" . html_entity_decode(r_arrays($config['wysiwyg_exp'])) . "'" ,
+		'S_PALET'	=> $config['palet'],
+		'S_EXP'	=> $config['EXP'],
+		'S_E_DIR'	=> $config['wdir'],
+		'S_BBCODE_IMAGE_SHOW'	=> ($config['bbcode_image_show'] == 1 ) ? true:false,
+		'S_WYSIWYG_SHOW'	=> ($config['wysiwyg_show'] == 1 ) ? true:false,
+		'S_LINK_P'	=> $config['link_p'],
+		'S_WYSIWYG_STATUS' => $user->data['user_wysiwyg'],]]></action>
+			</edit>
+			<edit>
+				<find><![CDATA[/**
+* Generate page footer
+*/]]></find>
+				<action type="before-add"><![CDATA[function r_arrays($r){
+	$r = preg_replace('/[\n\r]+/',"','",$r);
+	return $r;
+}]]></action>
+			</edit>
+		</open>
+		<open src="includes/functions_display.php">
+			<edit>
+				<find><![CDATA[		$template->assign_block_vars('custom_tags', array(
+			'BBCODE_NAME'		=> "'[{$row['bbcode_tag']}]', '[/" . str_replace('=', '', $row['bbcode_tag']) . "]'",
+			'BBCODE_ID'			=> $num_predefined_bbcodes + ($i * 2),
+			'BBCODE_TAG'		=> $row['bbcode_tag'],
+			'BBCODE_HELPLINE'	=> $row['bbcode_helpline'],
+			'A_BBCODE_HELPLINE'	=> str_replace(array('&amp;', '&quot;', "'", '&lt;', '&gt;'), array('&', '"', "\'", '<', '>'), $row['bbcode_helpline']),
+		));
+
+		$i++;
+	}
+	$db->sql_freeresult($result);]]></find>
+				<action type="after-add"><![CDATA[display_smiley_wysiwyg();]]></action>
+			</edit>
+			<edit>
+				<find><![CDATA[?>]]></find>
+				<action type="replace-with"><![CDATA[function display_smiley_wysiwyg()
+{
+	global $db, $template, $config, $cache;
+	if(($smilies=$cache->get('_wysiwyg_smilies'))===false){
+		$sql = 'SELECT smiley_id, code, smiley_url
+				FROM ' . SMILIES_TABLE . '
+				ORDER BY smiley_order';
+		$result = $db->sql_query($sql);
+
+		while ($row = $db->sql_fetchrow($result))
+		{
+			$smilies[$row['smiley_id']] = $row;
+		}
+		$db->sql_freeresult($result);
+		$cache->put('_wysiwyg_smilies',$smilies);
+	}
+	
+	if (sizeof($smilies))
+	{
+		foreach ($smilies as $row)
+		{
+			$template->assign_block_vars('smiley_wysiwyg', array(
+				//'SMILEY_CODE'   => $row['code'],
+				'A_SMILEY_CODE'   => addslashes($row['code']),
+				'SMILEY_IMG'   => $row['smiley_url'],
+			));
+		}
+
+		$template->assign_vars(array(
+			'SMILEY_PATH'   => $config['server_name'] . $config['script_path'] . '/' . $config['smilies_path'] . '/',
+			'SMILEY_TOTAL'   => sizeof($smilies),
+		));
+	}
+}
+
+?>]]></action>
+			</edit>
+		</open>
+		<open src="includes/functions_posting.php">
+			<edit>
+				<find><![CDATA[if (!defined('IN_PHPBB'))
+{
+	exit;
+}]]></find>
+				<action type="after-add"><![CDATA[if (isset($user))
+{
+$user->add_lang('mods/wysiwyg');
+}]]></action>
+			</edit>
+		</open>
+		<open src="includes/message_parser.php">
+			<edit>
+				<find><![CDATA[					if (preg_match($regexp, $this->message))
+					{
+						$this->message = preg_replace($regexp, $replacement, $this->message);
+						$bitfield->set($bbcode_data['bbcode_id']);
+					}]]></find>
+				<action type="replace-with"><![CDATA[					$pre_message="";
+					while(preg_match($regexp, $this->message))
+					{
+						$pre_message = $this->message;
+						$this->message = preg_replace($regexp, $replacement, $this->message);
+						$bitfield->set($bbcode_data['bbcode_id']);
+						if(strcmp($pre_message,$this->message)==0 || $bbcode_name == 'code' || $bbcode_name == 'quote') break;
+					}]]></action>
+			</edit>
+			<edit>
+				<find><![CDATA[		// Add other checks which needs to be placed before actually parsing anything (be it bbcodes, smilies, urls...)]]></find>
+				<action type="before-add"><![CDATA[		$this->message = preg_replace('/\[url=&quot;(.*)&quot;](.*)\[\/url]/i','[url=\1]\2[/url]',$this->message);
+		$this->message = preg_replace('/\[size=&quot;([\-\+]?\d+)&quot;\](.*?)\[\/size\]/i','[size=\1]\2[/size]',$this->message);
+		$this->message = preg_replace('/\[font=&quot;(.*)&quot;](\w+)\[\/font]/i','[font=\1]\2[/font]',$this->message);
+		$this->message = preg_replace('/\[color=&quot;([0-9a-f]{3}|[0-9a-f]{6}|[a-z\-]+)&quot;\](.*?)\[\/color\]/i','[color=\1]\2[/color]',$this->message);]]></action>
+			</edit>
+		</open>
+		<open src="includes/ucp/ucp_prefs.php">
+			<edit>
+				<find><![CDATA[			case 'post':]]></find>
+				<action type="after-add"><![CDATA[				$user->add_lang('mods/wysiwyg');]]></action>
+			</edit>
+			<edit>
+				<find><![CDATA[					'bbcode'	=> request_var('bbcode', $user->optionget('bbcode')),]]></find>
+				<action type="after-add"><![CDATA[					'wysiwyg_status'        => request_var('wysiwyg_status', $user->data['user_wysiwyg']),]]></action>
+			</edit>
+			<edit>
+				<find><![CDATA[							'user_notify'	=> $data['notify'],]]></find>
+				<action type="after-add"><![CDATA[							'user_wysiwyg'       => $data['wysiwyg_status'],]]></action>
+			</edit>
+			<edit>
+				<find><![CDATA[					'S_BBCODE'	=> $data['bbcode'],]]></find>
+				<action type="after-add"><![CDATA[					'S_WYSIWYG_STATUS'    =>  $data['wysiwyg_status'],]]></action>
+			</edit>
+		</open>
+		<open src="language/en/common.php">
+			<edit>
+				<find><![CDATA[));
+
+?>]]></find>
+				<action type="before-add"><![CDATA[	'LOG_WYSIWYG_UPDATED' => 'wysiwyg editor settings are updated',]]></action>
+			</edit>
+		</open>
+		<php-installer><![CDATA[install_wysiwyg.php]]></php-installer>
+		<diy-instructions lang="en"><![CDATA[1 - Upload all files and images [ if not using AutoMOD ].
+2 - Refresh templates from ACP>STYLES>TEMPLATES .
+3 - Run root/install_wysiwyg.php and follow instructions [UMIL] .]]></diy-instructions>
+	</action-group>
+</mod>

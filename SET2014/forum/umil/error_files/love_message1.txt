@@ -1,0 +1,8 @@
+Thông điệp yêu thương
+PHP Version: 5.2.4
+DBMS: MySQL 5.0.24a-community-nt
+phpBB3 Version: 3.0.7-PL1
+
+Adding acp module: acp/info/acp_love_message.php
+Fail
+

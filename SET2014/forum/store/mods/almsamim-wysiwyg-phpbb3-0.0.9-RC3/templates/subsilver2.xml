@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="modx.prosilver.en.xsl"?>
+<!--NOTICE: Please open this file in your web browser. If presented with a security warning, you may safely tell it to allow the blocked content.-->
+<!--For security purposes, please check: http://www.phpbb.com/mods/ for the latest version of this MOD.\nAlthough MODs are checked before being allowed in the MODs Database there is no guarantee that there are no security problems within the MOD.\nNo support will be given for MODs not found within the MODs Database which can be found at http://www.phpbb.com/mods/-->
+<mod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.phpbb.com/mods/xml/modx-1.2.5.xsd">
+	<header>
+		<meta name="generator" content="MODX file generated with PP MODX Creator 1.0.1 by tumba25 (phpBB version)"/>
+		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
+		<title lang="en"><![CDATA[Almsamim WYSIWYG editor for phpBB3 [subsilver2 style edit]]]></title>
+		<description lang="en"><![CDATA[prosilver and all subsilver2 based styles edits]]></description>
+		<author-group>
+			<author>
+				<realname><![CDATA[Abdullah Mohamed]]></realname>
+				<username><![CDATA[Almsamim]]></username>
+				<homepage><![CDATA[http://www.almsamim.com]]></homepage>
+			</author>
+			<author>
+				<realname><![CDATA[Vinh Le]]></realname>
+				<username><![CDATA[KidA7]]></username>
+				<homepage><![CDATA[http://hanghaicnt.net]]></homepage>
+				<email><![CDATA[vinh_thekiller@yahoo.com]]></email>
+			</author>
+		</author-group>
+		<mod-version>0.0.9-RC1</mod-version>
+		<installation>
+			<level>easy</level>
+			<time>60</time>
+			<target-version>3.0.7-PL1</target-version>
+		</installation>
+	</header>
+	<action-group>
+		<copy>
+			<file from="root/styles/subsilver2/template/wysiwyg.html" to="styles/subsilver2/template/wysiwyg.html"/>
+		</copy>
+		<open src="styles/subsilver2/template/editor.js">
+			<edit>
+				<find><![CDATA[	if (spaces) 
+	{
+		text = ' ' + text + ' ';
+	}]]></find>
+				<action type="after-add"><![CDATA[	if(textarea.style.display=="none") return false;]]></action>
+			</edit>
+		</open>
+		<open src="styles/subsilver2/template/posting_body.html">
+			<edit>
+				<find><![CDATA[<form action="{S_POST_ACTION}" method="post" name="postform"{S_FORM_ENCTYPE}>]]></find>
+				<action type="replace-with"><![CDATA[<form action="{S_POST_ACTION}" method="post" onsubmit="Gettext('message',true)" name="postform"{S_FORM_ENCTYPE}>]]></action>
+			</edit>
+			<edit>
+				<find><![CDATA[	<td class="row1" valign="top"><b class="genmed">{L_MESSAGE_BODY}:</b><br /><span class="gensmall">{L_MESSAGE_BODY_EXPLAIN}&nbsp;</span><br /><br />
+	<!-- IF S_SMILIES_ALLOWED -->
+		<table width="100%" cellspacing="5" cellpadding="0" border="0" align="center">
+		<tr>
+			<td class="gensmall" align="center"><b>{L_SMILIES}</b></td>
+		</tr>
+		<tr>
+			<td align="center">
+				<!-- BEGIN smiley -->
+					<a href="#" onclick="insert_text('{smiley.A_SMILEY_CODE}', true); return false;" style="line-height: 20px;"><img src="{smiley.SMILEY_IMG}" width="{smiley.SMILEY_WIDTH}" height="{smiley.SMILEY_HEIGHT}" alt="{smiley.SMILEY_CODE}" title="{smiley.SMILEY_DESC}" hspace="2" vspace="2" /></a>
+				<!-- END smiley -->
+			</td>
+		</tr>
+
+		<!-- IF S_SHOW_SMILEY_LINK -->
+			<tr>
+				<td align="center"><a class="nav" href="{U_MORE_SMILIES}" onclick="popup(this.href, 300, 350, '_phpbbsmilies'); return false;">{L_MORE_SMILIES}</a></td>
+			</tr>
+		<!-- ENDIF -->
+
+		</table>
+	<!-- ENDIF -->
+	</td>
+	<td class="row2" valign="top">
+		<script type="text/javascript">
+		// ]]>&lt;![CDATA[<![CDATA[
+			var form_name = 'postform';
+			var text_name = 'message';
+		// ]]>]]&gt;<![CDATA[
+		</script>
+
+		<table width="100%" cellspacing="0" cellpadding="0" border="0">
+		<!-- INCLUDE posting_buttons.html -->
+		<tr>
+			<td valign="top" style="width: 100%;"><textarea name="message" rows="15" cols="76" tabindex="3" onselect="storeCaret(this);" onclick="storeCaret(this);" onkeyup="storeCaret(this);" onfocus="initInsertions();" style="width: 98%;">{MESSAGE}</textarea></td>
+			<!-- IF S_BBCODE_ALLOWED -->
+			<td width="80" align="center" valign="top">
+				<script type="text/javascript">
+				// ]]>&lt;![CDATA[<![CDATA[
+					colorPalette('v', 7, 6)
+				// ]]>]]&gt;<![CDATA[
+				</script>
+			</td>
+			<!-- ENDIF -->
+	 	</tr>
+		</table>
+	</td>]]></find>
+				<action type="replace-with"><![CDATA[<!-- INCLUDE wysiwyg.html -->]]></action>
+			</edit>
+			<edit>
+				<find><![CDATA[onclick="attach_form = document.forms[form_name].elements['attachments']; attach_inline(attach_form.value, attach_form.options[attach_form.selectedIndex].text);" onmouseover="helpline('a')" onmouseout="helpline('tip')"]]></find>
+				<inline-edit>
+					<inline-find><![CDATA[onclick="attach_form = document.forms[form_name].elements['attachments']; attach_inline(attach_form.value, attach_form.options[attach_form.selectedIndex].text);" onmouseover="helpline('a')" onmouseout="helpline('tip')"]]></inline-find>
+					<inline-action type="replace-with"><![CDATA[<!-- IF S_WYSIWYG_SHOW -->onclick="var form_name = 'postform';var text_name = 'message';attach_form = document.forms[form_name].elements['attachments']; comm._HTML('[attachment=' + attach_form.value + ']', '[/attachment]',attach_form.options[attach_form.selectedIndex].text);"<!-- ELSE -->onclick="attach_form = document.forms[form_name].elements['attachments']; attach_inline(attach_form.value, attach_form.options[attach_form.selectedIndex].text);" onmouseover="helpline('a')" onmouseout="helpline('tip')"<!-- ENDIF -->]]></inline-action>
+				</inline-edit>
+			</edit>
+		</open>
+		<open src="styles/subsilver2/template/posting_smilies.html">
+			<edit>
+				<find><![CDATA[			<td class="row1" align="center" valign="middle"><!-- BEGIN smiley --> <a href="#" onclick="initInsertions(); insert_text('{smiley.A_SMILEY_CODE}', true, true); return false;"><img src="{smiley.SMILEY_IMG}" width="{smiley.SMILEY_WIDTH}" height="{smiley.SMILEY_HEIGHT}" alt="{smiley.SMILEY_CODE}" title="{smiley.SMILEY_DESC}" hspace="2" vspace="2" /></a> <!-- END smiley --><br />{PAGINATION}<br /><a class="nav" href="#" onclick="window.close(); return false;">{L_CLOSE_WINDOW}</a></td>]]></find>
+				<action type="replace-with"><![CDATA[			<td class="row1" align="center" valign="middle"><!-- BEGIN smiley --> <!-- IF S_WYSIWYG_SHOW --><a href="javascript:void();" onclick="initInsertions();insert_text('{smiley.A_SMILEY_CODE}', true, true);opener.AddSmileyIcon('{SITE_FULL_URL}{smiley.SMILEY_IMG}','{smiley.SMILEY_CODE}'); return false;"><!-- ELSE --><a href="#" onclick="initInsertions();insert_text('{smiley.A_SMILEY_CODE}', true, true); return false;"><!-- ENDIF --><img src="{smiley.SMILEY_IMG}" width="{smiley.SMILEY_WIDTH}" height="{smiley.SMILEY_HEIGHT}" alt="{smiley.SMILEY_CODE}" title="{smiley.SMILEY_DESC}" hspace="2" vspace="2" /></a> <!-- END smiley --><br />{PAGINATION}<br /><a class="nav" href="#" onclick="window.close(); return false;">{L_CLOSE_WINDOW}</a></td>]]></action>
+			</edit>
+		</open>
+		<open src="styles/subsilver2/template/ucp_header.html">
+			<edit>
+				<find><![CDATA[<form action="{S_POST_ACTION}" method="post" name="postform"{S_FORM_ENCTYPE}>]]></find>
+				<action type="replace-with"><![CDATA[<form action="{S_POST_ACTION}" method="post" onsubmit="Gettext('message',true)" name="postform"{S_FORM_ENCTYPE}>]]></action>
+			</edit>
+			<edit>
+				<find><![CDATA[<td width="80%" valign="top"><!-- IF not S_PRIVMSGS or S_SHOW_DRAFTS --><form name="ucp" id="ucp" method="post" action="{S_UCP_ACTION}"{S_FORM_ENCTYPE}><!-- ENDIF -->]]></find>
+				<action type="replace-with"><![CDATA[<td width="80%" valign="top"><!-- IF not S_PRIVMSGS or S_SHOW_DRAFTS --><form name="ucp" id="ucp" method="post" onsubmit="Gettext('signature',true)"  action="{S_UCP_ACTION}"{S_FORM_ENCTYPE}><!-- ENDIF -->]]></action>
+			</edit>
+		</open>
+		<open src="styles/subsilver2/template/ucp_prefs_post.html">
+			<edit>
+				<find><![CDATA[<tr>
+	<td class="row1" width="50%"><b class="genmed">{L_DEFAULT_BBCODE}:</b></td>
+	<td class="row2"><input type="radio" class="radio" name="bbcode" value="1"<!-- IF S_BBCODE --> checked="checked"<!-- ENDIF --> /><span class="gen">{L_YES}</span>&nbsp; &nbsp;<input type="radio" class="radio" name="bbcode" value="0"<!-- IF not S_BBCODE --> checked="checked"<!-- ENDIF --> /><span class="gen">{L_NO}</span></td>
+</tr>]]></find>
+				<action type="after-add"><![CDATA[<tr>
+	<td class="row1" width="50%"><b class="genmed">{L_UCP_WYSIWYG}:</b><br /><span>{L_WYSIWYG_EXPLAIN}</span></td>
+	<td class="row2"><input type="radio" name="wysiwyg_status" id="wysiwyg_status1" value="1"<!-- IF S_WYSIWYG_STATUS --> checked="checked"<!-- ENDIF --> /><span class="gen">{L_YES}</span>&nbsp; &nbsp;<input type="radio" name="wysiwyg_status" id="wysiwyg_status0" value="0"<!-- IF not S_WYSIWYG_STATUS --> checked="checked"<!-- ENDIF --> /><span class="gen">{L_NO}</span></td>
+</tr>]]></action>
+			</edit>
+		</open>
+		<open src="styles/subsilver2/template/ucp_profile_signature.html">
+			<edit>
+				<find><![CDATA[	<td colspan="2" class="row2">
+		<script type="text/javascript">
+		// ]]>&lt;![CDATA[<![CDATA[
+			var form_name = 'ucp';
+			var text_name = 'signature';
+		// ]]>]]&gt;<![CDATA[
+		</script>
+		
+		<table cellspacing="0" cellpadding="2" border="0" width="99%">
+		<!-- INCLUDE posting_buttons.html -->
+		<tr>
+			<td colspan="2"><textarea class="post" name="signature" rows="10" cols="76" style="width: 90%;" onselect="storeCaret(this);" onclick="storeCaret(this);" onkeyup="storeCaret(this);" onfocus="initInsertions();">{SIGNATURE}</textarea></td>]]></find>
+				<action type="replace-with"><![CDATA[<!-- INCLUDE wysiwyg.html -->]]></action>
+			</edit>
+		</open>
+		<open src="styles/subsilver2/theme/stylesheet.css">
+			<edit>
+				<find><![CDATA[.username-coloured {
+	font-weight: bold;
+}]]></find>
+				<action type="after-add"><![CDATA[blockquote.editor{
+display:block;
+padding-left: 3em;
+margin:0;
+background-image:none;
+background:none;
+border:none;
+}]]></action>
+			</edit>
+		</open>
+		<diy-instructions lang="en"><![CDATA[Refresh templates and themes of your style from [ ACP>STYLES ]]]></diy-instructions>
+	</action-group>
+</mod>

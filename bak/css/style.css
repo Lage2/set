@@ -1,0 +1,186 @@
+footer { width: 100%; position: fixed; z-index: 1;}
+
+/* Class Selectors */
+
+/*** Header ***/
+#nav {float:right; margin-top: 10px;}
+#nav ul { list-style: none; display: block; margin: 0 auto; height:100%;}
+#logo a { text-decoration: none; float: left; padding-left: 2.5%; margin-top: 5px; margin-bottom: 5px;}
+
+
+.icon-button a { color: #333; text-decoration: none;}
+.icon-button a:hover { color: #555; text-decoration: none;}
+
+#header, #header_small{
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	background-color: #1a9ede;
+	color: white;
+}
+
+#header {	
+	font-size: 1.25em;
+}
+
+#header_small{
+	display: none;
+}
+
+#header a {color: white; text-decoration: none; font-size:1.25em;}
+#header a:hover { color: #ffc37d; text-decoration: blink;}
+
+/*** Main Content ***/
+.main-container { width: 100%;}
+
+.speach-container{
+	padding: 0;
+	margin: 25px;
+	height:100px;
+}
+
+.person-quote{
+	height: 120px;
+	color: #555;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-size: 1.25em;
+	text-align: justify;
+	margin-bottom: 50px;
+}
+.person-name{
+	text-align: right;
+	padding-top: 50px;
+	color: #555; /*#1A1A1A*/
+	font-size: 1em;
+	font-family: Helvetica, Arial, sans-serif;	
+}
+.person-thumbnail{
+	height: 100px;
+	width: 100px;
+	margin-left: 25px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+}
+/*** UI ***/
+.my-button{
+	display: block !important;
+	font-size: 1.5em !important;
+}
+
+/*** Slides ***/
+.front-slide{
+	width: 100%;
+	min-height: 100px;
+	background-color: white;
+	padding-top: 2em;
+	padding-bottom: 1em;
+}
+
+
+.front-slide div {padding-top: 2em; padding-bottom: 1em; margin-bottom: 25px;}
+.front-slide div div {padding: 0;}
+.front-slide div div h3	{text-align: center; font-size: 3em; margin-bottom: 30px;}
+
+.back-slide {height: 720px; background-color: #E1E1E1;}
+.back-slide h2 { font-family: 'Montserrat', Arial, serif; text-align:center; color: black; margin-top: 15%; font-size: 4.5em; font-weight: bold; background: #161616; opacity: 0.9;}
+.back-slide h2 a { text-decoration: none; color:#ff9112;  }
+.back-slide p { font-family: 'Montserrat', Arial, serif; text-align: center; color: #ff9112; font-size: 2em; font-weight: bold; background-color: #161616; opacity: 0.8; margin: 0.15em 0;}
+
+.main-text {
+	padding: 0.75em;
+	font-size: 1.5em;
+	text-align: justify;
+}
+
+
+.edition-year {font-size: 1.5em; font-weight: bold;}
+
+.text { 
+	color: #555;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-size: 1em;
+	text-align: justify;
+}
+/* Identifier Selectors*/
+
+
+#home_slide, #speakers_slide, #history_slide, #sponsors_slide, #recruit_slide {
+	overflow: hidden;
+	width: 100%;
+	padding: 0;
+}
+
+#home_slide{
+	background: url('../img/main1.jpg') 50% 0 no-repeat fixed;
+	background-size: cover;
+	
+	margin: 0;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+}
+
+#speakers_slide{
+	background: url('../img/speakers1.jpg') 50% 0 no-repeat fixed;	
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	color: #fff;
+	margin: 0;
+}
+
+#history_slide{
+	background: url('../img/history2.jpg') 50% 0 no-repeat fixed;	
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	color: #fff;
+	margin: 0;
+}
+
+#sponsors_slide{
+	background: url('../img/sponsor1.jpg') 50% 0 no-repeat fixed;	
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	color: #fff;
+	margin: 0;
+}
+
+#recruit_slide{
+	background: url('../img/recruit1.jpg') 50% 0 no-repeat fixed;	
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	color: #fff;
+	margin: 0;
+}
+
+#recruits{
+	padding-bottom: 30%;
+}
+
+#myCarousel { padding-top: 5%;}
+
+
+@media (max-width: 480px){
+	#header, #speakers, #recruits{
+		display: none;
+	}
+
+	#header_small{
+		display: block;
+	}
+}
+
+@media (max-width: 768px){
+	#header{
+		display: none;
+	}
+
+	#header_small{
+		display: block;
+	}
+}

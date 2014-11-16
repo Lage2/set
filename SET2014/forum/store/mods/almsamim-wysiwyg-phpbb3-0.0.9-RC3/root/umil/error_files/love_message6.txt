@@ -1,0 +1,8 @@
+Love message
+PHP Version: 5.2.4
+DBMS: MySQL 5.0.24a-community-nt
+phpBB3 Version: 3.0.7-PL1
+
+Removing database table: phpbb_love_message
+ERROR: Database table phpbb_love_message does not exist.
+

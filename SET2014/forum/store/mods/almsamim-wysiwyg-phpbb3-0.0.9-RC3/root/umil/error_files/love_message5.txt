@@ -1,0 +1,14 @@
+Love message
+PHP Version: 5.2.4
+DBMS: MySQL 5.0.24a-community-nt
+phpBB3 Version: 3.0.7-PL1
+
+Adding a new database table: phpbb_love_message
+SQL ERROR Key column 'lm_id' doesn't exist in table
+
+Adding new config variable: enable_LM
+ERROR: Config variable enable_LM already exists.
+
+Adding new config variable: max_LM_appear
+ERROR: Config variable max_LM_appear already exists.
+

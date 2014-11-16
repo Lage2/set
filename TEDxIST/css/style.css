@@ -1,0 +1,302 @@
+#home_slide {
+    background: url(../images/main1.jpg) 50% 0 fixed;
+    background-size: cover;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    padding: 100px 0;
+}
+
+#intro_slide {
+    background: url(../images/intro.png) 50% 0 fixed;
+    background-color: white;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0,0,0,.25);
+    /*padding: 200px 0;*/
+}
+
+#speakers_slide {
+    background: url(../images/speakers1.jpg) 50% 0 fixed;
+    background-size: cover;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    padding: 200px 0;
+}
+
+#sponsors_slide {
+    background: url(../images/sponsor1.jpg) 50% 0 fixed;
+    background-size: cover;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    padding: 200px 0;
+}
+
+#prevEditions_slide {
+    background: url(../images/intro.png) 50% 0 fixed;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    padding: 200px 0;
+}
+
+#recruit_slide {
+    background: url(../images/about.png) 50% 0 fixed;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    padding: 100px 0;
+    color: #fff;
+}
+
+#contacts_slide {
+    background: url(../images/intro.png) 50% 0 fixed;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    padding: 200px 0;
+}
+
+.specialh2 {
+    margin: 0;
+    color: #666;
+    padding-top: 90px;
+    font-size: 52px;
+    font-family: "trebuchet ms", sans-serif;
+}
+
+.item {
+    background: #333;
+    text-align: center;
+    height: 300px !important;
+}
+
+.carousel {
+    margin-top: 20px;
+}
+
+.bs-example {
+    margin: 20px;
+}
+
+.post-content {
+    background: none repeat scroll 0 0 #FFFFFF;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.socialnetworks li {
+    transition: color .5s ease-in;
+    color: gray;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 3em;
+    height: auto;
+}
+
+    .socialnetworks li:hover {
+        color: white;
+    }
+
+    .socialnetworks li a {
+        display: block;
+    }
+
+
+/* Non-essential demo stuff */
+.hero-unit {
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.media-object {
+    width: 64px;
+    height: 64px;
+    padding-bottom: 30px;
+}
+
+.footer {
+    width: 100%;
+    background-color: black;
+}
+
+.textslide {
+    background: rgba(255,255,255,0.8);
+    border-radius: 10px;
+    color: black;
+    font-size: x-large;
+}
+
+.navbar-brand { max-width:200px;max-height: 40px; overflow: visible;padding-top: 5px;padding-bottom: 0; position:absolute}
+
+/* Class Selectors */
+
+/*** Header ***/
+#nav {
+    right: 0;
+    margin-top: -5px;
+    height: 20px;
+    position: absolute;
+    /*width: 100%;*/
+}
+
+    #nav ul {
+        list-style: none;
+        display: block;
+        margin: 0 auto;
+        height: 100%;
+    }
+
+#logo a {
+    text-decoration: none;
+    float: left;
+    padding-left: 2.5%;
+    margin-top: 5px;
+}
+
+.icon-button a {
+    color: #333;
+    text-decoration: none;
+}
+
+    .icon-button a:hover {
+        color: #555;
+        text-decoration: none;
+    }
+
+#header {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    z-index: 1;
+    background-color: black;
+    color: #E1E1E1;
+    font-size: 1.25em;
+}
+
+    #header a {
+        color: #E1E1E1;
+        text-decoration: none;
+        font-size: medium;
+    }
+
+        #header a:hover {
+            color: white;
+        }
+
+/*** Main Content ***/
+.main-container {
+    width: 100%;
+}
+
+.speach-container {
+    padding: 0;
+    margin: 25px;
+    height: 100px;
+}
+
+    .speach-container p {
+        font-size: medium;
+        color: black;
+    }
+
+.person-quote {
+    color: #94A4A4;
+    font-weight: normal;
+    font-size: 1.25em;
+    text-align: justify;
+}
+
+.person-name {
+    text-align: right;
+    padding-top: 50px;
+    color: #94A4A4;
+    font-size: 1.1em;
+}
+
+.person-thumbnail {
+    height: 100px;
+    width: 100px;
+    margin-left: 25px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+/*** UI ***/
+.my-button {
+    display: block !important;
+    font-size: 1.5em !important;
+}
+
+/*** Slides ***/
+.front-slide {
+    width: 100%;
+    min-height: 100px;
+    background-color: white;
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
+    .front-slide div {
+        padding-top: 2em;
+        padding-bottom: 1em;
+        margin-bottom: 25px;
+    }
+
+        .front-slide div div {
+            padding: 0;
+        }
+
+            .front-slide div div h3 {
+                text-align: center;
+                font-size: 3em;
+                margin-bottom: 30px;
+            }
+
+.back-slide {
+    background-color: #E1E1E1;
+}
+
+    .back-slide h2 {
+        text-align: center;
+        color: black;
+        margin-top: 15%;
+        font-size: 3em;
+        font-weight: bold;
+    }
+
+        .back-slide h2 div a {
+            text-decoration: none;
+            color: white;
+        }
+
+    .back-slide p {
+        text-align: center;
+        color: white;
+        font-size: 2em;
+    }
+
+.main-text {
+    padding: 0.75em;
+    font-size: 1.5em;
+    text-align: justify;
+}
