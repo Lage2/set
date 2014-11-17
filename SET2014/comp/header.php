@@ -1,6 +1,6 @@
 <header class="clearfix">
 	<section id="branding">
-		<img class="banner img-responsive" src="img/banner.png" alt="SET">
+		<img class="banner img-responsive" src="../img/banner.png" alt="SET">
 	</section>
 
 	<section class="navbar">
